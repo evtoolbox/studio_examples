@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.11">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="false"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="true"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.7"/>
+   <field name="y" value="0.7"/>
+   <field name="z" value="0.7"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_markerless_technology">
+  <resource internal="false" id="57f54199-21a-ff1-ce2-ec1" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="stones.png">
+   <filename value="stones.png"/>
+  </resource>
+  <resource internal="false" id="57f541b1-b26-5dd-58d-91a" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="ev_model.fbx">
+   <filename value="ev_model.fbx"/>
+   <optimizations/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="Scene"/>
+  </order>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="57f5418c-b511-7533-6f32"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="57f54189-aa69-d2b3-126c" name="Логотип" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="1.862645149231e-09"/>
+    <field name="y" value="9.2605128884315e-05"/>
+    <field name="z" value="0.0060848940432313"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.1"/>
+    <field name="y" value="0.1"/>
+    <field name="z" value="0.1"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="57f541b1-b26-5dd-58d-91a"/>
+  </reactor>
+  <reactor id="57f5418c-b511-7533-6f32" name="Метка" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="57f54189-aa69-d2b3-126c"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="image"/>
+   <parameter name="pattern" value="57f54199-21a-ff1-ce2-ec1"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.25"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+ </reactors>
+ <exportParameters/>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>

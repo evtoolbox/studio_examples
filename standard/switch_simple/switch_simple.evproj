@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.11">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="false"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="true"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.7"/>
+   <field name="y" value="0.7"/>
+   <field name="z" value="0.7"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_switch_simple">
+  <resource internal="false" id="64c7a3db-43b-367-593-491" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="marker_dino.png">
+   <filename value="marker_dino.png"/>
+  </resource>
+  <resource internal="false" id="64c7ad46-2a9-171-f2c-7f9" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="triceratops_model.fbx">
+   <filename value="triceratops_model.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="64c7ad7f-c2c-dd8-1f1-25d" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="t-rex_model.fbx">
+   <filename value="t-rex_model.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="true" id="Exo2-Bold" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="Exo2-Bold.ttf">
+   <filename value="Exo2-Bold.ttf"/>
+   <source value="${STUDIO_RESOURCES_DIR}/fonts/Exo2-Bold.ttf"/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="64c7adf6-88d2-6e51-3535"/>
+   <item id="Scene"/>
+  </order>
+  <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64c7be65-f6a2-fb75-fdff"/>
+    <item value="64c7adec-bf67-a4e2-5bd2"/>
+    <item value="64edf980-da66-e927-6711"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64c7a32a-5e4a-5b2c-c1da"/>
+    <item value="HeadUpDisplay"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64c7a32a-5e4a-5b2c-c1da" name="Метка дино" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64c7ad69-7856-78be-da2f"/>
+    <item value="64c7a9ce-1f93-d932-4d9b"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="64c7a3db-43b-367-593-491"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.1"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64c7a9ce-1f93-d932-4d9b" name="Модель трицератопс" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="-0.0012259799987078"/>
+    <field name="y" value="-0.0030878307297826"/>
+    <field name="z" value="0.0024456232786179"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="1.1271286304703e-13"/>
+    <field name="y" value="2.8627812164162e-14"/>
+    <field name="z" value="45"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.074374538954524"/>
+    <field name="y" value="0.074374538954524"/>
+    <field name="z" value="0.074374538954524"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="64c7ad46-2a9-171-f2c-7f9"/>
+  </reactor>
+  <reactor id="64c7ad69-7856-78be-da2f" name="Модель тирекс" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="-0.0012259799987078"/>
+    <field name="y" value="-0.0030878307297826"/>
+    <field name="z" value="0.0024456232786179"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="1.1271286304703e-13"/>
+    <field name="y" value="2.8627812164162e-14"/>
+    <field name="z" value="43.252381682799"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.084827869447917"/>
+    <field name="y" value="0.084827869447917"/>
+    <field name="z" value="0.084827869447917"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="64c7ad7f-c2c-dd8-1f1-25d"/>
+  </reactor>
+  <reactor id="64c7adec-bf67-a4e2-5bd2" name="Текст трицератопс" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="25.000000%"/>
+    <field name="y" value="10.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0.3921568627451"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0.19607843137255"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.font_id" value="Exo2-Bold"/>
+   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <parameter name="text.value" value="Трицератопс"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64c7adf6-88d2-6e51-3535" name="Переключатель дино" type="switch" enabled="true">
+   <parameter name="options">
+    <item value="Трицератопс"/>
+    <item value="Тирекс"/>
+   </parameter>
+   <parameter name="currentOptionIndex" value="1"/>
+  </reactor>
+  <reactor id="64c7be65-f6a2-fb75-fdff" name="Текст тирекс" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000000"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="25.000000%"/>
+    <field name="y" value="10.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.font_id" value="Exo2-Bold"/>
+   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <parameter name="text.value" value="Тирекс"/>
+  </reactor>
+  <reactor id="64edf980-da66-e927-6711" name="Подсказка" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.font_id" value="Exo2-Bold"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="0.3921568627451"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0.19607843137255"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <parameter name="text.value" value="[Наведите камеру на метку]"/>
+  </reactor>
+ </reactors>
+ <exportParameters/>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>

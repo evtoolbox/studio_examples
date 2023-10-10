@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.11">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="false"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="true"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.7"/>
+   <field name="y" value="0.7"/>
+   <field name="z" value="0.7"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_video_on_marker">
+  <resource internal="false" id="64f5d0e8-43b-367-593-491" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="marker_postcard.png">
+   <filename value="marker_postcard.png"/>
+  </resource>
+  <resource internal="false" id="64f5d225-e78-d58-5ec-1e5" kind="video" local="true" forceExport="false" rawAssetsExport="false" name="video_dragon.webm">
+   <filename value="video_dragon.webm"/>
+  </resource>
+  <resource internal="false" id="64f5eac2-ecf-822-b3a-953" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="button_link.png">
+   <filename value="button_link.png"/>
+  </resource>
+  <resource internal="true" id="Exo2-Bold" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="Exo2-Bold.ttf">
+   <filename value="Exo2-Bold.ttf"/>
+   <source value="${STUDIO_RESOURCES_DIR}/fonts/Exo2-Bold.ttf"/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="64f5e410-d788-2275-a77e"/>
+   <item id="System"/>
+   <item id="Scene"/>
+  </order>
+  <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64f5d75a-6d97-721f-6523"/>
+    <item value="64f5eaaa-3456-5ebd-818c"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64f5a1e8-5e4a-5b2c-c1da"/>
+    <item value="HeadUpDisplay"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="System" name="System" type="system" enabled="true">
+   <parameter name="albumName" value="evi_app"/>
+  </reactor>
+  <reactor id="64f5a1e8-5e4a-5b2c-c1da" name="Метка дракон" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64f5d305-6b75-e762-bbcb"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="image"/>
+   <parameter name="pattern" value="64f5d0e8-43b-367-593-491"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.1"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64f5d212-356e-7dc4-23db" name="Видео дракон" type="rect.video" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%c"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="64f5d225-e78-d58-5ec-1e5"/>
+   <parameter name="volume" value="1"/>
+   <parameter name="playMode" value="once"/>
+  </reactor>
+  <reactor id="64f5d305-6b75-e762-bbcb" name="Система координат" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64f5d212-356e-7dc4-23db"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0.0020224216399568"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.10031773257984"/>
+    <field name="y" value="0.10031773257984"/>
+    <field name="z" value="0.10031773257984"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64f5d75a-6d97-721f-6523" name="Подсказка" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="10.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0.81176470588235"/>
+    <field name="green" value="0.62745098039216"/>
+    <field name="blue" value="0.62745098039216"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.font_id" value="Exo2-Bold"/>
+   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <parameter name="text.value" value="[Наведите камеру устройства на метку]"/>
+  </reactor>
+  <reactor id="64f5e410-d788-2275-a77e" name="Таймер" type="timer" enabled="true"/>
+  <reactor id="64f5eaaa-3456-5ebd-818c" name="Кнопка" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-bottom"/>
+   <parameter name="rect.size">
+    <field name="x" value="20.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-2.000000%"/>
+    <field name="y" value="2.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="64f5eac2-ecf-822-b3a-953"/>
+  </reactor>
+ </reactors>
+ <exportParameters/>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>

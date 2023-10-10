@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.11">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="false"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="true"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.7"/>
+   <field name="y" value="0.7"/>
+   <field name="z" value="0.7"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_rotate_scale_model">
+  <resource internal="false" id="63d27a2f-bbd-ab5-f88-e4b" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="model_deer.fbx">
+   <filename value="model_deer.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="63d2845a-6c4-5ab-aea-5da" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="marker_deer.png">
+   <filename value="marker_deer.png"/>
+  </resource>
+  <resource internal="false" id="647077ad-5cf-47f-84d-441" kind="script" local="true" forceExport="true" rawAssetsExport="false" name="main.lua">
+   <filename value="main.lua"/>
+  </resource>
+  <resource internal="false" id="64707df0-31d-7fd-29b-f13" kind="script" local="true" forceExport="true" rawAssetsExport="false" name="scale.lua">
+   <filename value="scale.lua"/>
+  </resource>
+  <resource internal="false" id="64f86d4b-bf6-df7-cd8-49a" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="marker_fox.png">
+   <filename value="marker_fox.png"/>
+  </resource>
+  <resource internal="false" id="64f86d8f-27e-724-bc3-94a" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="model_fox.fbx">
+   <filename value="model_fox.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="true" id="Exo2-Bold" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="Exo2-Bold.ttf">
+   <filename value="Exo2-Bold.ttf"/>
+   <source value="${STUDIO_RESOURCES_DIR}/fonts/Exo2-Bold.ttf"/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="647078ac-1486-f5f9-e5a7"/>
+   <item id="6470785f-9858-a223-ffbc"/>
+   <item id="Scene"/>
+  </order>
+  <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64f87147-438d-121e-f7b6"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64f86d3f-ee38-59b6-8298"/>
+    <item value="63caa356-bef8-91b1-8d76"/>
+    <item value="HeadUpDisplay"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="63caa356-bef8-91b1-8d76" name="Marker_deer" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6475eb97-9b89-36c9-4a81"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="-0.122124343131"/>
+    <field name="y" value="5.3690067111922e-05"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="63d2845a-6c4-5ab-aea-5da"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.12"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="63d27a1f-2bbe-48d4-e2d6" name="Model_deer" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="-0.0090755438964132"/>
+    <field name="y" value="-0.012494728771035"/>
+    <field name="z" value="0.0010834189566499"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="-90"/>
+    <field name="z" value="-90"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.011171496477165"/>
+    <field name="y" value="0.011171496477165"/>
+    <field name="z" value="0.011171496477165"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="63d27a2f-bbd-ab5-f88-e4b"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="6470785f-9858-a223-ffbc" name="trackball" type="camera_manipulator" enabled="true">
+   <parameter name="kind" value="trackball"/>
+   <parameter name="homeEye">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="homeCenter">
+    <field name="x" value="0"/>
+    <field name="y" value="1"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="homeUp">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="autoComputeHomePosition" value="false"/>
+  </reactor>
+  <reactor id="647078ac-1486-f5f9-e5a7" name="multitouch" type="camera_manipulator" enabled="true">
+   <parameter name="kind" value="multitouch"/>
+   <parameter name="homeEye">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="homeCenter">
+    <field name="x" value="0"/>
+    <field name="y" value="1"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="homeUp">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="autoComputeHomePosition" value="false"/>
+  </reactor>
+  <reactor id="6475eb97-9b89-36c9-4a81" name="Transform_deer" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="63d27a1f-2bbe-48d4-e2d6"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.17590596063134"/>
+    <field name="y" value="0.17590596063134"/>
+    <field name="z" value="0.17590596063134"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64f86d3f-54ef-1ad5-f6d2" name="Transform_fox" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64f86d3f-634a-c4ad-936d"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.17590596063134"/>
+    <field name="y" value="0.17590596063134"/>
+    <field name="z" value="0.17590596063134"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64f86d3f-634a-c4ad-936d" name="Model_fox" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="-0.037586621730672"/>
+    <field name="y" value="-0.043134555220604"/>
+    <field name="z" value="0.048800475281529"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="-90"/>
+    <field name="y" value="90"/>
+    <field name="z" value="90"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.0081364481615687"/>
+    <field name="y" value="0.0081364481615687"/>
+    <field name="z" value="0.0081364481615687"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="64f86d8f-27e-724-bc3-94a"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64f86d3f-ee38-59b6-8298" name="Marker_fox" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64f86d3f-54ef-1ad5-f6d2"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0.11203762525141"/>
+    <field name="y" value="0.0007566824597267"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="64f86d4b-bf6-df7-cd8-49a"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.12"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64f87147-438d-121e-f7b6" name="Clue" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="15.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.font_id" value="Exo2-Bold"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <parameter name="text.value" value="[ Наведите камеру на метку ]"/>
+  </reactor>
+ </reactors>
+ <exportParameters last="apk">
+  <parameters format="apk" filename="C:\Users\Asus\Documents\AR_animal6.apk" appName="Animals_AR6" appId="ru.DomainName.Animals.AR5" arch="" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//AppIcon.png" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a,armeabi-v7a" targetApi="31">
+   <presets>
+    <preset id="user" name="User Preset">
+     <files>
+      <file name="AndroidManifest.xml" path="${ANDROID_DATA_DIR}/AndroidManifest.xml.in"/>
+      <file name="build.gradle" path="${ANDROID_DATA_DIR}/build.gradle.in"/>
+      <file name="gradle.properties" path="${ANDROID_DATA_DIR}/gradle.properties.in"/>
+      <file name="local.properties" path="${ANDROID_DATA_DIR}/local.properties.in"/>
+     </files>
+    </preset>
+   </presets>
+  </parameters>
+  <parameters format="exe" filename="C:\Users\Maria\Desktop\Animals_AR.exe" appName="Animals_AR" appId="Animals" arch="x64" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.7 Advanced/studio_data//AppIcon.ico" loadingImagePath="C:\Animals_AR\download.jpg" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="true" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="true" targetPlatform="1"/>
+  <parameters format="ipa" filename="/Users/etsune/Downloads/AR_Animals/Animals.ipa" appName="Animals - EVI iOS App" appId="ru.eligovision.Animals" arch="" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//AppIcon.png" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="4" appStoreDistribution="false" bundleName="Animals - EVI iOS App" cameraDescription="Дополненная реальность ждет!" photolibraryDescription="Снимки будут сохранены в Фото!" deviceMotionDescription="Необходимо для отслеживания движений" abis="armv7s,arm64"/>
+ </exportParameters>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>

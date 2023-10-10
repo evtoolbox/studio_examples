@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.11">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="false"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="true"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.7"/>
+   <field name="y" value="0.7"/>
+   <field name="z" value="0.7"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_manual_tracking_control">
+  <resource internal="false" id="57f52905-d46-787-792-fd4" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="ev_pattern.png">
+   <filename value="ev_pattern.png"/>
+  </resource>
+  <resource internal="false" id="57f52910-c5f-c22-72e-855" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="ev_model.fbx">
+   <filename value="ev_model.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="58f0cca5-5fa-8dd-9ff-1a4" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="stones.png">
+   <filename value="stones.png"/>
+  </resource>
+  <resource internal="false" id="58f0d9d1-b2c-f54-55d-179" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="alarm.fbx">
+   <filename value="alarm.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="58ff8ac5-48d-f42-355-aeb" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="Switch.png">
+   <filename value="Switch.png"/>
+  </resource>
+  <resource internal="true" id="OpenSans-Regular" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="OpenSans-Regular.ttf">
+   <filename value="OpenSans-Regular.ttf"/>
+   <source value="${STUDIO_RESOURCES_DIR}/fonts/OpenSans-Regular.ttf"/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="TrackingSystem"/>
+   <item id="58ff8db5-5b77-756d-bef4"/>
+   <item id="58ff8de6-8dce-2289-9756"/>
+   <item id="Scene"/>
+  </order>
+  <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="58f0cb24-c46e-3de6-36ce"/>
+    <item value="58f0cb1e-887f-8a9b-4364"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="57f528fb-366d-c13a-334a"/>
+    <item value="58f0cc41-1e6e-7896-d173"/>
+    <item value="HeadUpDisplay"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="TrackingSystem" name="TrackingSystem" type="trackingsystem" enabled="true">
+   <parameter name="dashDotEnabled" value="false"/>
+   <parameter name="dashDotResolution" value="320"/>
+   <parameter name="dashDotMinPresenceTime" value="0"/>
+   <parameter name="dashDotMaxAbsenceTime" value="0.5"/>
+   <parameter name="imageEnabled" value="false"/>
+   <parameter name="imageUseARKitIfSupported" value="false"/>
+   <parameter name="imageUseARCoreIfSupported" value="false"/>
+   <parameter name="imageTrackablesMaxCount" value="1"/>
+   <parameter name="imageMinPresenceTime" value="0"/>
+   <parameter name="imageMaxAbsenceTime" value="0.5"/>
+  </reactor>
+  <reactor id="57f528fb-366d-c13a-334a" name="Метка (маркер)" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="57f528fd-5893-3a64-ae67"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="-0.06225915898736"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="57f52905-d46-787-792-fd4"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.064"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="57f528fd-5893-3a64-ae67" name="Логотип" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0.005"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.08"/>
+    <field name="y" value="0.08"/>
+    <field name="z" value="0.08"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="57f52910-c5f-c22-72e-855"/>
+  </reactor>
+  <reactor id="58f0cb1e-887f-8a9b-4364" name="Трекинг (маркерная технология)" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="58ff8ad3-83f2-53f5-71bf"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="100.000000%c"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000"/>
+    <field name="y" value="0.000000"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="5.000000px"/>
+    <field name="right" value="keep-aspect"/>
+    <field name="bottom" value="5.000000px"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="3.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0"/>
+   <parameter name="text.value" value="Маркерная технология ВЫКЛЮЧЕНА"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="58f0cb24-c46e-3de6-36ce" name="Трекинг (безмаркерная технология)" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="58ff8d5b-c6c9-9d69-ec41"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="100.000000%c"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000"/>
+    <field name="y" value="0.000000"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="5.000000px"/>
+    <field name="right" value="keep-aspect"/>
+    <field name="bottom" value="5.000000px"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="3.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0"/>
+   <parameter name="text.value" value="Безмаркерная технология ВЫКЛЮЧЕНА"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="58f0cc41-1e6e-7896-d173" name="Метка (изображение)" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="58f0d9ed-8f82-a2cc-a17c"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0.070292143032244"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="image"/>
+   <parameter name="pattern" value="58f0cca5-5fa-8dd-9ff-1a4"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.078"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="58f0d9ed-8f82-a2cc-a17c" name="Будильник" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0.0050821313634515"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.0024374999497086"/>
+    <field name="y" value="0.0024374999497086"/>
+    <field name="z" value="0.0024374999497086"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="58f0d9d1-b2c-f54-55d-179"/>
+  </reactor>
+  <reactor id="58ff8ad3-83f2-53f5-71bf" name="Выключатель (маркерная технология)" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="keep-aspect"/>
+    <field name="y" value="100.000000%"/>
+    <field name="policy" value="min_aspect"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-5.000000px"/>
+    <field name="y" value="0.000000%c"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="58ff8ac5-48d-f42-355-aeb"/>
+  </reactor>
+  <reactor id="58ff8d5b-c6c9-9d69-ec41" name="Выключатель (безмаркерная технология)" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="keep-aspect"/>
+    <field name="y" value="100.000000%"/>
+    <field name="policy" value="min_aspect"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-5.000000px"/>
+    <field name="y" value="0.000000%c"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="58ff8ac5-48d-f42-355-aeb"/>
+  </reactor>
+  <reactor id="58ff8db5-5b77-756d-bef4" name="Состояние (безмаркерная технология)" type="switch" enabled="true">
+   <parameter name="options">
+    <item value="Выключена"/>
+    <item value="Включена"/>
+   </parameter>
+   <parameter name="currentOptionIndex" value="1"/>
+  </reactor>
+  <reactor id="58ff8de6-8dce-2289-9756" name="Состояние (маркерная технология)" type="switch" enabled="true">
+   <parameter name="options">
+    <item value="Выключена"/>
+    <item value="Включена"/>
+   </parameter>
+   <parameter name="currentOptionIndex" value="1"/>
+  </reactor>
+ </reactors>
+ <exportParameters/>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.11">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="false"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="true"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.7"/>
+   <field name="y" value="0.7"/>
+   <field name="z" value="0.7"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_counter_markers">
+  <resource internal="false" id="64b7e48e-167-d4d-932-eb6" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="parthenon_marker.png">
+   <filename value="parthenon_marker.png"/>
+  </resource>
+  <resource internal="false" id="64b7e4ad-814-7ab-e47-3ce" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="eiffel_marker.png">
+   <filename value="eiffel_marker.png"/>
+  </resource>
+  <resource internal="false" id="64b7e4e5-cbf-544-1ce-9c6" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="pisa_marker.png">
+   <filename value="pisa_marker.png"/>
+  </resource>
+  <resource internal="false" id="64b7e51b-61a-314-5bb-3fd" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="pisa_model.FBX">
+   <filename value="pisa_model.FBX"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="64b7e53f-c19-719-b1d-e6b" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="parphenon_model.fbx">
+   <filename value="parphenon_model.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="64b7e583-9ad-6b1-151-737" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="eiffel_tower_model.FBX">
+   <filename value="eiffel_tower_model.FBX"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="64b7e85e-21c-d2f-593-9a5" kind="audio" local="true" forceExport="false" rawAssetsExport="false" name="end_audio.mp3">
+   <filename value="end_audio.mp3"/>
+  </resource>
+  <resource internal="false" id="64b8e803-54e-9cf-fc9-79b" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="eiffel_color.png">
+   <filename value="eiffel_color.png"/>
+  </resource>
+  <resource internal="false" id="64b8e80b-b9e-ef6-22d-a56" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="parthenon_color.png">
+   <filename value="parthenon_color.png"/>
+  </resource>
+  <resource internal="false" id="64b8e816-2b8-b57-f5b-e21" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="pisa_color.png">
+   <filename value="pisa_color.png"/>
+  </resource>
+  <resource internal="false" id="64b8e823-916-b7d-695-3c5" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="eiffel_grey.png">
+   <filename value="eiffel_grey.png"/>
+  </resource>
+  <resource internal="false" id="64b8e82b-b8b-37f-73a-cf5" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="parthenon_grey.png">
+   <filename value="parthenon_grey.png"/>
+  </resource>
+  <resource internal="false" id="64b8e834-52e-af4-a5c-449" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="pisa_grey.png">
+   <filename value="pisa_grey.png"/>
+  </resource>
+  <resource internal="true" id="Exo2-Bold" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="Exo2-Bold.ttf">
+   <filename value="Exo2-Bold.ttf"/>
+   <source value="${STUDIO_RESOURCES_DIR}/fonts/Exo2-Bold.ttf"/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="TrackingSystem"/>
+   <item id="64b7e835-39ed-16ad-752b"/>
+   <item id="64b7e807-14bb-3c3c-9a58"/>
+   <item id="64b7e631-7ecb-ccbe-79c1"/>
+   <item id="Scene"/>
+  </order>
+  <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b7e442-fb34-2d99-1362"/>
+    <item value="64b7e433-376b-28a7-a512"/>
+    <item value="64b7e423-c5d5-662c-63a3"/>
+    <item value="64b7e3ec-84af-fc5a-83cb"/>
+    <item value="64b7e3ca-daf3-371e-2d2e"/>
+    <item value="64b7e28d-3756-e3e3-9a97"/>
+    <item value="64b7e773-85b2-1d2b-baea"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b7e286-3b3f-de51-3167"/>
+    <item value="64b7e288-ce98-6cb4-178f"/>
+    <item value="64b7e289-6734-8d6a-4593"/>
+    <item value="HeadUpDisplay"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="TrackingSystem" name="TrackingSystem" type="trackingsystem" enabled="true">
+   <parameter name="dashDotEnabled" value="true"/>
+   <parameter name="dashDotResolution" value="320"/>
+   <parameter name="dashDotMinPresenceTime" value="0.1"/>
+   <parameter name="dashDotMaxAbsenceTime" value="0.5"/>
+   <parameter name="imageEnabled" value="true"/>
+   <parameter name="imageUseARKitIfSupported" value="true"/>
+   <parameter name="imageUseARCoreIfSupported" value="true"/>
+   <parameter name="imageTrackablesMaxCount" value="1"/>
+   <parameter name="imageMinPresenceTime" value="0"/>
+   <parameter name="imageMaxAbsenceTime" value="0.5"/>
+  </reactor>
+  <reactor id="64b7e286-3b3f-de51-3167" name="Метка Пиза" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b7e4c7-7a8e-f541-b4ea"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="-0.19791448047695"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="image"/>
+   <parameter name="pattern" value="64b7e4e5-cbf-544-1ce-9c6"/>
+   <parameter name="gridSize">
+    <field name="x" value="7"/>
+    <field name="y" value="6"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.15"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64b7e288-ce98-6cb4-178f" name="Метка Парфенон" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b7e536-6b5c-8ecb-c2e9"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="image"/>
+   <parameter name="pattern" value="64b7e48e-167-d4d-932-eb6"/>
+   <parameter name="gridSize">
+    <field name="x" value="7"/>
+    <field name="y" value="6"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.17"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64b7e289-6734-8d6a-4593" name="Метка Эйфелева башня" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b7e571-ad5d-ec69-6db2"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0.18842653230167"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="image"/>
+   <parameter name="pattern" value="64b7e4ad-814-7ab-e47-3ce"/>
+   <parameter name="gridSize">
+    <field name="x" value="7"/>
+    <field name="y" value="6"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.15"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64b7e28d-3756-e3e3-9a97" name="Пизанская башня ЧБ" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="10.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-20.000000%"/>
+    <field name="y" value="-5.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="64b8e834-52e-af4-a5c-449"/>
+  </reactor>
+  <reactor id="64b7e3ca-daf3-371e-2d2e" name="Парфенон ЧБ" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="10.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-5.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="64b8e82b-b8b-37f-73a-cf5"/>
+  </reactor>
+  <reactor id="64b7e3ec-84af-fc5a-83cb" name="Эйфелева башня ЧБ" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="10.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="20.000000%"/>
+    <field name="y" value="-5.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="64b8e823-916-b7d-695-3c5"/>
+  </reactor>
+  <reactor id="64b7e423-c5d5-662c-63a3" name="Пизанская башня в цвете" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="10.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-20.000000%"/>
+    <field name="y" value="-5.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="64b8e816-2b8-b57-f5b-e21"/>
+  </reactor>
+  <reactor id="64b7e433-376b-28a7-a512" name="Парфенон в цвете" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="10.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-5.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="64b8e80b-b9e-ef6-22d-a56"/>
+  </reactor>
+  <reactor id="64b7e442-fb34-2d99-1362" name="Эйфелева башня в цвете" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="10.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="20.000000%"/>
+    <field name="y" value="-5.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="64b8e803-54e-9cf-fc9-79b"/>
+  </reactor>
+  <reactor id="64b7e4c7-7a8e-f541-b4ea" name="Модель Пизанская башня" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1.0993465358256"/>
+    <field name="y" value="1.0993465358256"/>
+    <field name="z" value="1.0993465358256"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="64b7e51b-61a-314-5bb-3fd"/>
+  </reactor>
+  <reactor id="64b7e536-6b5c-8ecb-c2e9" name="Модель Парфенон" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.83420951809514"/>
+    <field name="y" value="0.83420951809514"/>
+    <field name="z" value="0.83420951809514"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="64b7e53f-c19-719-b1d-e6b"/>
+  </reactor>
+  <reactor id="64b7e571-ad5d-ec69-6db2" name="Модель Эйфелева башня" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.31111218927935"/>
+    <field name="y" value="0.31111218927935"/>
+    <field name="z" value="0.31111218927935"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="64b7e583-9ad-6b1-151-737"/>
+  </reactor>
+  <reactor id="64b7e631-7ecb-ccbe-79c1" name="Счетчик меток" type="counter" enabled="true">
+   <parameter name="initialValue" value="0"/>
+  </reactor>
+  <reactor id="64b7e773-85b2-1d2b-baea" name="Конец игры" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b7e7a7-af96-2d52-c4fe"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="50.000000%"/>
+    <field name="y" value="50.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.25098039215686"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64b7e7a7-af96-2d52-c4fe" name="Текст" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.font_id" value="Exo2-Bold"/>
+   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <parameter name="text.value" value="Молодец!&#10;&#10;Ты нашел все метки!"/>
+  </reactor>
+  <reactor id="64b7e807-14bb-3c3c-9a58" name="Таймер концовка" type="timer" enabled="true"/>
+  <reactor id="64b7e835-39ed-16ad-752b" name="Аудио концовка" type="audio" enabled="true">
+   <parameter name="audioResource" value="64b7e85e-21c-d2f-593-9a5"/>
+   <parameter name="volume" value="1"/>
+   <parameter name="pan" value="0"/>
+   <parameter name="playMode" value="once"/>
+   <parameter name="liveDecoding" value="false"/>
+  </reactor>
+ </reactors>
+ <exportParameters/>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>

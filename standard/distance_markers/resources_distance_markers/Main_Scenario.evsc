@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chart owner="EV_Studio" version="1.0">
+ <object type="Reactor">
+  <property name="id" type="long">137993</property>
+  <property name="relative_position" type="realpoint">2020.000000,-293.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>57f528fd-5893-3a64-ae67</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">9310162</property>
+   <property name="relative_position" type="realpoint">0.000000,72.000000</property>
+   <property name="action" type="action_info">
+    <reactor>57f528fd-5893-3a64-ae67</reactor>
+    <action>playAnimation</action>
+    <arguments>
+     <argument name="animationName" type="node.model.AnimationName" value="Take 001"/>
+     <argument name="animationPlayMode" type="node.model.AnimationPlayMode" value="LOOP"/>
+     <argument name="stopOthers" type="Bool" value="false"/>
+     <argument name="fromBeginning" type="Bool" value="true"/>
+    </arguments>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">1201755</property>
+  <property name="relative_position" type="realpoint">87.000000,758.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>57f528fb-366d-c13a-334a</reactor>
+  </property>
+  <object type="Event">
+   <property name="id" type="long">686571</property>
+   <property name="relative_position" type="realpoint">36.000000,100.000000</property>
+   <property name="event" type="event_info">
+    <reactor>57f528fb-366d-c13a-334a</reactor>
+    <event>onHidden</event>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">1416769</property>
+  <property name="relative_position" type="realpoint">841.000000,1108.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d29194-21b9-deea-ef7a</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">9669378</property>
+   <property name="relative_position" type="realpoint">0.000000,100.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d29194-21b9-deea-ef7a</reactor>
+    <action>reset</action>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">2087745</property>
+  <property name="relative_position" type="realpoint">841.000000,997.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d28c2c-6423-1cc1-ad22</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">9556436</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d28c2c-6423-1cc1-ad22</reactor>
+    <action>stop</action>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">2172567</property>
+  <property name="relative_position" type="realpoint">1359.000000,-10.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d2460e-8a71-7984-a849</reactor>
+  </property>
+  <object type="Event">
+   <property name="id" type="long">9613339</property>
+   <property name="relative_position" type="realpoint">36.000000,72.000000</property>
+   <property name="event" type="event_info">
+    <reactor>58d2460e-8a71-7984-a849</reactor>
+    <event>onMovedAside</event>
+    <arguments>
+     <argument name="value" type="Number" value="0.15"/>
+     <argument name="minDeviation" type="Number" value="0.01"/>
+    </arguments>
+   </property>
+  </object>
+  <object type="Event">
+   <property name="id" type="long">8401951</property>
+   <property name="relative_position" type="realpoint">36.000000,100.000000</property>
+   <property name="event" type="event_info">
+    <reactor>58d2460e-8a71-7984-a849</reactor>
+    <event>onMovedCloser</event>
+    <arguments>
+     <argument name="value" type="Number" value="0.15"/>
+     <argument name="minDeviation" type="Number" value="0.01"/>
+    </arguments>
+   </property>
+  </object>
+ </object>
+ <object type="Switch">
+  <property name="id" type="long">3800287</property>
+  <property name="relative_position" type="realpoint">399.000000,-505.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d2467f-96de-df17-c23a</reactor>
+  </property>
+  <object type="SwitchItem">
+   <property name="id" type="long">8661324</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="switch_item" type="switch_item_info">показан</property>
+  </object>
+  <object type="SwitchItem">
+   <property name="id" type="long">6959242</property>
+   <property name="relative_position" type="realpoint">0.000000,72.000000</property>
+   <property name="switch_item" type="switch_item_info">скрыт</property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">3937695</property>
+  <property name="relative_position" type="realpoint">2418.000000,393.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>57f528fd-5893-3a64-ae67</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">1484943</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>57f528fd-5893-3a64-ae67</reactor>
+    <action>stopAnimation</action>
+    <arguments>
+     <argument name="animationName" type="node.model.AnimationName" value="Take 001"/>
+    </arguments>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">4055643</property>
+  <property name="relative_position" type="realpoint">2016.000000,200.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d244c4-5ed3-a89f-a351</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">304199</property>
+   <property name="relative_position" type="realpoint">0.000000,100.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d244c4-5ed3-a89f-a351</reactor>
+    <action>playAnimation</action>
+    <arguments>
+     <argument name="animationName" type="node.model.AnimationName" value="Take 001"/>
+     <argument name="animationPlayMode" type="node.model.AnimationPlayMode" value="ONCE"/>
+     <argument name="stopOthers" type="Bool" value="false"/>
+     <argument name="fromBeginning" type="Bool" value="true"/>
+    </arguments>
+   </property>
+  </object>
+  <object type="Event">
+   <property name="id" type="long">4043092</property>
+   <property name="relative_position" type="realpoint">36.000000,72.000000</property>
+   <property name="event" type="event_info">
+    <reactor>58d244c4-5ed3-a89f-a351</reactor>
+    <event>onAnimationFinish</event>
+    <arguments>
+     <argument name="animationName" type="node.model.AnimationName" value="Take 001"/>
+    </arguments>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">4174905</property>
+  <property name="relative_position" type="realpoint">31.000000,-823.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>57f528fb-366d-c13a-334a</reactor>
+  </property>
+  <object type="Event">
+   <property name="id" type="long">8946780</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+   <property name="event" type="event_info">
+    <reactor>57f528fb-366d-c13a-334a</reactor>
+    <event>onFrame</event>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">4672068</property>
+  <property name="relative_position" type="realpoint">2417.000000,282.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d28c2b-bcc3-8794-e94d</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">1939429</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d28c2b-bcc3-8794-e94d</reactor>
+    <action>stop</action>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">5683173</property>
+  <property name="relative_position" type="realpoint">790.000000,-504.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d2460e-8a71-7984-a849</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">8261095</property>
+   <property name="relative_position" type="realpoint">0.000000,100.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d2460e-8a71-7984-a849</reactor>
+    <action>updateState</action>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">6183736</property>
+  <property name="relative_position" type="realpoint">839.000000,896.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d28c2b-bcc3-8794-e94d</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">7789416</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d28c2b-bcc3-8794-e94d</reactor>
+    <action>stop</action>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">6230143</property>
+  <property name="relative_position" type="realpoint">837.000000,696.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>57f528fd-5893-3a64-ae67</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">343461</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>57f528fd-5893-3a64-ae67</reactor>
+    <action>stopAllAnimations</action>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">6331602</property>
+  <property name="relative_position" type="realpoint">2417.000000,502.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d28c2c-6423-1cc1-ad22</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">8649853</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d28c2c-6423-1cc1-ad22</reactor>
+    <action>stop</action>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">6357700</property>
+  <property name="relative_position" type="realpoint">2019.000000,364.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d29194-21b9-deea-ef7a</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">6925007</property>
+   <property name="relative_position" type="realpoint">0.000000,72.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d29194-21b9-deea-ef7a</reactor>
+    <action>start</action>
+    <arguments>
+     <argument name="alarmTime" type="Number" value="3"/>
+     <argument name="mode" type="timer.Mode" value="once"/>
+    </arguments>
+   </property>
+  </object>
+  <object type="Event">
+   <property name="id" type="long">7029310</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+   <property name="event" type="event_info">
+    <reactor>58d29194-21b9-deea-ef7a</reactor>
+    <event>onAlarm</event>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">6401897</property>
+  <property name="relative_position" type="realpoint">2016.000000,-79.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d244c4-5ed3-a89f-a351</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">5746839</property>
+   <property name="relative_position" type="realpoint">0.000000,72.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d244c4-5ed3-a89f-a351</reactor>
+    <action>stopAnimation</action>
+    <arguments>
+     <argument name="animationName" type="node.model.AnimationName" value=""/>
+    </arguments>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">6895659</property>
+  <property name="relative_position" type="realpoint">840.000000,799.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d244c4-5ed3-a89f-a351</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">2948930</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d244c4-5ed3-a89f-a351</reactor>
+    <action>stopAllAnimations</action>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">9493578</property>
+  <property name="relative_position" type="realpoint">36.000000,-506.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d244bd-d4ab-164c-4183</reactor>
+  </property>
+  <object type="Event">
+   <property name="id" type="long">1068526</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+   <property name="event" type="event_info">
+    <reactor>58d244bd-d4ab-164c-4183</reactor>
+    <event>onShowed</event>
+    <arguments/>
+   </property>
+  </object>
+  <object type="Event">
+   <property name="id" type="long">8459877</property>
+   <property name="relative_position" type="realpoint">36.000000,72.000000</property>
+   <property name="event" type="event_info">
+    <reactor>58d244bd-d4ab-164c-4183</reactor>
+    <event>onHidden</event>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">9610242</property>
+  <property name="relative_position" type="realpoint">84.000000,1050.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d244bd-d4ab-164c-4183</reactor>
+  </property>
+  <object type="Event">
+   <property name="id" type="long">954380</property>
+   <property name="relative_position" type="realpoint">36.000000,100.000000</property>
+   <property name="event" type="event_info">
+    <reactor>58d244bd-d4ab-164c-4183</reactor>
+    <event>onHidden</event>
+    <arguments/>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">9656450</property>
+  <property name="relative_position" type="realpoint">2014.000000,102.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d28c2c-6423-1cc1-ad22</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">6619734</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d28c2c-6423-1cc1-ad22</reactor>
+    <action>play</action>
+    <arguments>
+     <argument name="playMode" type="audio.PlayModeExt"/>
+    </arguments>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">9950559</property>
+  <property name="relative_position" type="realpoint">2020.000000,-207.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>58d28c2b-bcc3-8794-e94d</reactor>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">4422511</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>58d28c2b-bcc3-8794-e94d</reactor>
+    <action>play</action>
+    <arguments>
+     <argument name="playMode" type="audio.PlayModeExt"/>
+    </arguments>
+   </property>
+  </object>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">5659386</property>
+  <property name="relative_position" type="realpoint">439.000000,23.000000</property>
+  <property name="source" type="long">1068526</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">8661324</property>
+  <property name="target_offset" type="realpoint">-0.027273,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">3996816</property>
+  <property name="relative_position" type="realpoint">439.000000,23.000000</property>
+  <property name="source" type="long">8459877</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">6959242</property>
+  <property name="target_offset" type="realpoint">-0.027273,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">638010</property>
+  <property name="relative_position" type="realpoint">439.000000,23.000000</property>
+  <property name="source" type="long">8946780</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">3800287</property>
+  <property name="target_offset" type="realpoint">0.500000,-0.060000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">2073276</property>
+  <property name="relative_position" type="realpoint">1517.000000,-256.000000</property>
+  <property name="source" type="long">9613339</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">5746839</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">597206</property>
+  <property name="relative_position" type="realpoint">1057.000000,-123.000000</property>
+  <property name="source" type="long">9613339</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">9310162</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">7227259</property>
+  <property name="relative_position" type="realpoint">1242.000000,-227.000000</property>
+  <property name="source" type="long">8401951</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">304199</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">6902000</property>
+  <property name="relative_position" type="realpoint">419.000000,-28.000000</property>
+  <property name="source" type="long">686571</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">343461</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">9177482</property>
+  <property name="relative_position" type="realpoint">419.000000,-28.000000</property>
+  <property name="source" type="long">686571</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">2948930</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">8055011</property>
+  <property name="relative_position" type="realpoint">419.000000,-28.000000</property>
+  <property name="source" type="long">686571</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">7789416</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">1178811</property>
+  <property name="relative_position" type="realpoint">419.000000,-28.000000</property>
+  <property name="source" type="long">686571</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">9556436</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">9138269</property>
+  <property name="relative_position" type="realpoint">677.000000,303.000000</property>
+  <property name="source" type="long">954380</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">343461</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">7493320</property>
+  <property name="relative_position" type="realpoint">677.000000,303.000000</property>
+  <property name="source" type="long">954380</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">2948930</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">1402153</property>
+  <property name="relative_position" type="realpoint">677.000000,303.000000</property>
+  <property name="source" type="long">954380</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">7789416</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">244477</property>
+  <property name="relative_position" type="realpoint">677.000000,303.000000</property>
+  <property name="source" type="long">954380</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">9556436</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">9176047</property>
+  <property name="relative_position" type="realpoint">1444.000000,-137.000000</property>
+  <property name="source" type="long">8401951</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">6619734</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">596239</property>
+  <property name="relative_position" type="realpoint">1444.000000,-137.000000</property>
+  <property name="source" type="long">8401951</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">6925007</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">7172542</property>
+  <property name="relative_position" type="realpoint">1444.000000,-137.000000</property>
+  <property name="source" type="long">7029310</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">8649853</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">1571510</property>
+  <property name="relative_position" type="realpoint">741.000000,254.000000</property>
+  <property name="source" type="long">686571</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">9669378</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">5212080</property>
+  <property name="relative_position" type="realpoint">741.000000,254.000000</property>
+  <property name="source" type="long">954380</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">9669378</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">9118003</property>
+  <property name="relative_position" type="realpoint">1597.000000,-232.000000</property>
+  <property name="source" type="long">9613339</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">4422511</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">1494340</property>
+  <property name="relative_position" type="realpoint">1245.000000,-169.000000</property>
+  <property name="source" type="long">8661324</property>
+  <property name="source_offset" type="realpoint">1.022727,0.500000</property>
+  <property name="target" type="long">8261095</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">4057881</property>
+  <property name="relative_position" type="realpoint">1132.000000,494.000000</property>
+  <property name="source" type="long">7029310</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">1939429</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">9971136</property>
+  <property name="relative_position" type="realpoint">1132.000000,494.000000</property>
+  <property name="source" type="long">7029310</property>
+  <property name="source_offset" type="realpoint">1.027174,0.500000</property>
+  <property name="target" type="long">1484943</property>
+  <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+  <property name="priority" type="long">0</property>
+ </object>
+</chart>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.11">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="false"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="false"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.43137254901961"/>
+   <field name="y" value="0.43137254901961"/>
+   <field name="z" value="0.43137254901961"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_global_pick_handler">
+  <resource internal="false" id="5ba397a9-d21-e51-952-1013" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="house.fbx">
+   <filename value="house.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="5ba4d634-887-710b-e83-6410" kind="script" local="true" forceExport="true" rawAssetsExport="false" name="main.lua">
+   <filename value="main.lua"/>
+  </resource>
+  <resource internal="false" id="5badfb41-338-eda-c63-96a" kind="script" local="true" forceExport="true" rawAssetsExport="false" name="pick_handler_highlight.lua">
+   <filename value="pick_handler_highlight.lua"/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="Scene"/>
+  </order>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="5ba39788-ee99-9719-d98a"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="5ba39788-ee99-9719-d98a" name="house" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="1.862645149231e-09"/>
+    <field name="y" value="0.0017789469275158"/>
+    <field name="z" value="-0.0001072389139023"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="-90"/>
+    <field name="z" value="-90"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.05"/>
+    <field name="y" value="0.05"/>
+    <field name="z" value="0.05"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="5ba397a9-d21-e51-952-1013"/>
+  </reactor>
+ </reactors>
+ <exportParameters/>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>

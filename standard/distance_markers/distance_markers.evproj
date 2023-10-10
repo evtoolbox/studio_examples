@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.11">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="true"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="true"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.69803921568627"/>
+   <field name="y" value="0.69803921568627"/>
+   <field name="z" value="0.69803921568627"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_distance_markers">
+  <resource internal="false" id="57f52905-d46-787-792-fd4" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="ev_pattern.png">
+   <filename value="ev_pattern.png"/>
+  </resource>
+  <resource internal="false" id="57f52910-c5f-c22-72e-855" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="alarm.fbx">
+   <filename value="alarm.fbx"/>
+  </resource>
+  <resource internal="false" id="58d245bd-46c-185-f35-a31" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="toolbox_pattern.png">
+   <filename value="toolbox_pattern.png"/>
+  </resource>
+  <resource internal="false" id="58d24796-1a1-37d-29f-228" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="deadman.fbx">
+   <filename value="deadman.fbx"/>
+  </resource>
+  <resource internal="false" id="58d28c23-458-61c-f66-8cc" kind="audio" local="true" forceExport="false" rawAssetsExport="false" name="deadman.ogg">
+   <filename value="deadman.ogg"/>
+  </resource>
+  <resource internal="false" id="58d28c23-c75-c15-5e1-cab" kind="audio" local="true" forceExport="false" rawAssetsExport="false" name="alarm.ogg">
+   <filename value="alarm.ogg"/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="58d28c2b-bcc3-8794-e94d"/>
+   <item id="58d28c2c-6423-1cc1-ad22"/>
+   <item id="58d29194-21b9-deea-ef7a"/>
+   <item id="Scene"/>
+   <item id="58d2467f-96de-df17-c23a"/>
+   <item id="58d2460e-8a71-7984-a849"/>
+  </order>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="57f528fb-366d-c13a-334a"/>
+    <item value="58d244bd-d4ab-164c-4183"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="57f528fb-366d-c13a-334a" name="Метка 1" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="57f528fd-5893-3a64-ae67"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0.11436445576883"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="57f52905-d46-787-792-fd4"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.064"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="57f528fd-5893-3a64-ae67" name="Будильник" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0.0041699544526637"/>
+    <field name="z" value="1.1175870905794e-10"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.0020000000447035"/>
+    <field name="y" value="0.0020000000447035"/>
+    <field name="z" value="0.0020000000447035"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="57f52910-c5f-c22-72e-855"/>
+  </reactor>
+  <reactor id="58d244bd-d4ab-164c-4183" name="Метка 2" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="58d244c4-5ed3-a89f-a351"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="58d245bd-46c-185-f35-a31"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.051"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="58d244c4-5ed3-a89f-a351" name="Спящий красавец" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0.012586715631187"/>
+    <field name="z" value="0.00130299159904"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="-1"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.002209"/>
+    <field name="y" value="0.002209"/>
+    <field name="z" value="0.002209"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="58d24796-1a1-37d-29f-228"/>
+  </reactor>
+  <reactor id="58d2460e-8a71-7984-a849" name="Расстояние между объектами" type="distance" enabled="true">
+   <parameter name="firstNodeReactor" value="57f528fb-366d-c13a-334a"/>
+   <parameter name="secondNodeReactor" value="58d244bd-d4ab-164c-4183"/>
+  </reactor>
+  <reactor id="58d2467f-96de-df17-c23a" name="Видимость будильника" type="switch" enabled="true">
+   <parameter name="options">
+    <item value="показан"/>
+    <item value="скрыт"/>
+   </parameter>
+   <parameter name="currentOptionIndex" value="0"/>
+  </reactor>
+  <reactor id="58d28c2b-bcc3-8794-e94d" name="Звонок" type="audio" enabled="true">
+   <parameter name="audioResource" value="58d28c23-c75-c15-5e1-cab"/>
+   <parameter name="volume" value="0.5"/>
+   <parameter name="pan" value="0"/>
+   <parameter name="playMode" value="loop"/>
+   <parameter name="liveDecoding" value="false"/>
+  </reactor>
+  <reactor id="58d28c2c-6423-1cc1-ad22" name="Недовольство красавца" type="audio" enabled="true">
+   <parameter name="audioResource" value="58d28c23-458-61c-f66-8cc"/>
+   <parameter name="volume" value="1"/>
+   <parameter name="pan" value="0"/>
+   <parameter name="playMode" value="once"/>
+   <parameter name="liveDecoding" value="false"/>
+  </reactor>
+  <reactor id="58d29194-21b9-deea-ef7a" name="Таймер" type="timer" enabled="true"/>
+ </reactors>
+ <exportParameters/>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>

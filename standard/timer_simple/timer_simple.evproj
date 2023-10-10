@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.11">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="true"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="true"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.69803921568627"/>
+   <field name="y" value="0.69803921568627"/>
+   <field name="z" value="0.69803921568627"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_timer_simple">
+  <resource internal="false" id="64b95890-4d3-d52-bf5-69a" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="triceratops_model.fbx">
+   <filename value="triceratops_model.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="64b95c21-5ec-1e5-6b7-5e7" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="marker_1.png">
+   <filename value="marker_1.png"/>
+  </resource>
+  <resource internal="false" id="64b95dd7-626-3cc-37d-788" kind="audio" local="true" forceExport="false" rawAssetsExport="false" name="audio_triceratops.mp3">
+   <filename value="audio_triceratops.mp3"/>
+  </resource>
+  <resource internal="false" id="64b963c3-c21-538-e28-b1c" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="marker_2.jpeg">
+   <filename value="marker_2.jpeg"/>
+  </resource>
+  <resource internal="true" id="Exo2-Bold" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="Exo2-Bold.ttf">
+   <filename value="Exo2-Bold.ttf"/>
+   <source value="${STUDIO_RESOURCES_DIR}/fonts/Exo2-Bold.ttf"/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="64b95dcf-c2cf-314e-fd5b"/>
+   <item id="64b95b96-31f1-f6e7-8d58"/>
+   <item id="Scene"/>
+  </order>
+  <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b95c9f-62bb-cb6d-9772"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b9524e-5e4a-5b2c-c1da"/>
+    <item value="64b9524e-43b3-6759-3491"/>
+    <item value="HeadUpDisplay"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64b9524e-43b3-6759-3491" name="Маркерная метка" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b95874-d917-521a-a513"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="-0.10827703769674"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="64b95c21-5ec-1e5-6b7-5e7"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.1"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64b9524e-5e4a-5b2c-c1da" name="Безмаркерная метка" type="node.marker" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="64b95841-78be-da2f-c2cd"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0.11755004699298"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="image"/>
+   <parameter name="pattern" value="64b963c3-c21-538-e28-b1c"/>
+   <parameter name="gridSize">
+    <field name="x" value="6"/>
+    <field name="y" value="5"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.17"/>
+   <parameter name="enhancedCloseupTracking" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="64b95841-78be-da2f-c2cd" name="Дино безмаркерный" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000000"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="-0.015481828247581"/>
+    <field name="y" value="-0.0083392138762176"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="-0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="89.787144296148"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.061109360915186"/>
+    <field name="y" value="0.061109360915186"/>
+    <field name="z" value="0.061109360915186"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="64b95890-4d3-d52-bf5-69a"/>
+  </reactor>
+  <reactor id="64b95874-d917-521a-a513" name="Дино маркерный" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="-0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="50.058744342859"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.06"/>
+    <field name="y" value="0.06"/>
+    <field name="z" value="0.06"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="64b95890-4d3-d52-bf5-69a"/>
+  </reactor>
+  <reactor id="64b95b96-31f1-f6e7-8d58" name="Таймер дино" type="timer" enabled="true"/>
+  <reactor id="64b95c9f-62bb-cb6d-9772" name="Подсказка" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="10.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.font_id" value="Exo2-Bold"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="0.50196078431373"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <parameter name="text.value" value="[ Наведите  камеру на обе метки сразу]"/>
+  </reactor>
+  <reactor id="64b95dcf-c2cf-314e-fd5b" name="Аудио дино" type="audio" enabled="true">
+   <parameter name="audioResource" value="64b95dd7-626-3cc-37d-788"/>
+   <parameter name="volume" value="1"/>
+   <parameter name="pan" value="0"/>
+   <parameter name="playMode" value="loop"/>
+   <parameter name="liveDecoding" value="false"/>
+  </reactor>
+ </reactors>
+ <exportParameters/>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>
