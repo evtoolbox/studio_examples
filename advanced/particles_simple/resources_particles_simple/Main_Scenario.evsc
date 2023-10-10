@@ -31,7 +31,7 @@
     <reactor>61e00981-62d3-b544-8ba2</reactor>
     <action>play</action>
     <arguments>
-     <argument name="playMode" type="audio.PlayModeExt" value="once"/>
+     <argument name="playMode" type="audio.PlayModeExt" value="loop"/>
     </arguments>
    </property>
   </object>

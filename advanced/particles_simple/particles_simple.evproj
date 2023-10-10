@@ -39,7 +39,6 @@
   </resource>
   <resource internal="false" id="651c12b5-f9e-b49-5ee-1cf" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="fireplace_without_wall_with_texture.fbx">
    <filename value="fireplace_without_wall_with_texture.fbx"/>
-   <optimizations/>
   </resource>
  </resources>
  <reactors>
@@ -56,9 +55,9 @@
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
-    <item value="651c1487-d32a-ded4-21df"/>
     <item value="61dfe831-e999-4735-1142"/>
     <item value="61decb58-f73e-d515-e999"/>
+    <item value="651c1487-d32a-ded4-21df"/>
    </parameter>
    <view expanded="true"/>
   </reactor>
@@ -73,13 +72,11 @@
     <field name="mask" value="0x0000001F"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
-   <parameter name="children">
-    <item value="61e00774-91ff-e3ff-aca9"/>
-   </parameter>
+   <parameter name="children"/>
    <parameter name="trans">
-    <field name="x" value="-0.32697242647393"/>
-    <field name="y" value="7.6753536618608"/>
-    <field name="z" value="-1.4090979721761"/>
+    <field name="x" value="-0.15"/>
+    <field name="y" value="7.38"/>
+    <field name="z" value="-1.4"/>
    </parameter>
    <parameter name="rotate">
     <field name="x" value="0"/>
@@ -97,20 +94,20 @@
    <parameter name="kind" value="trackball"/>
    <parameter name="homeEye">
     <field name="x" value="0"/>
-    <field name="y" value="0"/>
+    <field name="y" value="-3"/>
     <field name="z" value="0"/>
    </parameter>
    <parameter name="homeCenter">
     <field name="x" value="0"/>
-    <field name="y" value="1"/>
-    <field name="z" value="0"/>
+    <field name="y" value="7"/>
+    <field name="z" value="-0.85"/>
    </parameter>
    <parameter name="homeUp">
     <field name="x" value="0"/>
     <field name="y" value="0"/>
     <field name="z" value="1"/>
    </parameter>
-   <parameter name="autoComputeHomePosition" value="true"/>
+   <parameter name="autoComputeHomePosition" value="false"/>
   </reactor>
   <reactor id="61dfe831-e999-4735-1142" name="Fireplace_model" type="node.model" enabled="true">
    <parameter name="nodeMask">
@@ -120,8 +117,8 @@
    <parameter name="children"/>
    <parameter name="trans">
     <field name="x" value="0"/>
-    <field name="y" value="7.8442768313145"/>
-    <field name="z" value="-1.6086818884021"/>
+    <field name="y" value="7.85"/>
+    <field name="z" value="-1.6"/>
    </parameter>
    <parameter name="rotate">
     <field name="x" value="3.4899099358617e-14"/>
@@ -140,87 +137,23 @@
    <parameter name="gpuInstancesMinCount" value="50"/>
    <parameter name="model" value="651c12b5-f9e-b49-5ee-1cf"/>
   </reactor>
-  <reactor id="61e00774-91ff-e3ff-aca9" name="Rect_fire1" type="node.rect" enabled="true">
-   <parameter name="nodeMask">
-    <field name="mask" value="0x0000001F"/>
-    <field name="unchangedBits" value="0x00000000"/>
-   </parameter>
-   <parameter name="children"/>
-   <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="center-center"/>
-   <parameter name="rect.size">
-    <field name="x" value="100.000000%c"/>
-    <field name="y" value="keep-aspect"/>
-    <field name="policy" value="simple"/>
-   </parameter>
-   <parameter name="rect.color">
-    <field name="red" value="0"/>
-    <field name="green" value="0"/>
-    <field name="blue" value="0"/>
-    <field name="alpha" value="0.001"/>
-   </parameter>
-   <parameter name="rect.shift">
-    <field name="x" value="0.000000px"/>
-    <field name="y" value="0.000000px"/>
-   </parameter>
-   <parameter name="rect.padding">
-    <field name="top" value="0.000000px"/>
-    <field name="right" value="0.000000px"/>
-    <field name="bottom" value="keep-aspect"/>
-    <field name="left" value="keep-aspect"/>
-   </parameter>
-   <parameter name="rect.scalePolicy" value="inherit"/>
-  </reactor>
   <reactor id="61e00981-62d3-b544-8ba2" name="Audio" type="audio" enabled="true">
    <parameter name="audioResource" value="61e00987-24c-f22-afa-457"/>
    <parameter name="volume" value="1"/>
    <parameter name="pan" value="0"/>
-   <parameter name="playMode" value="once"/>
-   <parameter name="liveDecoding" value="false"/>
-  </reactor>
-  <reactor id="651c1487-55c9-9cd5-bd96" name="Rect_fire2" type="node.rect" enabled="true">
-   <parameter name="nodeMask">
-    <field name="mask" value="0x0000001F"/>
-    <field name="unchangedBits" value="0x00000000"/>
-   </parameter>
-   <parameter name="children"/>
-   <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="center-center"/>
-   <parameter name="rect.size">
-    <field name="x" value="100.000000%c"/>
-    <field name="y" value="keep-aspect"/>
-    <field name="policy" value="simple"/>
-   </parameter>
-   <parameter name="rect.color">
-    <field name="red" value="0"/>
-    <field name="green" value="0"/>
-    <field name="blue" value="0"/>
-    <field name="alpha" value="0.001"/>
-   </parameter>
-   <parameter name="rect.shift">
-    <field name="x" value="0.000000px"/>
-    <field name="y" value="0.000000px"/>
-   </parameter>
-   <parameter name="rect.padding">
-    <field name="top" value="0.000000px"/>
-    <field name="right" value="0.000000px"/>
-    <field name="bottom" value="keep-aspect"/>
-    <field name="left" value="keep-aspect"/>
-   </parameter>
-   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="playMode" value="loop"/>
+   <parameter name="liveDecoding" value="true"/>
   </reactor>
   <reactor id="651c1487-d32a-ded4-21df" name="Transform_fire2" type="node.transform" enabled="true">
    <parameter name="nodeMask">
     <field name="mask" value="0x0000001F"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
-   <parameter name="children">
-    <item value="651c1487-55c9-9cd5-bd96"/>
-   </parameter>
+   <parameter name="children"/>
    <parameter name="trans">
-    <field name="x" value="-0.12597803296569"/>
-    <field name="y" value="7.6753536618608"/>
-    <field name="z" value="-1.4090979721761"/>
+    <field name="x" value="0.15"/>
+    <field name="y" value="7.38"/>
+    <field name="z" value="-1.4"/>
    </parameter>
    <parameter name="rotate">
     <field name="x" value="0"/>
@@ -235,9 +168,7 @@
    <view expanded="true"/>
   </reactor>
  </reactors>
- <exportParameters last="exe">
-  <parameters format="exe" filename="C:/Users/Asus/Desktop/test/particles_simple.exe" appName="particles_simple - EVI Windows App" appId="particles.simple" arch="x64" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.6 Advanced/studio_data//AppIcon.ico" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" targetPlatform="1"/>
- </exportParameters>
+ <exportParameters />
  <workspace>
   <preview platform="1"/>
  </workspace>

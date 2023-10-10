@@ -30,32 +30,44 @@ local transform2 = reactorController:getReactorByName("Transform_fire2")
 
 --Задаем шаблон частиц
 local template = osgParticle.Particle()
-template:setLifeTime(0.2)
-template:setSizeRange(0.01, 0.02)
+template:setLifeTime(1.75)
+template:setSizeRange(0.03, 0.10)
 template:setMass(1000.0)
 
---Создаем систему частиц
-local system = osgParticle.ParticleSystem()
-system:setDefaultParticleTemplate(template)
-system:setDefaultAttributes("resources/fire3.png", true, false, 0)
-system:getOrCreateStateSet():setDefine("EV_GL_OPACITY_FROM_DIFFUSE", osg.StateAttribute.ON)
+local function createParticlesSystem(filename)
+	--Создаем систему частиц
+	local system = osgParticle.ParticleSystem()
+	system:setDefaultParticleTemplate(template)
+	system:setDefaultAttributes("resources/" .. filename, true, false, 0)
+	system:getOrCreateStateSet():setDefine("EV_GL_OPACITY_FROM_DIFFUSE", osg.StateAttribute.ON)
+	system:getOrCreateStateSet():setAttributeAndModes(osg.AlphaFunc(osg.AlphaFunc.GREATER, 0.05))
 
---Создаем источник частиц
-local emitter = osgParticle.ModularEmitter()
-emitter:setParticleSystem(system)
+	local shooter = osgParticle.RadialShooter()
+	shooter:setInitialSpeedRange(0.1, 0.8)
 
+	--Создаем источник частиц
+	local emitter = osgParticle.ModularEmitter()
+	emitter:setParticleSystem(system)
+	emitter:setShooter(shooter)
 
-local randomCounter = osgParticle.RandomRateCounter()
-randomCounter:setRateRange(500, 1000)
-emitter:setCounter(randomCounter)
+	local randomCounter = osgParticle.RandomRateCounter()
+	randomCounter:setRateRange(50, 300)
+	emitter:setCounter(randomCounter)
+
+	return system, emitter
+end
+
+local system1, emitter1 = createParticlesSystem("fire.png")
+local system2, emitter2 = createParticlesSystem("fire3.png")
 
 local updater = osgParticle.ParticleSystemUpdater()
-updater:addParticleSystem(system)
-
+updater:addParticleSystem(system1)
+updater:addParticleSystem(system2)
 sceneRoot:addChild(updater)
 
-transform1.node:addChild(system)
-transform1.node:addChild(emitter)
 
-transform2.node:addChild(system)
-transform2.node:addChild(emitter)
+transform1.node:addChild(system1)
+transform1.node:addChild(emitter1)
+
+transform2.node:addChild(system2)
+transform2.node:addChild(emitter2)
