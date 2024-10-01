@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -44,8 +44,8 @@
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
-    <item value="6012d716-5814-2a5c-96ee"/>
     <item value="601abb00-5b6e-c4d5-7547"/>
+    <item value="66e9834a-6aba-d384-12ba"/>
    </parameter>
    <view expanded="true"/>
   </reactor>
@@ -150,6 +150,31 @@
    <parameter name="deviceType" value="controller_right"/>
    <parameter name="autoShow" value="true"/>
    <parameter name="autoHide" value="true"/>
+  </reactor>
+  <reactor id="66e9834a-6aba-d384-12ba" name="ShadowedGroup" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6012d716-5814-2a5c-96ee"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <view expanded="true"/>
   </reactor>
  </reactors>
  <exportParameters/>

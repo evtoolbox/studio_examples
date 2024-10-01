@@ -34,6 +34,42 @@ local sceneStateSet = scene.node:getOrCreateStateSet()
 sceneStateSet:setMode(GLenum.GL_CULL_FACE, osg.StateAttribute.ON)
 sceneStateSet:setMode(GLenum.GL_BLEND, osg.StateAttribute.OFF)
 
+
+do
+	local position = osg.Vec4(-50.0, -100.0, 50.0, 0.0)						-- w = 0.0 => directional
+	local direction = osg.Vec3(-position:x(), -position:y(), -position:z())
+	lightSource:getLight():setPosition(position)
+	lightSource:getLight():setDirection(direction)
+	lightSource:getLight():setDiffuse(osg.Vec4(1.5, 1.5, 1.5, 1.0))
+	lightSource:getLight():setAmbient(osg.Vec4(0.4, 0.4, 0.45, 1.0))		-- color of the shadow
+	lightSource:setReferenceFrame(osg.LightSource.RELATIVE_RF)
+--	lightSource:getParent(0):asTransform():setReferenceFrame(osg.Transform.RELATIVE_RF)
+end
+
+local root
+
+local ENABLE_SHADOWS = true
+if ENABLE_SHADOWS then
+	local shadowedScene = osgShadow.ShadowedScene()
+	local shadowTechnique = EVosgShadow.MinimalBypassShadowMap()
+	shadowTechnique:setTextureSize(512, 512)
+	shadowTechnique:setLight(lightSource:getLight())
+
+	shadowedScene:setShadowTechnique(shadowTechnique)
+	root = shadowedScene
+else
+	root = osg.Group()
+end
+
+local ambientIntensityUniform	= osg.Uniform.Vec4f("ev_LightModelAmbientIntensity", osg.Vec4(0.25, 0.25, 0.25, 1.0))
+root:getOrCreateStateSet():addUniform(ambientIntensityUniform, osg.StateAttribute.OVERRIDE)
+
+
+local shadowedGroup = reactorController:getReactorByName("ShadowedGroup")
+scene:removeChild(shadowedGroup)
+root:addChild(shadowedGroup.node)
+scene.node:addChild(root)
+
 -- Helper functions
 local function xyz_str(v)
 	return string.format("[%.5f, %.5f, %.5f]", v:x(), v:y(), v:z())
@@ -112,7 +148,6 @@ local function syncDrawableTransform(motionState, drawableTransform)
 	drawableTransform:setMatrix(bt.bt2osg(rigidBodyTransform))
 end
 
-
 local function addRigidBody(drawable, shape)
 	local rbTransform = bt.Transform.getIdentity()
 	local x, y = 1 - math.random(0, 200)/100.0, 1 - math.random(0, 200)/100.0
@@ -139,9 +174,10 @@ local function addRigidBody(drawable, shape)
 	local drawableTransform = osg.MatrixTransform()
 	local r, g, b = math.random(0, 100)/100.0, math.random(0, 100)/100.0, math.random(0, 100)/100.0
 	drawableTransform:getOrCreateStateSet():addUniform(osg.Uniform.Vec4f("ev_MaterialDiffuse", osg.Vec4(r, g, b, 1.0)))
+	drawableTransform:getOrCreateStateSet():addUniform(osg.Uniform.Vec4f("ev_MaterialAmbient", osg.Vec4(r, g, b, 1.0)))
 
 	drawableTransform:addChild(drawable)
-	scene.node:addChild(drawableTransform)
+	root:addChild(drawableTransform)
 
 	syncDrawableTransform(motionState1, drawableTransform)
 	-- NOTE: Do not specify parameters (in callback function) if you don't need it.
@@ -154,7 +190,7 @@ local function addRigidBody(drawable, shape)
 				physicsWorld:removeCollisionObject(rb)
 				drawableTransform:setUpdateCallback(nil)		-- Importrant for GC
 
-				scene.node:removeChild(drawableTransform)
+				root:removeChild(drawableTransform)
 			end)
 		end
 		return true
@@ -168,7 +204,8 @@ local frame = 0
 local lastSimulationTime
 bus:subscribe(function()
 	local time = timer:getTime()
-	physicsWorld:stepSimulation((time - (lastSimulationTime or time)))
+	local dt = time - (lastSimulationTime or time)
+	physicsWorld:stepSimulation(dt, 10, math.min(dt, 1/30))
 	lastSimulationTime = time
 
 	frame = frame + 1
