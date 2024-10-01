@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -24,14 +24,12 @@
   </resource>
   <resource internal="false" id="57f52910-c5f-c22-72e-855" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="ev_model.fbx">
    <filename value="ev_model.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="58f0cca5-5fa-8dd-9ff-1a4" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="stones.png">
    <filename value="stones.png"/>
   </resource>
   <resource internal="false" id="58f0d9d1-b2c-f54-55d-179" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="alarm.fbx">
    <filename value="alarm.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="58ff8ac5-48d-f42-355-aeb" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="Switch.png">
    <filename value="Switch.png"/>
@@ -159,7 +157,7 @@
    <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="100.000000%"/>
-    <field name="y" value="100.000000%c"/>
+    <field name="y" value="170.000000%c"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -188,7 +186,7 @@
     <field name="alpha" value="1"/>
    </parameter>
    <parameter name="text.align" value="center-center"/>
-   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.auto_wrap" value="true"/>
    <parameter name="text.line_spacing" value="0"/>
    <parameter name="text.value" value="Маркерная технология ВЫКЛЮЧЕНА"/>
    <view expanded="true"/>
@@ -205,7 +203,7 @@
    <parameter name="rect.position" value="center-bottom"/>
    <parameter name="rect.size">
     <field name="x" value="100.000000%"/>
-    <field name="y" value="100.000000%c"/>
+    <field name="y" value="150.000000%c"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">

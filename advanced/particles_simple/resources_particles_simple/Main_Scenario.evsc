@@ -5,6 +5,7 @@
   <property name="relative_position" type="realpoint">-776.000000,52.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>System</reactor>
+   <typename>system</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">9267452</property>
@@ -23,6 +24,7 @@
   <property name="relative_position" type="realpoint">-358.000000,50.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>61e00981-62d3-b544-8ba2</reactor>
+   <typename>audio</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">220663</property>

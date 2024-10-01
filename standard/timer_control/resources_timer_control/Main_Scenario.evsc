@@ -5,6 +5,7 @@
   <property name="relative_position" type="realpoint">2227.000000,1257.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5857c48c-ee13-c471-d6af</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">527311410</property>
@@ -17,6 +18,7 @@
   <property name="relative_position" type="realpoint">1015.000000,1320.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>584577bf-b146-276e-788d</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">594523440</property>
@@ -26,6 +28,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: НА ПАУЗЕ"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>
@@ -35,6 +38,7 @@
   <property name="relative_position" type="realpoint">2616.000000,2613.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fd-5893-3a64-ae67</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">667661840</property>
@@ -53,6 +57,7 @@
   <property name="relative_position" type="realpoint">2880.000000,377.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58457663-b9a2-ac79-9777</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">680601477</property>
@@ -76,6 +81,7 @@
   <property name="relative_position" type="realpoint">2670.000000,1255.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58457663-b9a2-ac79-9777</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">194364627</property>
@@ -99,6 +105,7 @@
   <property name="relative_position" type="realpoint">2591.000000,2324.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>584577bf-b146-276e-788d</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">170767604</property>
@@ -118,12 +125,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">126977134</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>584577bf-b146-276e-788d</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="ОЖИДАНИЕ МЕТКИ"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>
@@ -133,6 +141,7 @@
   <property name="relative_position" type="realpoint">2880.000000,277.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845765c-a6e7-93b2-b7c6</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">534374508</property>
@@ -156,6 +165,7 @@
   <property name="relative_position" type="realpoint">3920.000000,846.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5857c48a-d834-5dfc-cfc4</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">250652286</property>
@@ -164,7 +174,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">186444020</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="switch_item" type="switch_item_info">Продолжить - неактивно</property>
   </object>
  </object>
@@ -173,6 +183,7 @@
   <property name="relative_position" type="realpoint">1010.000000,1132.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845765c-a6e7-93b2-b7c6</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">653313725</property>
@@ -196,6 +207,7 @@
   <property name="relative_position" type="realpoint">3487.000000,296.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fb-366d-c13a-334a</reactor>
+   <typename>node.marker</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">191674035</property>
@@ -208,7 +220,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">842561901</property>
-   <property name="relative_position" type="realpoint">36.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <event>onHidden</event>
@@ -221,6 +233,7 @@
   <property name="relative_position" type="realpoint">86.000000,977.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845765c-a6e7-93b2-b7c6</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">391847544</property>
@@ -237,6 +250,7 @@
   <property name="relative_position" type="realpoint">580.000000,387.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5857bd3e-599f-2624-de65</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">402892250</property>
@@ -249,6 +263,7 @@
   <property name="relative_position" type="realpoint">1009.000000,1019.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845581c-bd13-2aaf-84e2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">794607843</property>
@@ -272,10 +287,11 @@
   <property name="relative_position" type="realpoint">3490.000000,528.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58455202-1c7f-6215-9ceb</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">631270551</property>
-   <property name="relative_position" type="realpoint">36.000000,164.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onStart</event>
@@ -284,7 +300,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">350706913</property>
-   <property name="relative_position" type="realpoint">36.000000,104.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onResume</event>
@@ -293,7 +309,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">3022730</property>
-   <property name="relative_position" type="realpoint">36.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,110.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onPause</event>
@@ -302,7 +318,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">170309438</property>
-   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,143.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onAlarm</event>
@@ -311,7 +327,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">753505594</property>
-   <property name="relative_position" type="realpoint">36.000000,134.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,176.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onReset</event>
@@ -324,6 +340,7 @@
   <property name="relative_position" type="realpoint">3343.000000,2073.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58455202-1c7f-6215-9ceb</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">509699856</property>
@@ -340,10 +357,11 @@
   <property name="relative_position" type="realpoint">3344.000000,2278.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fb-366d-c13a-334a</reactor>
+   <typename>node.marker</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">10083579</property>
-   <property name="relative_position" type="realpoint">36.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <event>onHidden</event>
@@ -352,7 +370,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">382843332</property>
-   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <event>onShowed</event>
@@ -365,10 +383,11 @@
   <property name="relative_position" type="realpoint">2674.000000,1454.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58455202-1c7f-6215-9ceb</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">213850456</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <action>reset</action>
@@ -381,6 +400,7 @@
   <property name="relative_position" type="realpoint">362.000000,1816.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58455202-1c7f-6215-9ceb</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">557898751</property>
@@ -397,6 +417,7 @@
   <property name="relative_position" type="realpoint">2671.000000,1159.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845765c-a6e7-93b2-b7c6</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">695916243</property>
@@ -420,6 +441,7 @@
   <property name="relative_position" type="realpoint">119.000000,104.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845581c-bd13-2aaf-84e2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">22085884</property>
@@ -436,6 +458,7 @@
   <property name="relative_position" type="realpoint">1063.000000,395.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58457663-b9a2-ac79-9777</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">751811379</property>
@@ -459,6 +482,7 @@
   <property name="relative_position" type="realpoint">1940.000000,1033.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58457664-2a6e-e22d-b7fb</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">447995169</property>
@@ -475,10 +499,11 @@
   <property name="relative_position" type="realpoint">2615.000000,2480.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58455202-1c7f-6215-9ceb</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">384104088</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <action>reset</action>
@@ -491,6 +516,7 @@
   <property name="relative_position" type="realpoint">3914.000000,570.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5857c488-d6a3-ebb5-cc46</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">583126473</property>
@@ -499,7 +525,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">77063390</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="switch_item" type="switch_item_info">Пауза - неактивно</property>
   </object>
  </object>
@@ -508,6 +534,7 @@
   <property name="relative_position" type="realpoint">3912.000000,368.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5857c48c-ee13-c471-d6af</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">259750610</property>
@@ -516,7 +543,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">951569691</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="switch_item" type="switch_item_info">Сброс - неактивно</property>
   </object>
  </object>
@@ -525,6 +552,7 @@
   <property name="relative_position" type="realpoint">477.000000,1236.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5857c488-d6a3-ebb5-cc46</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">215502060</property>
@@ -537,6 +565,7 @@
   <property name="relative_position" type="realpoint">1066.000000,160.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845581c-bd13-2aaf-84e2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">191856964</property>
@@ -556,12 +585,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">526340602</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>5845581c-bd13-2aaf-84e2</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Перезапустить таймер (5с)"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>
@@ -571,10 +601,11 @@
   <property name="relative_position" type="realpoint">4057.000000,2311.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fd-5893-3a64-ae67</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">810300440</property>
-   <property name="relative_position" type="realpoint">0.000000,164.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>57f528fd-5893-3a64-ae67</reactor>
     <action>playAnimation</action>
@@ -592,6 +623,7 @@
   <property name="relative_position" type="realpoint">2673.000000,1353.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>584577bf-b146-276e-788d</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">218674377</property>
@@ -601,6 +633,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ГОТОВ"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>
@@ -610,6 +643,7 @@
   <property name="relative_position" type="realpoint">1062.000000,491.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>584577bf-b146-276e-788d</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">953618526</property>
@@ -619,6 +653,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ЗАПУЩЕН"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>
@@ -628,6 +663,7 @@
   <property name="relative_position" type="realpoint">2886.000000,574.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58455202-1c7f-6215-9ceb</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">529899692</property>
@@ -644,6 +680,7 @@
   <property name="relative_position" type="realpoint">2883.000000,182.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845581c-bd13-2aaf-84e2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">606430020</property>
@@ -667,6 +704,7 @@
   <property name="relative_position" type="realpoint">2885.000000,471.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>584577bf-b146-276e-788d</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">999251569</property>
@@ -676,6 +714,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ЗАПУЩЕН"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>
@@ -685,6 +724,7 @@
   <property name="relative_position" type="realpoint">2204.000000,189.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58457663-b9a2-ac79-9777</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">117800003</property>
@@ -701,6 +741,7 @@
   <property name="relative_position" type="realpoint">1018.000000,1421.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58455202-1c7f-6215-9ceb</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">732225508</property>
@@ -717,6 +758,7 @@
   <property name="relative_position" type="realpoint">2450.000000,399.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5857c48a-d834-5dfc-cfc4</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">144910870</property>
@@ -729,6 +771,7 @@
   <property name="relative_position" type="realpoint">2588.000000,2165.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>584577bf-b146-276e-788d</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">120526189</property>
@@ -748,12 +791,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">762499403</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>584577bf-b146-276e-788d</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ГОТОВ"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>
@@ -763,6 +807,7 @@
   <property name="relative_position" type="realpoint">3911.000000,214.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5857bd3e-599f-2624-de65</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">943003918</property>
@@ -771,7 +816,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">733079983</property>
-   <property name="relative_position" type="realpoint">0.000000,104.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="switch_item" type="switch_item_info">Запуск - неактивено</property>
   </object>
  </object>
@@ -780,6 +825,7 @@
   <property name="relative_position" type="realpoint">1209.000000,2150.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845765c-a6e7-93b2-b7c6</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">167100609</property>
@@ -803,6 +849,7 @@
   <property name="relative_position" type="realpoint">3697.000000,2278.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5857bd3f-ca8c-4a7d-7183</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">90798858</property>
@@ -811,7 +858,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">522081239</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="switch_item" type="switch_item_info">Отображается</property>
   </object>
  </object>
@@ -820,6 +867,7 @@
   <property name="relative_position" type="realpoint">1069.000000,600.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58455202-1c7f-6215-9ceb</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">503957836</property>
@@ -839,10 +887,11 @@
   <property name="relative_position" type="realpoint">3491.000000,804.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58455202-1c7f-6215-9ceb</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">586312801</property>
-   <property name="relative_position" type="realpoint">36.000000,164.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onPause</event>
@@ -851,7 +900,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">502571758</property>
-   <property name="relative_position" type="realpoint">36.000000,104.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onReset</event>
@@ -860,7 +909,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">323799999</property>
-   <property name="relative_position" type="realpoint">36.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,110.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onResume</event>
@@ -869,7 +918,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">963386240</property>
-   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,143.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onStart</event>
@@ -878,7 +927,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">75681100</property>
-   <property name="relative_position" type="realpoint">36.000000,134.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,176.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onAlarm</event>
@@ -891,6 +940,7 @@
   <property name="relative_position" type="realpoint">1012.000000,1227.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58457663-b9a2-ac79-9777</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">475251310</property>
@@ -914,6 +964,7 @@
   <property name="relative_position" type="realpoint">359.000000,2245.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fd-5893-3a64-ae67</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">869751230</property>
@@ -932,6 +983,7 @@
   <property name="relative_position" type="realpoint">1224.000000,2450.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>584577bf-b146-276e-788d</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">190761591</property>
@@ -941,6 +993,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ГОТОВ"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>
@@ -950,6 +1003,7 @@
   <property name="relative_position" type="realpoint">2076.000000,2242.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fb-366d-c13a-334a</reactor>
+   <typename>node.marker</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">183697108</property>
@@ -962,7 +1016,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">445537904</property>
-   <property name="relative_position" type="realpoint">36.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <event>onHidden</event>
@@ -975,6 +1029,7 @@
   <property name="relative_position" type="realpoint">2676.000000,1016.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845581c-bd13-2aaf-84e2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">336884275</property>
@@ -994,12 +1049,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">959085948</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>5845581c-bd13-2aaf-84e2</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Запустить таймер (5с)"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>
@@ -1009,10 +1065,11 @@
   <property name="relative_position" type="realpoint">1071.000000,708.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fd-5893-3a64-ae67</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">134840239</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>57f528fd-5893-3a64-ae67</reactor>
     <action>stopAnimation</action>
@@ -1027,6 +1084,7 @@
   <property name="relative_position" type="realpoint">1217.000000,2312.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58457663-b9a2-ac79-9777</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">789278607</property>
@@ -1050,6 +1108,7 @@
   <property name="relative_position" type="realpoint">1062.000000,305.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845765c-a6e7-93b2-b7c6</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">463796566</property>
@@ -1073,6 +1132,7 @@
   <property name="relative_position" type="realpoint">1208.000000,2001.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5845581c-bd13-2aaf-84e2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">533693017</property>
@@ -1092,12 +1152,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">820261308</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>5845581c-bd13-2aaf-84e2</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Запустить таймер (5с)"/>
+     <argument name="concatenate" type="Bool"/>
     </arguments>
    </property>
   </object>

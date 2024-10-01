@@ -5,10 +5,11 @@
   <property name="relative_position" type="realpoint">-2254.000000,-798.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">7518638</property>
-   <property name="relative_position" type="realpoint">36.000000,172.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
     <event>onClick</event>
@@ -21,6 +22,7 @@
   <property name="relative_position" type="realpoint">-2371.000000,-575.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">6343006</property>
@@ -37,6 +39,7 @@
   <property name="relative_position" type="realpoint">-2384.000000,-1079.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7ad69-7856-78be-da2f</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">9499907</property>
@@ -53,10 +56,11 @@
   <property name="relative_position" type="realpoint">-1224.000000,-1799.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7be65-f6a2-fb75-fdff</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">2722598</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7be65-f6a2-fb75-fdff</reactor>
     <action>hide</action>
@@ -74,10 +78,11 @@
   <property name="relative_position" type="realpoint">-1222.000000,-1685.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">3169854</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
     <action>hide</action>
@@ -95,10 +100,11 @@
   <property name="relative_position" type="realpoint">-1458.000000,-504.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7be65-f6a2-fb75-fdff</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">8743088</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7be65-f6a2-fb75-fdff</reactor>
     <action>show</action>
@@ -116,6 +122,7 @@
   <property name="relative_position" type="realpoint">-1952.000000,-1080.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7adf6-88d2-6e51-3535</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">3007303</property>
@@ -124,7 +131,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">8208242</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="switch_item" type="switch_item_info">Тирекс</property>
   </object>
  </object>
@@ -133,6 +140,7 @@
   <property name="relative_position" type="realpoint">-1456.000000,-769.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7ad69-7856-78be-da2f</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">40594</property>
@@ -150,7 +158,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">3123654</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7ad69-7856-78be-da2f</reactor>
     <action>playAnimation</action>
@@ -168,10 +176,11 @@
   <property name="relative_position" type="realpoint">-2249.000000,-1317.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7be65-f6a2-fb75-fdff</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">4830453</property>
-   <property name="relative_position" type="realpoint">36.000000,172.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>64c7be65-f6a2-fb75-fdff</reactor>
     <event>onClick</event>
@@ -184,6 +193,7 @@
   <property name="relative_position" type="realpoint">-1952.000000,-606.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7adf6-88d2-6e51-3535</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">537296</property>
@@ -192,7 +202,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">1808094</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="switch_item" type="switch_item_info">Тирекс</property>
   </object>
  </object>
@@ -201,10 +211,11 @@
   <property name="relative_position" type="realpoint">-1459.000000,-1064.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">6090424</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
     <action>show</action>
@@ -222,10 +233,11 @@
   <property name="relative_position" type="realpoint">-2085.000000,-1673.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">6645052</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
     <action>hide</action>
@@ -239,7 +251,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">2705892</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
     <action>stopAllAnimations</action>
@@ -252,10 +264,11 @@
   <property name="relative_position" type="realpoint">-2565.000000,-1848.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7a32a-5e4a-5b2c-c1da</reactor>
+   <typename>node.marker</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">6444085</property>
-   <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>64c7a32a-5e4a-5b2c-c1da</reactor>
     <event>onShowed</event>
@@ -264,7 +277,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">7761740</property>
-   <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>64c7a32a-5e4a-5b2c-c1da</reactor>
     <event>onHidden</event>
@@ -277,10 +290,11 @@
   <property name="relative_position" type="realpoint">-1226.000000,-1939.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64edf980-da66-e927-6711</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">3185676</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64edf980-da66-e927-6711</reactor>
     <action>hide</action>
@@ -294,7 +308,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">3211777</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>64edf980-da66-e927-6711</reactor>
     <action>show</action>
@@ -312,10 +326,11 @@
   <property name="relative_position" type="realpoint">-1642.000000,-1830.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7a32a-5e4a-5b2c-c1da</reactor>
+   <typename>node.marker</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">229277</property>
-   <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>64c7a32a-5e4a-5b2c-c1da</reactor>
     <event>onShowed</event>
@@ -324,7 +339,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">7314086</property>
-   <property name="relative_position" type="realpoint">36.000000,172.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>64c7a32a-5e4a-5b2c-c1da</reactor>
     <event>onHidden</event>
@@ -337,10 +352,11 @@
   <property name="relative_position" type="realpoint">-1456.000000,-636.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">9238729</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
     <action>hide</action>
@@ -354,7 +370,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">666110</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
     <action>stopAnimation</action>
@@ -369,6 +385,7 @@
   <property name="relative_position" type="realpoint">-1455.000000,-1337.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">7802303</property>
@@ -386,7 +403,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">7578792</property>
-   <property name="relative_position" type="realpoint">0.000000,140.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
     <action>playAnimation</action>
@@ -404,10 +421,11 @@
   <property name="relative_position" type="realpoint">-2085.000000,-1814.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7ad69-7856-78be-da2f</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">2135021</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7ad69-7856-78be-da2f</reactor>
     <action>hide</action>
@@ -421,7 +439,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">4326321</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7ad69-7856-78be-da2f</reactor>
     <action>stopAllAnimations</action>
@@ -434,10 +452,11 @@
   <property name="relative_position" type="realpoint">-1459.000000,-400.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">1055092</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
     <action>hide</action>
@@ -455,10 +474,11 @@
   <property name="relative_position" type="realpoint">-1457.000000,-1204.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7ad69-7856-78be-da2f</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">9901359</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7ad69-7856-78be-da2f</reactor>
     <action>hide</action>
@@ -472,7 +492,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">3323960</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7ad69-7856-78be-da2f</reactor>
     <action>stopAnimation</action>
@@ -487,6 +507,7 @@
   <property name="relative_position" type="realpoint">-1459.000000,-955.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7be65-f6a2-fb75-fdff</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">2693058</property>
@@ -508,6 +529,7 @@
   <property name="relative_position" type="realpoint">-2083.000000,-1959.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">5611329</property>
@@ -525,7 +547,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">6640370</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7a9ce-1f93-d932-4d9b</reactor>
     <action>playAnimation</action>
@@ -543,10 +565,11 @@
   <property name="relative_position" type="realpoint">-1952.000000,-458.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
+   <typename>rect.text</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">5492572</property>
-   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>64c7adec-bf67-a4e2-5bd2</reactor>
     <action>show</action>

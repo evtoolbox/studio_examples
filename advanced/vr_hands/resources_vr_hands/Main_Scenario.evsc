@@ -5,10 +5,11 @@
   <property name="relative_position" type="realpoint">-223.000000,98.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5dee1cc9-a9fa-9574-9aaf</reactor>
+   <typename>node.intersector</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">8284901</property>
-   <property name="relative_position" type="realpoint">0.000000,136.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee1cc9-a9fa-9574-9aaf</reactor>
     <action>findIntersection</action>
@@ -17,7 +18,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">9459263</property>
-   <property name="relative_position" type="realpoint">36.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>5dee1cc9-a9fa-9574-9aaf</reactor>
     <event>onHit</event>
@@ -33,10 +34,11 @@
   <property name="relative_position" type="realpoint">977.000000,-152.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5dee24f4-e598-77b7-96a3</reactor>
+   <typename>node.text3d</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">4371885</property>
-   <property name="relative_position" type="realpoint">0.000000,137.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee24f4-e598-77b7-96a3</reactor>
     <action>setText_color</action>
@@ -52,7 +54,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">674612</property>
-   <property name="relative_position" type="realpoint">0.000000,106.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee24f4-e598-77b7-96a3</reactor>
     <action>setText_color</action>
@@ -68,7 +70,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">5890937</property>
-   <property name="relative_position" type="realpoint">0.000000,106.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,110.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee24f4-e598-77b7-96a3</reactor>
     <action>setText_color</action>
@@ -84,7 +86,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">9160624</property>
-   <property name="relative_position" type="realpoint">0.000000,137.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,143.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee24f4-e598-77b7-96a3</reactor>
     <action>setText_color</action>
@@ -104,10 +106,11 @@
   <property name="relative_position" type="realpoint">-634.000000,-136.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5dea528a-4c29-f619-27a2</reactor>
+   <typename>vr_controller</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">4815225</property>
-   <property name="relative_position" type="realpoint">36.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>5dea528a-4c29-f619-27a2</reactor>
     <event>onFrame</event>
@@ -120,10 +123,11 @@
   <property name="relative_position" type="realpoint">322.000000,-257.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5dee543b-3abf-1921-558a</reactor>
+   <typename>counter</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">7874034</property>
-   <property name="relative_position" type="realpoint">0.000000,224.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee543b-3abf-1921-558a</reactor>
     <action>resetValue</action>
@@ -132,7 +136,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">5818831</property>
-   <property name="relative_position" type="realpoint">0.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee543b-3abf-1921-558a</reactor>
     <action>add</action>
@@ -143,7 +147,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">3000120</property>
-   <property name="relative_position" type="realpoint">36.000000,104.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,110.000000</property>
    <property name="event" type="event_info">
     <reactor>5dee543b-3abf-1921-558a</reactor>
     <event>onEqual</event>
@@ -154,7 +158,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">2080348</property>
-   <property name="relative_position" type="realpoint">36.000000,164.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,143.000000</property>
    <property name="event" type="event_info">
     <reactor>5dee543b-3abf-1921-558a</reactor>
     <event>onEqual</event>
@@ -169,10 +173,11 @@
   <property name="relative_position" type="realpoint">-648.000000,71.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5dea528a-9764-c1f2-ae1e</reactor>
+   <typename>vr_controller</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">6308731</property>
-   <property name="relative_position" type="realpoint">36.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>5dea528a-9764-c1f2-ae1e</reactor>
     <event>onFrame</event>
@@ -185,10 +190,11 @@
   <property name="relative_position" type="realpoint">-283.000000,-368.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>Scene</reactor>
+   <typename>node.scene</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">3806132</property>
-   <property name="relative_position" type="realpoint">36.000000,106.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>Scene</reactor>
     <event>onFrame</event>
@@ -201,10 +207,11 @@
   <property name="relative_position" type="realpoint">-222.000000,-98.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>5dee23c4-19c5-8ad7-8c8f</reactor>
+   <typename>node.intersector</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">1203888</property>
-   <property name="relative_position" type="realpoint">0.000000,136.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee23c4-19c5-8ad7-8c8f</reactor>
     <action>findIntersection</action>
@@ -213,7 +220,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">4341494</property>
-   <property name="relative_position" type="realpoint">36.000000,74.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>5dee23c4-19c5-8ad7-8c8f</reactor>
     <event>onHit</event>

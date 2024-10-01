@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -21,7 +21,6 @@
  <resources dir="resources_timer_simple">
   <resource internal="false" id="64b95890-4d3-d52-bf5-69a" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="triceratops_model.fbx">
    <filename value="triceratops_model.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="64b95c21-5ec-1e5-6b7-5e7" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="marker_1.png">
    <filename value="marker_1.png"/>
@@ -204,7 +203,7 @@
    <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="100.000000%"/>
-    <field name="y" value="10.000000%"/>
+    <field name="y" value="6.500000%w"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -225,7 +224,7 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.font_size" value="3.000000%vw"/>
    <parameter name="text.color">
     <field name="red" value="0.50196078431373"/>
     <field name="green" value="0"/>

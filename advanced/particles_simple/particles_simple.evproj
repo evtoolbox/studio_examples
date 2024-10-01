@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -168,7 +168,7 @@
    <view expanded="true"/>
   </reactor>
  </reactors>
- <exportParameters />
+ <exportParameters/>
  <workspace>
   <preview platform="1"/>
  </workspace>

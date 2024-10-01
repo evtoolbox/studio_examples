@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -24,7 +24,6 @@
   </resource>
   <resource internal="false" id="57f52910-c5f-c22-72e-855" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="ev_model.fbx">
    <filename value="ev_model.fbx"/>
-   <optimizations/>
   </resource>
  </resources>
  <reactors>

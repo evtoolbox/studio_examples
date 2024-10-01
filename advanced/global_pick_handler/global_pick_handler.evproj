@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -21,7 +21,6 @@
  <resources dir="resources_global_pick_handler">
   <resource internal="false" id="5ba397a9-d21-e51-952-1013" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="house.fbx">
    <filename value="house.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="5ba4d634-887-710b-e83-6410" kind="script" local="true" forceExport="true" rawAssetsExport="false" name="main.lua">
    <filename value="main.lua"/>

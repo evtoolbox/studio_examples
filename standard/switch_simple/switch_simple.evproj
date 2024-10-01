@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -24,11 +24,9 @@
   </resource>
   <resource internal="false" id="64c7ad46-2a9-171-f2c-7f9" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="triceratops_model.fbx">
    <filename value="triceratops_model.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="64c7ad7f-c2c-dd8-1f1-25d" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="t-rex_model.fbx">
    <filename value="t-rex_model.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="true" id="Exo2-Bold" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="Exo2-Bold.ttf">
    <filename value="Exo2-Bold.ttf"/>
@@ -162,11 +160,11 @@
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children"/>
-   <parameter name="layer" value="0.01"/>
+   <parameter name="layer" value="0.02"/>
    <parameter name="rect.position" value="right-center"/>
    <parameter name="rect.size">
     <field name="x" value="25.000000%"/>
-    <field name="y" value="10.000000%"/>
+    <field name="y" value="6.000000%w"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -187,7 +185,7 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.font_size" value="3.000000%vw"/>
    <parameter name="text.color">
     <field name="red" value="1"/>
     <field name="green" value="1"/>
@@ -217,7 +215,7 @@
    <parameter name="rect.position" value="right-center"/>
    <parameter name="rect.size">
     <field name="x" value="25.000000%"/>
-    <field name="y" value="10.000000%"/>
+    <field name="y" value="6.000000%w"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -238,7 +236,7 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.font_size" value="3.000000%vw"/>
    <parameter name="text.color">
     <field name="red" value="1"/>
     <field name="green" value="1"/>
@@ -260,7 +258,7 @@
    <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="100.000000%"/>
-    <field name="y" value="keep-aspect"/>
+    <field name="y" value="7.000000%vw"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -281,7 +279,7 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.font_size" value="4.000000%vw"/>
    <parameter name="text.color">
     <field name="red" value="0.3921568627451"/>
     <field name="green" value="0"/>

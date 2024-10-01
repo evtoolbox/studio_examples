@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -21,11 +21,9 @@
  <resources dir="resources_two_models_on_marker">
   <resource internal="false" id="57c5a633-ef8-df1-7fa-881" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="dash-dot.FBX">
    <filename value="dash-dot.FBX"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="57c5a63b-feb-cf9-16b-f69" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="ev_model.fbx">
    <filename value="ev_model.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="57c5a642-fa2-894-34d-543" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="ev_pattern.png">
    <filename value="ev_pattern.png"/>

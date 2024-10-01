@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -169,7 +169,7 @@
    <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="100.000000%"/>
-    <field name="y" value="10.000000%"/>
+    <field name="y" value="6.000000%vw"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -190,7 +190,7 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.font_size" value="4.000000%vw"/>
    <parameter name="text.color">
     <field name="red" value="0"/>
     <field name="green" value="0"/>

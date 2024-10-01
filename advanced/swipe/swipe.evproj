@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -903,7 +903,7 @@
   </reactor>
  </reactors>
  <exportParameters last="apk">
-  <parameters format="apk" filename="C:\Users\Asus\Documents\AR_animal6.apk" appName="Animals_AR6" appId="ru.DomainName.Animals.AR5" arch="" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//AppIcon.png" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a,armeabi-v7a" targetApi="31">
+  <parameters format="apk" filename="C:\Users\Asus\Documents\AR_animal6.apk" appName="Animals_AR6" appId="ru.DomainName.Animals.AR5" arch="" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//AppIcon.png" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a,armeabi-v7a" minApi="24" targetApi="31">
    <presets>
     <preset id="user" name="User Preset">
      <files>

@@ -5,10 +5,11 @@
   <property name="relative_position" type="realpoint">2020.000000,-293.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fd-5893-3a64-ae67</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">9310162</property>
-   <property name="relative_position" type="realpoint">0.000000,72.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>57f528fd-5893-3a64-ae67</reactor>
     <action>playAnimation</action>
@@ -26,10 +27,11 @@
   <property name="relative_position" type="realpoint">87.000000,758.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fb-366d-c13a-334a</reactor>
+   <typename>node.marker</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">686571</property>
-   <property name="relative_position" type="realpoint">36.000000,100.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <event>onHidden</event>
@@ -42,10 +44,11 @@
   <property name="relative_position" type="realpoint">841.000000,1108.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d29194-21b9-deea-ef7a</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">9669378</property>
-   <property name="relative_position" type="realpoint">0.000000,100.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>58d29194-21b9-deea-ef7a</reactor>
     <action>reset</action>
@@ -58,6 +61,7 @@
   <property name="relative_position" type="realpoint">841.000000,997.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d28c2c-6423-1cc1-ad22</reactor>
+   <typename>audio</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">9556436</property>
@@ -74,10 +78,11 @@
   <property name="relative_position" type="realpoint">1359.000000,-10.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d2460e-8a71-7984-a849</reactor>
+   <typename>distance</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">9613339</property>
-   <property name="relative_position" type="realpoint">36.000000,72.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>58d2460e-8a71-7984-a849</reactor>
     <event>onMovedAside</event>
@@ -89,7 +94,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">8401951</property>
-   <property name="relative_position" type="realpoint">36.000000,100.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>58d2460e-8a71-7984-a849</reactor>
     <event>onMovedCloser</event>
@@ -105,6 +110,7 @@
   <property name="relative_position" type="realpoint">399.000000,-505.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d2467f-96de-df17-c23a</reactor>
+   <typename>switch</typename>
   </property>
   <object type="SwitchItem">
    <property name="id" type="long">8661324</property>
@@ -113,7 +119,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">6959242</property>
-   <property name="relative_position" type="realpoint">0.000000,72.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
    <property name="switch_item" type="switch_item_info">скрыт</property>
   </object>
  </object>
@@ -122,6 +128,7 @@
   <property name="relative_position" type="realpoint">2418.000000,393.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fd-5893-3a64-ae67</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">1484943</property>
@@ -140,10 +147,11 @@
   <property name="relative_position" type="realpoint">2016.000000,200.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d244c4-5ed3-a89f-a351</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">304199</property>
-   <property name="relative_position" type="realpoint">0.000000,100.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>58d244c4-5ed3-a89f-a351</reactor>
     <action>playAnimation</action>
@@ -157,7 +165,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">4043092</property>
-   <property name="relative_position" type="realpoint">36.000000,72.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>58d244c4-5ed3-a89f-a351</reactor>
     <event>onAnimationFinish</event>
@@ -172,6 +180,7 @@
   <property name="relative_position" type="realpoint">31.000000,-823.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fb-366d-c13a-334a</reactor>
+   <typename>node.marker</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">8946780</property>
@@ -188,6 +197,7 @@
   <property name="relative_position" type="realpoint">2417.000000,282.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d28c2b-bcc3-8794-e94d</reactor>
+   <typename>audio</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">1939429</property>
@@ -204,10 +214,11 @@
   <property name="relative_position" type="realpoint">790.000000,-504.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d2460e-8a71-7984-a849</reactor>
+   <typename>distance</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">8261095</property>
-   <property name="relative_position" type="realpoint">0.000000,100.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>58d2460e-8a71-7984-a849</reactor>
     <action>updateState</action>
@@ -220,6 +231,7 @@
   <property name="relative_position" type="realpoint">839.000000,896.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d28c2b-bcc3-8794-e94d</reactor>
+   <typename>audio</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">7789416</property>
@@ -236,6 +248,7 @@
   <property name="relative_position" type="realpoint">837.000000,696.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>57f528fd-5893-3a64-ae67</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">343461</property>
@@ -252,6 +265,7 @@
   <property name="relative_position" type="realpoint">2417.000000,502.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d28c2c-6423-1cc1-ad22</reactor>
+   <typename>audio</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">8649853</property>
@@ -268,10 +282,11 @@
   <property name="relative_position" type="realpoint">2019.000000,364.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d29194-21b9-deea-ef7a</reactor>
+   <typename>timer</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">6925007</property>
-   <property name="relative_position" type="realpoint">0.000000,72.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>58d29194-21b9-deea-ef7a</reactor>
     <action>start</action>
@@ -283,7 +298,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">7029310</property>
-   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>58d29194-21b9-deea-ef7a</reactor>
     <event>onAlarm</event>
@@ -296,10 +311,11 @@
   <property name="relative_position" type="realpoint">2016.000000,-79.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d244c4-5ed3-a89f-a351</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">5746839</property>
-   <property name="relative_position" type="realpoint">0.000000,72.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
    <property name="action" type="action_info">
     <reactor>58d244c4-5ed3-a89f-a351</reactor>
     <action>stopAnimation</action>
@@ -314,6 +330,7 @@
   <property name="relative_position" type="realpoint">840.000000,799.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d244c4-5ed3-a89f-a351</reactor>
+   <typename>node.model</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">2948930</property>
@@ -330,6 +347,7 @@
   <property name="relative_position" type="realpoint">36.000000,-506.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d244bd-d4ab-164c-4183</reactor>
+   <typename>node.marker</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">1068526</property>
@@ -342,7 +360,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">8459877</property>
-   <property name="relative_position" type="realpoint">36.000000,72.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
    <property name="event" type="event_info">
     <reactor>58d244bd-d4ab-164c-4183</reactor>
     <event>onHidden</event>
@@ -355,10 +373,11 @@
   <property name="relative_position" type="realpoint">84.000000,1050.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d244bd-d4ab-164c-4183</reactor>
+   <typename>node.marker</typename>
   </property>
   <object type="Event">
    <property name="id" type="long">954380</property>
-   <property name="relative_position" type="realpoint">36.000000,100.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
    <property name="event" type="event_info">
     <reactor>58d244bd-d4ab-164c-4183</reactor>
     <event>onHidden</event>
@@ -371,6 +390,7 @@
   <property name="relative_position" type="realpoint">2014.000000,102.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d28c2c-6423-1cc1-ad22</reactor>
+   <typename>audio</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">6619734</property>
@@ -389,6 +409,7 @@
   <property name="relative_position" type="realpoint">2020.000000,-207.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d28c2b-bcc3-8794-e94d</reactor>
+   <typename>audio</typename>
   </property>
   <object type="Action">
    <property name="id" type="long">4422511</property>

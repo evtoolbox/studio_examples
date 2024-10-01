@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -30,15 +30,12 @@
   </resource>
   <resource internal="false" id="64b7e51b-61a-314-5bb-3fd" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="pisa_model.FBX">
    <filename value="pisa_model.FBX"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="64b7e53f-c19-719-b1d-e6b" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="parphenon_model.fbx">
    <filename value="parphenon_model.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="64b7e583-9ad-6b1-151-737" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="eiffel_tower_model.FBX">
    <filename value="eiffel_tower_model.FBX"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="64b7e85e-21c-d2f-593-9a5" kind="audio" local="true" forceExport="false" rawAssetsExport="false" name="end_audio.mp3">
    <filename value="end_audio.mp3"/>

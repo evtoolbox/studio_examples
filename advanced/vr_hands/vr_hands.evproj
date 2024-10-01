@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.4.12">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -21,11 +21,9 @@
  <resources dir="resources_vr_hands">
   <resource internal="false" id="5f6b48b7-a1f-a37-eb6-95e" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="hand_right.fbx">
    <filename value="hand_right.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="5f6b48dc-261-18c-5e9-51e" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="hand_left.fbx">
    <filename value="hand_left.fbx"/>
-   <optimizations/>
   </resource>
   <resource internal="false" id="5f721738-125-ec9-333-29e" kind="script" local="true" forceExport="true" rawAssetsExport="false" name="main.lua">
    <filename value="main.lua"/>
@@ -313,7 +311,7 @@
   </reactor>
  </reactors>
  <exportParameters last="apk">
-  <parameters format="apk" filename="/Users/KOS/Desktop/vr_hands.apk" appName="EV Toolbox - VR Hands" appId="ru.eligovision.vr_hands" arch="arm64" version="1.0" build="1" configurationFile="" appIconPath="/Users/KOS/EligoVision/git/ev_evi/build/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//AppIcon.png" loadingImagePath="/Users/KOS/EligoVision/git/ev_evi/build/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="armeabi-v7a" targetApi="28">
+  <parameters format="apk" filename="/Users/KOS/Desktop/vr_hands.apk" appName="EV Toolbox - VR Hands" appId="ru.eligovision.vr_hands" arch="arm64" version="1.0" build="1" configurationFile="" appIconPath="/Users/KOS/EligoVision/git/ev_evi/build/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//AppIcon.png" loadingImagePath="/Users/KOS/EligoVision/git/ev_evi/build/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="armeabi-v7a" minApi="24" targetApi="28">
    <presets>
     <preset id="undefined" name="User Preset">
      <files>
