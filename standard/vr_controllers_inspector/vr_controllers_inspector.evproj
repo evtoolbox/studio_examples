@@ -64,13 +64,11 @@
    <filename value="ppController_NEO2_Right.obj"/>
    <source value="/root/EligoVision/archive/openxr/Pico_controllers/Controller/Neo2/ppController_NEO2_Right.obj"/>
   </resource>
-  <resource internal="false" id="669e7c28-1eb-848-645-27e" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="hand_left.fbx">
+  <resource internal="false" id="669e7c28-1eb-848-645-27e" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="hand_left.fbx">
    <filename value="hand_left.fbx"/>
-   <source value="/root/EligoVision/github/evtoolbox/studio_examples/advanced/vr_hands/resources_vr_hands/hand_left.fbx"/>
   </resource>
-  <resource internal="false" id="669e7c28-969-5a4-aed-ac1" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="hand_right.fbx">
+  <resource internal="false" id="669e7c28-969-5a4-aed-ac1" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="hand_right.fbx">
    <filename value="hand_right.fbx"/>
-   <source value="/root/EligoVision/github/evtoolbox/studio_examples/advanced/vr_hands/resources_vr_hands/hand_right.fbx"/>
   </resource>
   <resource internal="false" id="66bca8c9-22c-aa8-799-d5c" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="vr_splash.png">
    <filename value="vr_splash.png"/>
@@ -3807,8 +3805,7 @@
    <view expanded="true"/>
   </reactor>
  </reactors>
- <exportParameters>
- </exportParameters>
+ <exportParameters/>
  <workspace>
   <preview platform="1"/>
  </workspace>
