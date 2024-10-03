@@ -27,42 +27,33 @@
   </resource>
   <resource internal="false" id="65e9dd7e-278-134-1f5-441" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="alarm.fbx">
    <filename value="alarm.fbx"/>
-   <source value="/root/EligoVision/git/ev_evi/data/ev_studio/examples/standard/manual_tracking_control/resources_manual_tracking_control/alarm.fbx"/>
   </resource>
   <resource internal="false" id="65f847d1-6c4-3bc-684-941" kind="audio" local="true" forceExport="false" rawAssetsExport="false" name="match.wav">
    <filename value="match.wav"/>
   </resource>
   <resource internal="false" id="65f85fad-55a-6e4-eeb-a1b" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="quest2_contollers_div0_left.fbx">
    <filename value="quest2_contollers_div0_left.fbx"/>
-   <source value="/root/EligoVision/archive/openxr/quest2_contollers_div0_left.fbx"/>
   </resource>
   <resource internal="false" id="65f8603b-c3a-73e-8cf-12c" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="quest2_contollers_div1_left.fbx">
    <filename value="quest2_contollers_div1_left.fbx"/>
-   <source value="/root/EligoVision/archive/openxr/quest2_contollers_div1_left.fbx"/>
   </resource>
   <resource internal="false" id="65f86040-1e9-a97-821-8ee" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="quest2_contollers_div2_left.fbx">
    <filename value="quest2_contollers_div2_left.fbx"/>
-   <source value="/root/EligoVision/archive/openxr/quest2_contollers_div2_left.fbx"/>
   </resource>
   <resource internal="false" id="65f873bf-fb1-4cd-ce2-2b5" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="quest2_contollers_div0_right.fbx">
    <filename value="quest2_contollers_div0_right.fbx"/>
-   <source value="/root/EligoVision/archive/openxr/quest2_contollers_div0_right.fbx"/>
   </resource>
   <resource internal="false" id="65f8777b-951-38b-2c3-c57" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="PICO4_Controller_Left.fbx">
    <filename value="PICO4_Controller_Left.fbx"/>
-   <source value="/root/EligoVision/archive/openxr/Pico_controllers/Controller/PICO 4/Meshes/PICO4_Controller_Left.fbx"/>
   </resource>
   <resource internal="false" id="65f95cd3-1f4-295-f14-acf" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="PICO4_Controller_Right.fbx">
    <filename value="PICO4_Controller_Right.fbx"/>
-   <source value="/root/EligoVision/archive/openxr/Pico_controllers/Controller/PICO 4/Meshes/PICO4_Controller_Right.fbx"/>
   </resource>
   <resource internal="false" id="65f9bace-f8a-4d6-221-8c7" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="ppController_NEO2_Left.obj">
    <filename value="ppController_NEO2_Left.obj"/>
-   <source value="/root/EligoVision/archive/openxr/Pico_controllers/Controller/Neo2/ppController_NEO2_Left.obj"/>
   </resource>
   <resource internal="false" id="65f9bb0b-3b7-e4a-894-ada" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="ppController_NEO2_Right.obj">
    <filename value="ppController_NEO2_Right.obj"/>
-   <source value="/root/EligoVision/archive/openxr/Pico_controllers/Controller/Neo2/ppController_NEO2_Right.obj"/>
   </resource>
   <resource internal="false" id="669e7c28-1eb-848-645-27e" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="hand_left.fbx">
    <filename value="hand_left.fbx"/>
