@@ -310,20 +310,7 @@
    <parameter name="autoComputeHomePosition" value="false"/>
   </reactor>
  </reactors>
- <exportParameters last="apk">
-  <parameters format="apk" filename="/Users/KOS/Desktop/vr_hands.apk" appName="EV Toolbox - VR Hands" appId="ru.eligovision.vr_hands" arch="arm64" version="1.0" build="1" configurationFile="" appIconPath="/Users/KOS/EligoVision/git/ev_evi/build/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//AppIcon.png" loadingImagePath="/Users/KOS/EligoVision/git/ev_evi/build/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="armeabi-v7a" minApi="24" targetApi="28">
-   <presets>
-    <preset id="undefined" name="User Preset">
-     <files>
-      <file name="AndroidManifest.xml" path="${ANDROID_DATA_DIR}/AndroidManifest.xml.in"/>
-      <file name="build.gradle" path="${ANDROID_DATA_DIR}/build.gradle.in"/>
-      <file name="gradle.properties" path="${ANDROID_DATA_DIR}/gradle.properties.in"/>
-      <file name="local.properties" path="${ANDROID_DATA_DIR}/local.properties.in"/>
-     </files>
-    </preset>
-   </presets>
-  </parameters>
-  <parameters format="exe" filename="/root/EligoVision/github/evtoolbox_examples/advanced/vr_controllers/vr_controllers.exe" appName="vr_controllers - EVI Windows App" appId="vr.controllers" arch="x64" version="1.0" build="1" configurationFile="" appIconPath="/root/EligoVision/git/ev_evi/build/src/ev_studio/studio_data//AppIcon.ico" loadingImagePath="/root/EligoVision/git/ev_evi/build/src/ev_studio/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" targetPlatform="1"/>
+ <exportParameters>
  </exportParameters>
  <workspace>
   <preview platform="1"/>

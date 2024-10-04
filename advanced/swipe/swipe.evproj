@@ -902,21 +902,7 @@
    <parameter name="text.value" value="База знаний для работы в EV Toolbox"/>
   </reactor>
  </reactors>
- <exportParameters last="apk">
-  <parameters format="apk" filename="C:\Users\Asus\Documents\AR_animal6.apk" appName="Animals_AR6" appId="ru.DomainName.Animals.AR5" arch="" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//AppIcon.png" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a,armeabi-v7a" minApi="24" targetApi="31">
-   <presets>
-    <preset id="user" name="User Preset">
-     <files>
-      <file name="AndroidManifest.xml" path="${ANDROID_DATA_DIR}/AndroidManifest.xml.in"/>
-      <file name="build.gradle" path="${ANDROID_DATA_DIR}/build.gradle.in"/>
-      <file name="gradle.properties" path="${ANDROID_DATA_DIR}/gradle.properties.in"/>
-      <file name="local.properties" path="${ANDROID_DATA_DIR}/local.properties.in"/>
-     </files>
-    </preset>
-   </presets>
-  </parameters>
-  <parameters format="exe" filename="C:\Users\Maria\Desktop\Animals_AR.exe" appName="Animals_AR" appId="Animals" arch="x64" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.7 Advanced/studio_data//AppIcon.ico" loadingImagePath="C:\Animals_AR\download.jpg" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="true" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="true" targetPlatform="1"/>
-  <parameters format="ipa" filename="/Users/etsune/Downloads/AR_Animals/Animals.ipa" appName="Animals - EVI iOS App" appId="ru.eligovision.Animals" arch="" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//AppIcon.png" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.10 Advanced/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="4" appStoreDistribution="false" bundleName="Animals - EVI iOS App" cameraDescription="Дополненная реальность ждет!" photolibraryDescription="Снимки будут сохранены в Фото!" deviceMotionDescription="Необходимо для отслеживания движений" abis="armv7s,arm64"/>
+ <exportParameters>
  </exportParameters>
  <workspace>
   <preview platform="1"/>
