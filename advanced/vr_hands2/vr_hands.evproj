@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.5.2">
+<Project version="3.5.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -53,6 +53,7 @@
     <item value="5dea528a-9764-c1f2-ae1e"/>
     <item value="5dee24f4-e598-77b7-96a3"/>
    </parameter>
+   <view expanded="true"/>
   </reactor>
   <reactor id="Viewer" name="Viewer" type="viewer" enabled="true">
    <parameter name="cameraManipulator" value="5dfb8456-1259-d39d-a18e"/>
@@ -172,6 +173,7 @@
    <parameter name="deviceType" value="hand_right"/>
    <parameter name="autoShow" value="true"/>
    <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
   </reactor>
   <reactor id="5dee1cc9-a9fa-9574-9aaf" name="intersector_right" type="node.intersector" enabled="true">
    <parameter name="nodeMask">
@@ -310,7 +312,21 @@
    <parameter name="autoComputeHomePosition" value="false"/>
   </reactor>
  </reactors>
- <exportParameters/>
+ <exportParameters last="apk">
+  <parameters format="apk" filename="/root/vr_hands2.apk" appName="VR Hands 2" appId="ru.eligovision.vr_hands2" arch="arm64" version="1.0" build="1" configurationFile="" appIconPath="/root/EligoVision/git/ev_evi/data/ev_studio/AppIcon.png" loadingImagePath="/root/EligoVision/git/ev_evi/data/ev_studio/LaunchImageWVR.png" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="openxr" abis="arm64-v8a" minApi="24" targetApi="28">
+   <presets>
+    <preset id="undefined" name="User Preset">
+     <files>
+      <file name="AndroidManifest.xml" path="${ANDROID_DATA_DIR}/AndroidManifest.xml.in"/>
+      <file name="build.gradle" path="${ANDROID_DATA_DIR}/build.gradle.in"/>
+      <file name="gradle.properties" path="${ANDROID_DATA_DIR}/gradle.properties.in"/>
+      <file name="local.properties" path="${ANDROID_DATA_DIR}/local.properties.in"/>
+     </files>
+    </preset>
+   </presets>
+  </parameters>
+  <parameters format="exe" filename="/root/EligoVision/github/evtoolbox_examples/advanced/vr_controllers/vr_controllers.exe" appName="vr_controllers - EVI Windows App" appId="vr.controllers" arch="x64" version="1.0" build="1" configurationFile="" appIconPath="/root/EligoVision/git/ev_evi/build/src/ev_studio/studio_data//AppIcon.ico" loadingImagePath="/root/EligoVision/git/ev_evi/build/src/ev_studio/studio_data//LaunchImage.png" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" targetPlatform="1"/>
+ </exportParameters>
  <workspace>
   <preview platform="1"/>
  </workspace>

@@ -30,6 +30,47 @@
   </object>
  </object>
  <object type="Reactor">
+  <property name="id" type="long">1029601</property>
+  <property name="relative_position" type="realpoint">-167.000000,-731.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>5dea528a-9764-c1f2-ae1e</reactor>
+   <typename>vr_controller</typename>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">2910894</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>5dea528a-9764-c1f2-ae1e</reactor>
+    <action>hide</action>
+    <arguments>
+     <argument name="nodeMask" type="NodeMaskExt">
+      <field name="mask" value="0x00000000"/>
+      <field name="unchangedBits" value="0x00000000"/>
+     </argument>
+    </arguments>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
+  <property name="id" type="long">1647865</property>
+  <property name="relative_position" type="realpoint">-668.000000,-669.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>System</reactor>
+   <typename>system</typename>
+  </property>
+  <object type="Event">
+   <property name="id" type="long">8479706</property>
+   <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+   <property name="event" type="event_info">
+    <reactor>System</reactor>
+    <event>onApplicationStart</event>
+    <arguments>
+     <argument name="OsType" type="system.OsType"/>
+    </arguments>
+   </property>
+  </object>
+ </object>
+ <object type="Reactor">
   <property name="id" type="long">1657192</property>
   <property name="relative_position" type="realpoint">977.000000,-152.000000</property>
   <property name="reactor" type="reactor_info">
@@ -231,6 +272,28 @@
    </property>
   </object>
  </object>
+ <object type="Reactor">
+  <property name="id" type="long">8393108</property>
+  <property name="relative_position" type="realpoint">-172.000000,-607.000000</property>
+  <property name="reactor" type="reactor_info">
+   <reactor>5dea528a-4c29-f619-27a2</reactor>
+   <typename>vr_controller</typename>
+  </property>
+  <object type="Action">
+   <property name="id" type="long">6426528</property>
+   <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+   <property name="action" type="action_info">
+    <reactor>5dea528a-4c29-f619-27a2</reactor>
+    <action>hide</action>
+    <arguments>
+     <argument name="nodeMask" type="NodeMaskExt">
+      <field name="mask" value="0x00000000"/>
+      <field name="unchangedBits" value="0x00000000"/>
+     </argument>
+    </arguments>
+   </property>
+  </object>
+ </object>
  <object type="Connection">
   <property name="id" type="long">3110108</property>
   <property name="relative_position" type="realpoint">-677.000000,-502.000000</property>
@@ -311,5 +374,23 @@
   <property name="target" type="long">5890937</property>
   <property name="target_offset" type="realpoint">-0.030769,0.481481</property>
   <property name="priority" type="long">10</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">5573754</property>
+  <property name="relative_position" type="realpoint">-699.000000,-839.000000</property>
+  <property name="source" type="long">8479706</property>
+  <property name="source_offset" type="realpoint">0.994872,0.500000</property>
+  <property name="target" type="long">2910894</property>
+  <property name="target_offset" type="realpoint">-0.024096,0.482759</property>
+  <property name="priority" type="long">0</property>
+ </object>
+ <object type="Connection">
+  <property name="id" type="long">8188839</property>
+  <property name="relative_position" type="realpoint">-699.000000,-839.000000</property>
+  <property name="source" type="long">8479706</property>
+  <property name="source_offset" type="realpoint">0.994872,0.500000</property>
+  <property name="target" type="long">6426528</property>
+  <property name="target_offset" type="realpoint">-0.024096,0.482759</property>
+  <property name="priority" type="long">0</property>
  </object>
 </chart>

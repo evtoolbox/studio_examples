@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.5.0" version-extra="devel">
+<Project version="3.5.2">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -32,6 +32,7 @@
  </resources>
  <reactors>
   <order>
+   <item id="System"/>
    <item id="Viewer"/>
    <item id="5dee543b-3abf-1921-558a"/>
    <item id="Scene"/>
@@ -48,6 +49,9 @@
     <item value="5dee24f4-e598-77b7-96a3"/>
    </parameter>
    <view expanded="true"/>
+  </reactor>
+  <reactor id="System" name="System" type="system" enabled="true">
+   <parameter name="albumName" value="evi_app"/>
   </reactor>
   <reactor id="Viewer" name="Viewer" type="viewer" enabled="true">
    <parameter name="cameraManipulator" value="5dfb8456-1259-d39d-a18e"/>

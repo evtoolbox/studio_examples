@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 --                                                                           --
--- Copyright 2020-2021 EligoVision. Interactive Technologies                 --
+-- Copyright 2020-2024 EligoVision. Interactive Technologies                 --
 --                                                                           --
 -- Permission is hereby granted, free of charge, to any person obtaining a   --
 -- copy of this software and associated documentation files                  --
@@ -23,9 +23,13 @@
 --                                                                           --
 -------------------------------------------------------------------------------
 
--- EV Toolbox 3.3.1 required
+-- EV Toolbox 3.5.2 required
 
 local logger = set_logger("ev_evi.lua.app.physics_simple")
+
+
+-- EV.Logger.setAppenderPriority("logcat", "DEBUG");
+-- EV.Logger.setCatPriority("OSG", "DEBUG")
 
 local scene = reactorController:getReactorByName("Scene")
 local sceneStateSet = scene.node:getOrCreateStateSet()
@@ -43,7 +47,6 @@ do
 	lightSource:getLight():setDiffuse(osg.Vec4(1.5, 1.5, 1.5, 1.0))
 	lightSource:getLight():setAmbient(osg.Vec4(0.4, 0.4, 0.45, 1.0))		-- color of the shadow
 	lightSource:setReferenceFrame(osg.LightSource.RELATIVE_RF)
---	lightSource:getParent(0):asTransform():setReferenceFrame(osg.Transform.RELATIVE_RF)
 end
 
 local root
@@ -57,6 +60,9 @@ if ENABLE_SHADOWS then
 
 	shadowedScene:setShadowTechnique(shadowTechnique)
 	root = shadowedScene
+
+	-- Prevent shadows jittering by specify constant bounds:
+	shadowedScene:setInitialBound(osg.BoundingSphere(osg.Vec3(0.0, 0.0, 1.0), 2.5))
 else
 	root = osg.Group()
 end
@@ -205,7 +211,7 @@ local lastSimulationTime
 bus:subscribe(function()
 	local time = timer:getTime()
 	local dt = time - (lastSimulationTime or time)
-	physicsWorld:stepSimulation(dt, 10, math.min(dt, 1/30))
+	physicsWorld:stepSimulation(dt, 10, 1.0/60.0)
 	lastSimulationTime = time
 
 	frame = frame + 1
@@ -224,15 +230,28 @@ end)
 if statsHandler then
 	viewer:removeEventHandler(statsHandler)
 else
-	statsHandler = EVosgViewer.StatsHandler(viewer)
+	statsHandler = EVosgViewer.StatsHandler(viewer) -- global, nobody ref it
+end
+
+	-- configurable:
+local useMipmaps = true
+
+local graphics = require("base/util/graphics.lua")
+
+local stw, sth		= 2048, 1024
+-- local stw, sth	= 1024, 512
+local scale			= 0.25 -- 25cm
+local defaultAspect	= 1920.0/1080.0
+local statsTexture	= graphics.createTexture2D(stw, sth)
+
+if useMipmaps then
+	statsTexture:setFilter(osg.Texture.MIN_FILTER, osg.Texture.LINEAR_MIPMAP_LINEAR)
+	statsTexture:setFilter(osg.Texture.MAG_FILTER, osg.Texture.LINEAR_MIPMAP_LINEAR)
+	statsTexture:setUseHardwareMipMapGeneration(true)
+	statsTexture:setMaxAnisotropy(8.0)
 end
 
 
-local graphics = require("base/util/graphics.lua")
-local stw, sth = 1024, 1024
-local scale = 0.25 -- 25cm
-local defaultAspect = 1920.0/1080.0
-local statsTexture = graphics.createTexture2D(stw, sth)
 local statsQuad = osg.createTexturedQuad(osg.Vec3(-0.5*defaultAspect*scale, 0.0, 0.0),
 										 osg.Vec3(1.0*defaultAspect*scale, 0.0, 0.0),
 										 osg.Vec3(0.0, scale, 0.0))
@@ -245,18 +264,22 @@ statsQuadSS:setMode(GLenum.GL_BLEND, osg.StateAttribute.ON)
 statsQuadSS:setDefine("EV_GL_OPACITY_FROM_DIFFUSE", osg.StateAttribute.ON)
 statsQuadSS:setRenderBinDetails(10, "RenderBin", osg.StateSet.USE_RENDERBIN_DETAILS)
 
-local statsParentReactor = reactorController:getReactorByName("VRController") or scene
+local statsParentReactor = reactorController:getReactorByName("StatsTransform")
 statsParentReactor.node:addChild(statsQuad)
+
+local statsParentReactor2 = reactorController:getReactorByName("StatsTransformNoController")
+statsParentReactor2.node:addChild(statsQuad)
+
 
 local statsCamera = statsHandler:getCamera()
 statsCamera:setRenderOrder(osg.Camera.PRE_RENDER, 5)
 statsCamera:setRenderTargetImplementation(osg.Camera.FRAME_BUFFER_OBJECT)
-statsCamera:attach(osg.Camera.COLOR_BUFFER0, statsTexture, 0, 0, false, 0, 0)
-statsCamera:setClearColor(osg.Vec4(0.0, 0.0, 0.0, 0.75))
+statsCamera:detach(osg.Camera.DEPTH_BUFFER)
+statsCamera:attach(osg.Camera.COLOR_BUFFER, statsTexture, 0, 0, useMipmaps, 0, 0)
 
-bus:subscribeOnce(function()
-	statsCamera:setClearMask(bit_or(GLenum.GL_COLOR_BUFFER_BIT, GLenum.GL_DEPTH_BUFFER_BIT))
-	statsCamera:setProjectionMatrix(osg.Matrix.ortho2D(0, 1920, 0, 1080))
-	statsCamera:setViewport(0, 0, stw, sth);
-	statsHandler:setLevel(4)
-end)
+statsCamera:setClearColor(osg.Vec4(0.0, 0.05, 0.1, 0.85))
+statsCamera:setClearMask(bit_or(GLenum.GL_COLOR_BUFFER_BIT, GLenum.GL_COLOR_BUFFER_BIT))
+
+statsCamera:setProjectionMatrix(osg.Matrix.ortho2D(0, 1920, 0, 1080))
+statsCamera:setViewport(0, 0, stw, sth);
+statsHandler:setLevel(4)

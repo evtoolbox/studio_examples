@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.5.0" version-extra="devel">
+<Project version="3.5.2">
  <presentationParams>
-  <parameter name="enableStatistics" value="true"/>
+  <parameter name="enableStatistics" value="false"/>
   <parameter name="flipFrames">
    <field name="x" value="false"/>
    <field name="y" value="false"/>
@@ -12,9 +12,9 @@
   </parameter>
   <parameter name="useMainCamera" value="false"/>
   <parameter name="clearColor">
-   <field name="x" value="0.44705882352941"/>
+   <field name="x" value="0.43921568627451"/>
    <field name="y" value="0.62352941176471"/>
-   <field name="z" value="0.81176470588235"/>
+   <field name="z" value="0.8"/>
    <field name="w" value="1"/>
   </parameter>
  </presentationParams>
@@ -44,6 +44,7 @@
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
+    <item value="676a9aa9-c19e-58a5-7ee1"/>
     <item value="601abb00-5b6e-c4d5-7547"/>
     <item value="66e9834a-6aba-d384-12ba"/>
    </parameter>
@@ -106,17 +107,17 @@
    <parameter name="rect.scalePolicy" value="inherit"/>
    <view expanded="true"/>
   </reactor>
-  <reactor id="6014253e-3351-e69f-3c3d" name="CameraManipulatorVR" type="camera_manipulator" enabled="false">
+  <reactor id="6014253e-3351-e69f-3c3d" name="CameraManipulatorVR" type="camera_manipulator" enabled="true">
    <parameter name="kind" value="vr"/>
    <parameter name="homeEye">
     <field name="x" value="0"/>
-    <field name="y" value="-1"/>
-    <field name="z" value="1.6"/>
+    <field name="y" value="-3"/>
+    <field name="z" value="1"/>
    </parameter>
    <parameter name="homeCenter">
     <field name="x" value="0"/>
     <field name="y" value="0"/>
-    <field name="z" value="1.2"/>
+    <field name="z" value="1"/>
    </parameter>
    <parameter name="homeUp">
     <field name="x" value="0"/>
@@ -125,12 +126,14 @@
    </parameter>
    <parameter name="autoComputeHomePosition" value="false"/>
   </reactor>
-  <reactor id="601abb00-5b6e-c4d5-7547" name="VRController" type="vr_controller" enabled="false">
+  <reactor id="601abb00-5b6e-c4d5-7547" name="VRController" type="vr_controller" enabled="true">
    <parameter name="nodeMask">
     <field name="mask" value="0x0000001F"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
-   <parameter name="children"/>
+   <parameter name="children">
+    <item value="6769bbf2-c19e-58a5-7ee1"/>
+   </parameter>
    <parameter name="trans">
     <field name="x" value="0"/>
     <field name="y" value="0"/>
@@ -150,6 +153,7 @@
    <parameter name="deviceType" value="controller_right"/>
    <parameter name="autoShow" value="true"/>
    <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
   </reactor>
   <reactor id="66e9834a-6aba-d384-12ba" name="ShadowedGroup" type="node.transform" enabled="true">
    <parameter name="nodeMask">
@@ -175,6 +179,50 @@
     <field name="z" value="1"/>
    </parameter>
    <view expanded="true"/>
+  </reactor>
+  <reactor id="6769bbf2-c19e-58a5-7ee1" name="StatsTransform" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="-45"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="676a9aa9-c19e-58a5-7ee1" name="StatsTransformNoController" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="-0.14997012403169"/>
+    <field name="y" value="-2.5871644992104"/>
+    <field name="z" value="0.58249640121821"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="61.355122689803"/>
+    <field name="y" value="-9.1122046133971e-14"/>
+    <field name="z" value="-1.1262779527836e-13"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
   </reactor>
  </reactors>
  <exportParameters/>
