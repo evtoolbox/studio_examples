@@ -14,6 +14,7 @@
 	<example path="standard/distance_markers/distance_markers.evproj" name="Distance Markers"/>
 	<example path="standard/vr_controllers/vr_controllers.evproj" name="VR Controllers"/>
 	<example path="standard/vr_controllers_inspector/vr_controllers_inspector.evproj" name="VR Controllers Inspector"/>
+	<example path="standard/audio_3d/audio_3d.evproj" name="Audio 3D"/>
 
 	<advanced>
 		<example path="advanced/global_pick_handler/global_pick_handler.evproj" name="Pick Handler"/>
