@@ -28,7 +28,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: НА ПАУЗЕ"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
@@ -125,13 +125,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">126977134</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>584577bf-b146-276e-788d</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="ОЖИДАНИЕ МЕТКИ"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
@@ -174,7 +174,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">186444020</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">Продолжить - неактивно</property>
   </object>
  </object>
@@ -220,7 +220,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">842561901</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <event>onHidden</event>
@@ -300,7 +300,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">350706913</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onResume</event>
@@ -309,7 +309,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">3022730</property>
-   <property name="relative_position" type="realpoint">36.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,108.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onPause</event>
@@ -318,7 +318,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">170309438</property>
-   <property name="relative_position" type="realpoint">36.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,140.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onAlarm</event>
@@ -327,7 +327,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">753505594</property>
-   <property name="relative_position" type="realpoint">36.000000,176.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,172.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onReset</event>
@@ -370,7 +370,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">382843332</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <event>onShowed</event>
@@ -525,7 +525,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">77063390</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">Пауза - неактивно</property>
   </object>
  </object>
@@ -543,7 +543,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">951569691</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">Сброс - неактивно</property>
   </object>
  </object>
@@ -585,13 +585,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">526340602</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>5845581c-bd13-2aaf-84e2</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Перезапустить таймер (5с)"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
@@ -633,7 +633,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ГОТОВ"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
@@ -653,7 +653,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ЗАПУЩЕН"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
@@ -714,7 +714,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ЗАПУЩЕН"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
@@ -791,13 +791,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">762499403</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>584577bf-b146-276e-788d</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ГОТОВ"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
@@ -816,7 +816,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">733079983</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">Запуск - неактивено</property>
   </object>
  </object>
@@ -858,7 +858,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">522081239</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">Отображается</property>
   </object>
  </object>
@@ -900,7 +900,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">502571758</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onReset</event>
@@ -909,7 +909,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">323799999</property>
-   <property name="relative_position" type="realpoint">36.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,108.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onResume</event>
@@ -918,7 +918,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">963386240</property>
-   <property name="relative_position" type="realpoint">36.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,140.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onStart</event>
@@ -927,7 +927,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">75681100</property>
-   <property name="relative_position" type="realpoint">36.000000,176.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,172.000000</property>
    <property name="event" type="event_info">
     <reactor>58455202-1c7f-6215-9ceb</reactor>
     <event>onAlarm</event>
@@ -993,7 +993,7 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Состояние таймера: ГОТОВ"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
@@ -1016,7 +1016,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">445537904</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <event>onHidden</event>
@@ -1049,13 +1049,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">959085948</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>5845581c-bd13-2aaf-84e2</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Запустить таймер (5с)"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
@@ -1152,13 +1152,13 @@
   </object>
   <object type="Action">
    <property name="id" type="long">820261308</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>5845581c-bd13-2aaf-84e2</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Запустить таймер (5с)"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.5.2">
+<Project version="3.6.0" version-extra="devel_x64">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -350,7 +350,7 @@
   </reactor>
   <reactor id="64b7e433-376b-28a7-a512" name="Парфенон в цвете" type="rect.image" enabled="true">
    <parameter name="nodeMask">
-    <field name="mask" value="0x00000010"/>
+    <field name="mask" value="0x0000001F"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children"/>
@@ -585,7 +585,23 @@
    <parameter name="liveDecoding" value="false"/>
   </reactor>
  </reactors>
- <exportParameters/>
+ <exportParameters last="rpm">
+  <parameters format="apk" appName="counter_markers - EVI Android App" appId="counter.markers" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/counter_markers.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="5" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a" minApi="24" targetApi="36">
+   <presets>
+    <preset id="user" name="User Preset">
+     <files>
+      <file name="AndroidManifest.xml" path="${ANDROID_DATA_DIR}/AndroidManifest.xml.in"/>
+      <file name="build.gradle" path="${ANDROID_DATA_DIR}/build.gradle.in"/>
+      <file name="gradle.properties" path="${ANDROID_DATA_DIR}/gradle.properties.in"/>
+      <file name="local.properties" path="${ANDROID_DATA_DIR}/local.properties.in"/>
+     </files>
+    </preset>
+   </presets>
+  </parameters>
+  <parameters format="app" appName="counter_markers - EVI macOS App" appId="counter.markers" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/counter_markers.app" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="None" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" retinaSupport="true" bundleName="counter_markers - EVI macOS App" cameraDescription="Дополненная реальность ждет!"/>
+  <parameters format="exe" appName="counter_markers - EVI Windows App" appId="counter.markers" arch="x64" version="1.0" build="1" filename="${PROJECT_DIR}/counter_markers.exe" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" targetPlatform="1"/>
+  <parameters format="rpm" name="ru.eligovision.CounterMarkers" version="0.0.1" summary="Мини-игра с использованием объекта &quot;Счетчик&quot; и определением меток." license="MIT" arch="armv7hl" description="Мини-игра с использованием объекта &quot;Счетчик&quot; и определением меток. Наводите камеру на метки и загорятся нужные иконки: Парфенон, Пизанская башня или Эйфелева башня." verboseName="Counter markers example" verboseNameRu="Счетчик и маркеры пример" cert="${STUDIO_DATA_DIR}/aurora/cert/regular_cert.pem" key="${STUDIO_DATA_DIR}/aurora/cert/regular_key.pem" dirname="${PROJECT_DIR}/" qmldir="C:/ev/git/ev_evi/build/MSWin32.advanced.int.x64.plugins/install/bin/studio_data//aurora/template.adv.qml" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" coverIcon="${STUDIO_DATA_DIR}/AppIcon.png" permissions="Audio;Camera;DeviceInfo;UserDirs" orientations="All"/>
+ </exportParameters>
  <workspace>
   <preview platform="1"/>
  </workspace>

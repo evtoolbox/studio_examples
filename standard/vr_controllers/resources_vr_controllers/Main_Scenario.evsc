@@ -18,7 +18,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">9459263</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>5dee1cc9-a9fa-9574-9aaf</reactor>
     <event>onHit</event>
@@ -95,7 +95,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">674612</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee24f4-e598-77b7-96a3</reactor>
     <action>setText_color</action>
@@ -111,7 +111,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">5890937</property>
-   <property name="relative_position" type="realpoint">0.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,108.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee24f4-e598-77b7-96a3</reactor>
     <action>setText_color</action>
@@ -127,7 +127,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">9160624</property>
-   <property name="relative_position" type="realpoint">0.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,140.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee24f4-e598-77b7-96a3</reactor>
     <action>setText_color</action>
@@ -177,7 +177,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">5818831</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>5dee543b-3abf-1921-558a</reactor>
     <action>add</action>
@@ -188,7 +188,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">3000120</property>
-   <property name="relative_position" type="realpoint">36.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,108.000000</property>
    <property name="event" type="event_info">
     <reactor>5dee543b-3abf-1921-558a</reactor>
     <event>onEqual</event>
@@ -199,7 +199,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">2080348</property>
-   <property name="relative_position" type="realpoint">36.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,140.000000</property>
    <property name="event" type="event_info">
     <reactor>5dee543b-3abf-1921-558a</reactor>
     <event>onEqual</event>
@@ -211,7 +211,7 @@
  </object>
  <object type="Reactor">
   <property name="id" type="long">2464203</property>
-  <property name="relative_position" type="realpoint">-536.000000,-402.000000</property>
+  <property name="relative_position" type="realpoint">-639.000000,-390.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>Scene</reactor>
    <typename>node.scene</typename>
@@ -261,7 +261,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">4341494</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>5dee23c4-19c5-8ad7-8c8f</reactor>
     <event>onHit</event>

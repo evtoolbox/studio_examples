@@ -15,13 +15,13 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Маркерная технология ВКЛЮЧЕНА"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
   <object type="Action">
    <property name="id" type="long">513300</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>58f0cb1e-887f-8a9b-4364</reactor>
     <action>setRect_color</action>
@@ -37,19 +37,19 @@
   </object>
   <object type="Action">
    <property name="id" type="long">8350085</property>
-   <property name="relative_position" type="realpoint">0.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,108.000000</property>
    <property name="action" type="action_info">
     <reactor>58f0cb1e-887f-8a9b-4364</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Маркерная технология ВЫКЛЮЧЕНА"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
   <object type="Action">
    <property name="id" type="long">4019379</property>
-   <property name="relative_position" type="realpoint">0.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,140.000000</property>
    <property name="action" type="action_info">
     <reactor>58f0cb1e-887f-8a9b-4364</reactor>
     <action>setRect_color</action>
@@ -82,7 +82,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">2186275</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <action>disable</action>
@@ -91,7 +91,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">4479984</property>
-   <property name="relative_position" type="realpoint">36.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,108.000000</property>
    <property name="event" type="event_info">
     <reactor>57f528fb-366d-c13a-334a</reactor>
     <event>onDisabled</event>
@@ -113,7 +113,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">5670933</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">Включена</property>
   </object>
  </object>
@@ -131,7 +131,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">6773458</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">Выключена</property>
   </object>
  </object>
@@ -150,13 +150,13 @@
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Безмаркерная технология ВКЛЮЧЕНА"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
   <object type="Action">
    <property name="id" type="long">384155</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>58f0cb24-c46e-3de6-36ce</reactor>
     <action>setRect_color</action>
@@ -172,19 +172,19 @@
   </object>
   <object type="Action">
    <property name="id" type="long">6073533</property>
-   <property name="relative_position" type="realpoint">0.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,108.000000</property>
    <property name="action" type="action_info">
     <reactor>58f0cb24-c46e-3de6-36ce</reactor>
     <action>setText_value</action>
     <arguments>
      <argument name="value" type="String" value="Безмаркерная технология ВЫКЛЮЧЕНА"/>
-     <argument name="concatenate" type="Bool"/>
+     <argument name="concatenate" type="Bool" value="false"/>
     </arguments>
    </property>
   </object>
   <object type="Action">
    <property name="id" type="long">5452770</property>
-   <property name="relative_position" type="realpoint">0.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,140.000000</property>
    <property name="action" type="action_info">
     <reactor>58f0cb24-c46e-3de6-36ce</reactor>
     <action>setRect_color</action>
@@ -217,7 +217,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">6169288</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>58f0cc41-1e6e-7896-d173</reactor>
     <action>enable</action>
@@ -226,7 +226,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">586202</property>
-   <property name="relative_position" type="realpoint">0.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,108.000000</property>
    <property name="action" type="action_info">
     <reactor>58f0cc41-1e6e-7896-d173</reactor>
     <action>disable</action>
@@ -274,7 +274,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">7989538</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>TrackingSystem</reactor>
     <action>disableImage</action>
@@ -283,7 +283,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">3161986</property>
-   <property name="relative_position" type="realpoint">0.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,108.000000</property>
    <property name="action" type="action_info">
     <reactor>TrackingSystem</reactor>
     <action>enableDashDot</action>
@@ -292,7 +292,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">950468</property>
-   <property name="relative_position" type="realpoint">0.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,140.000000</property>
    <property name="action" type="action_info">
     <reactor>TrackingSystem</reactor>
     <action>disableDashDot</action>
@@ -318,7 +318,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">8236826</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>TrackingSystem</reactor>
     <event>onDashDotDisabled</event>
@@ -327,7 +327,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">2998103</property>
-   <property name="relative_position" type="realpoint">36.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,108.000000</property>
    <property name="event" type="event_info">
     <reactor>TrackingSystem</reactor>
     <event>onImageEnabled</event>
@@ -336,7 +336,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">9347902</property>
-   <property name="relative_position" type="realpoint">36.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,140.000000</property>
    <property name="event" type="event_info">
     <reactor>TrackingSystem</reactor>
     <event>onImageDisabled</event>
@@ -375,7 +375,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">2645306</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">Выключена</property>
   </object>
  </object>
@@ -393,7 +393,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">6162898</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">Включена</property>
   </object>
  </object>
@@ -415,7 +415,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">3737484</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>TrackingSystem</reactor>
     <event>onDashDotDisabled</event>
@@ -424,7 +424,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">9748250</property>
-   <property name="relative_position" type="realpoint">36.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,108.000000</property>
    <property name="event" type="event_info">
     <reactor>TrackingSystem</reactor>
     <event>onImageEnabled</event>
@@ -433,7 +433,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">6765973</property>
-   <property name="relative_position" type="realpoint">36.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,140.000000</property>
    <property name="event" type="event_info">
     <reactor>TrackingSystem</reactor>
     <event>onImageDisabled</event>

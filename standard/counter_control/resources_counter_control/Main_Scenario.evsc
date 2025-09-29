@@ -44,7 +44,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">847563000</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>5866414c-5a3b-b4b8-7e78</reactor>
     <action>subtract</action>
@@ -55,7 +55,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">95685274</property>
-   <property name="relative_position" type="realpoint">0.000000,110.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,108.000000</property>
    <property name="action" type="action_info">
     <reactor>5866414c-5a3b-b4b8-7e78</reactor>
     <action>add</action>
@@ -66,7 +66,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">370387162</property>
-   <property name="relative_position" type="realpoint">0.000000,143.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,140.000000</property>
    <property name="action" type="action_info">
     <reactor>5866414c-5a3b-b4b8-7e78</reactor>
     <action>add</action>
@@ -77,7 +77,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">531097614</property>
-   <property name="relative_position" type="realpoint">0.000000,176.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,172.000000</property>
    <property name="action" type="action_info">
     <reactor>5866414c-5a3b-b4b8-7e78</reactor>
     <action>resetValue</action>

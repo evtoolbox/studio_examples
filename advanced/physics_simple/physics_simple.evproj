@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.5.2">
+<Project version="3.6.0" version-extra="devel_x64">
  <presentationParams>
   <parameter name="enableStatistics" value="false"/>
   <parameter name="flipFrames">
@@ -225,7 +225,22 @@
    </parameter>
   </reactor>
  </reactors>
- <exportParameters/>
+ <exportParameters last="rpm">
+  <parameters format="apk" appName="physics_simple - EVI Android App" appId="physics.simple" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/physics_simple.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a" minApi="24" targetApi="36">
+   <presets>
+    <preset id="user" name="User Preset">
+     <files>
+      <file name="AndroidManifest.xml" path="${ANDROID_DATA_DIR}/AndroidManifest.xml.in"/>
+      <file name="build.gradle" path="${ANDROID_DATA_DIR}/build.gradle.in"/>
+      <file name="gradle.properties" path="${ANDROID_DATA_DIR}/gradle.properties.in"/>
+      <file name="local.properties" path="${ANDROID_DATA_DIR}/local.properties.in"/>
+     </files>
+    </preset>
+   </presets>
+  </parameters>
+  <parameters format="exe" appName="physics_simple - EVI Windows App" appId="physics.simple" arch="x64" version="1.0" build="1" filename="${PROJECT_DIR}/physics_simple.exe" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" targetPlatform="1"/>
+  <parameters format="rpm" name="ru.eligovision.PhysicsSimple" version="0.0.1" summary="Пример с подключением физики с использованием библиотеки Bullet Physics." license="MIT" arch="armv7hl" description="Пример с подключением физики с использованием библиотеки Bullet Physics. Разноцветные кубики падают на плоскость." verboseName="Physics example" verboseNameRu="Физика объектов пример" cert="${STUDIO_DATA_DIR}/aurora/cert/regular_cert.pem" key="${STUDIO_DATA_DIR}/aurora/cert/regular_key.pem" dirname="${PROJECT_DIR}" qmldir="" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" coverIcon="${STUDIO_DATA_DIR}/AppIcon.png" permissions="Audio;Camera;DeviceInfo;UserDirs" orientations="All"/>
+ </exportParameters>
  <workspace>
   <preview platform="1"/>
  </workspace>

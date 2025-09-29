@@ -18,7 +18,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">7946586</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>64b7e807-14bb-3c3c-9a58</reactor>
     <action>start</action>
@@ -231,7 +231,7 @@
  </object>
  <object type="Reactor">
   <property name="id" type="long">5415405</property>
-  <property name="relative_position" type="realpoint">-32.000000,-193.000000</property>
+  <property name="relative_position" type="realpoint">-32.000000,-194.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>64b7e423-c5d5-662c-63a3</reactor>
    <typename>rect.image</typename>
@@ -485,7 +485,7 @@
   </object>
   <object type="Action">
    <property name="id" type="long">2336424</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="action" type="action_info">
     <reactor>64b7e631-7ecb-ccbe-79c1</reactor>
     <action>add</action>

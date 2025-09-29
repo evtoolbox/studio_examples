@@ -94,7 +94,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">8401951</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>58d2460e-8a71-7984-a849</reactor>
     <event>onMovedCloser</event>
@@ -107,7 +107,7 @@
  </object>
  <object type="Switch">
   <property name="id" type="long">3800287</property>
-  <property name="relative_position" type="realpoint">399.000000,-505.000000</property>
+  <property name="relative_position" type="realpoint">400.000000,-505.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d2467f-96de-df17-c23a</reactor>
    <typename>switch</typename>
@@ -119,7 +119,7 @@
   </object>
   <object type="SwitchItem">
    <property name="id" type="long">6959242</property>
-   <property name="relative_position" type="realpoint">0.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">0.000000,76.000000</property>
    <property name="switch_item" type="switch_item_info">скрыт</property>
   </object>
  </object>
@@ -165,7 +165,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">4043092</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>58d244c4-5ed3-a89f-a351</reactor>
     <event>onAnimationFinish</event>
@@ -211,7 +211,7 @@
  </object>
  <object type="Reactor">
   <property name="id" type="long">5683173</property>
-  <property name="relative_position" type="realpoint">790.000000,-504.000000</property>
+  <property name="relative_position" type="realpoint">790.000000,-505.000000</property>
   <property name="reactor" type="reactor_info">
    <reactor>58d2460e-8a71-7984-a849</reactor>
    <typename>distance</typename>
@@ -298,7 +298,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">7029310</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>58d29194-21b9-deea-ef7a</reactor>
     <event>onAlarm</event>
@@ -360,7 +360,7 @@
   </object>
   <object type="Event">
    <property name="id" type="long">8459877</property>
-   <property name="relative_position" type="realpoint">36.000000,77.000000</property>
+   <property name="relative_position" type="realpoint">36.000000,76.000000</property>
    <property name="event" type="event_info">
     <reactor>58d244bd-d4ab-164c-4183</reactor>
     <event>onHidden</event>
