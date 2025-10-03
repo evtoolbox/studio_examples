@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.6.0" version-extra="devel_x64">
+<Project version="3.6.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -19,7 +19,7 @@
   </parameter>
  </presentationParams>
  <resources dir="resources_swipe">
-  <resource internal="false" id="64467807-5cc-1a3-ffb-de5" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="ev_logo.png">
+  <resource internal="false" id="64467807-5cc-1a3-ffb-de5" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="ev_logo.png">
    <filename value="ev_logo.png"/>
   </resource>
   <resource internal="false" id="647077ad-5cf-47f-84d-441" kind="script" local="true" forceExport="true" rawAssetsExport="false" name="main.lua">
@@ -28,31 +28,31 @@
   <resource internal="false" id="647ee567-bd7-479-6d3-6a4" kind="script" local="true" forceExport="true" rawAssetsExport="false" name="corousel.lua">
    <filename value="corousel.lua"/>
   </resource>
-  <resource internal="false" id="6481a781-44f-a63-56a-178" kind="image" local="true" forceExport="true" rawAssetsExport="false" name="circle_new2.png">
+  <resource internal="false" id="6481a781-44f-a63-56a-178" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="circle_new2.png">
    <filename value="circle_new2.png"/>
   </resource>
-  <resource internal="false" id="6481e0e2-a8e-ef3-e17-726" kind="image" local="true" forceExport="true" rawAssetsExport="false" name="circle_new3.png">
+  <resource internal="false" id="6481e0e2-a8e-ef3-e17-726" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="circle_new3.png">
    <filename value="circle_new3.png"/>
   </resource>
-  <resource internal="false" id="64a2a35d-397-b66-33a-c64" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="circle_new1.png">
+  <resource internal="false" id="64a2a35d-397-b66-33a-c64" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="circle_new1.png">
    <filename value="circle_new1.png"/>
   </resource>
-  <resource internal="false" id="64e8a703-641-8c9-fd3-d4a" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="image_fon_slide.png">
+  <resource internal="false" id="64e8a703-641-8c9-fd3-d4a" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="image_fon_slide.png">
    <filename value="image_fon_slide.png"/>
   </resource>
-  <resource internal="false" id="64f87bed-ca3-3ce-2fe-2e7" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="image_fon.png">
+  <resource internal="false" id="64f87bed-ca3-3ce-2fe-2e7" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="image_fon.png">
    <filename value="image_fon.png"/>
   </resource>
-  <resource internal="false" id="64f87d3f-4cc-bea-7b9-213" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="button_menu.png">
+  <resource internal="false" id="64f87d3f-4cc-bea-7b9-213" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="button_menu.png">
    <filename value="button_menu.png"/>
   </resource>
-  <resource internal="false" id="64f9902c-be3-d62-aad-e3e" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="button_link.png">
+  <resource internal="false" id="64f9902c-be3-d62-aad-e3e" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="button_link.png">
    <filename value="button_link.png"/>
   </resource>
-  <resource internal="false" id="64f99555-b4e-19a-b98-e7f" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="button_back.png">
+  <resource internal="false" id="64f99555-b4e-19a-b98-e7f" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="button_back.png">
    <filename value="button_back.png"/>
   </resource>
-  <resource internal="false" id="64f99e97-bef-3af-24a-b41" kind="audio" local="true" forceExport="false" rawAssetsExport="false" name="audio_click.wav">
+  <resource internal="false" id="64f99e97-bef-3af-24a-b41" kind="audio" local="true" forceExport="false" rawAssetsExport="true" name="audio_click.wav">
    <filename value="audio_click.wav"/>
   </resource>
   <resource internal="true" id="Exo2-Bold" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="Exo2-Bold.ttf">
@@ -100,15 +100,14 @@
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
-    <item value="63caad7d-c461-4444-2187"/>
-    <item value="63e3864b-5f6f-bf28-6ad7"/>
+    <item value="68df7d8b-bf44-7fde-8f9e"/>
    </parameter>
    <parameter name="layer" value="0.01"/>
    <parameter name="rect.position" value="center-center"/>
    <parameter name="rect.size">
     <field name="x" value="100.000000%"/>
     <field name="y" value="100.000000%"/>
-    <field name="policy" value="simple"/>
+    <field name="policy" value="min_aspect"/>
    </parameter>
    <parameter name="rect.color">
     <field name="red" value="0"/>
@@ -139,10 +138,10 @@
     <item value="63d28870-3579-4ce5-87cf"/>
    </parameter>
    <parameter name="layer" value="0.02"/>
-   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.position" value="left-bottom"/>
    <parameter name="rect.size">
-    <field name="x" value="30.000000%"/>
-    <field name="y" value="keep-aspect"/>
+    <field name="x" value="40.000000%vh"/>
+    <field name="y" value="10.000000%v"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -152,8 +151,8 @@
     <field name="alpha" value="0"/>
    </parameter>
    <parameter name="rect.shift">
-    <field name="x" value="-29.000000%"/>
-    <field name="y" value="-28.000000%"/>
+    <field name="x" value="5.000000%v"/>
+    <field name="y" value="5.000000%v"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -163,7 +162,6 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="image.resourceId" value="64f87d3f-4cc-bea-7b9-213"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="63d28870-3579-4ce5-87cf" name="Text_information" type="rect.text" enabled="true">
    <parameter name="nodeMask">
@@ -196,7 +194,7 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="2.800000%vw"/>
+   <parameter name="text.font_size" value="3.000000%v"/>
    <parameter name="text.color">
     <field name="red" value="1"/>
     <field name="green" value="1"/>
@@ -217,8 +215,8 @@
    <parameter name="layer" value="0.02"/>
    <parameter name="rect.position" value="right-top"/>
    <parameter name="rect.size">
-    <field name="x" value="8.000000%"/>
-    <field name="y" value="keep-aspect"/>
+    <field name="x" value="10.000000%vh"/>
+    <field name="y" value="10.000000%v"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -282,6 +280,7 @@
    <parameter name="text.auto_wrap" value="false"/>
    <parameter name="text.line_spacing" value="0.15"/>
    <parameter name="text.value" value="КАК ИГРАТЬ"/>
+   <view expanded="true"/>
   </reactor>
   <reactor id="63d29557-f995-f654-fc53" name="Title_slide1" type="rect.text" enabled="true">
    <parameter name="nodeMask">
@@ -290,7 +289,7 @@
    </parameter>
    <parameter name="children"/>
    <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="90.000000%v"/>
     <field name="y" value="keep-aspect"/>
@@ -304,7 +303,7 @@
    </parameter>
    <parameter name="rect.shift">
     <field name="x" value="0.000000%"/>
-    <field name="y" value="21.000000%v"/>
+    <field name="y" value="-20.000000%v"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -335,8 +334,8 @@
    <parameter name="layer" value="0.01"/>
    <parameter name="rect.position" value="right-bottom"/>
    <parameter name="rect.size">
-    <field name="x" value="15.000000%"/>
-    <field name="y" value="keep-aspect"/>
+    <field name="x" value="keep-aspect"/>
+    <field name="y" value="10.000000%v"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -347,7 +346,7 @@
    </parameter>
    <parameter name="rect.shift">
     <field name="x" value="-5.000000%"/>
-    <field name="y" value="0.000000%"/>
+    <field name="y" value="5.000000%"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -360,15 +359,17 @@
   </reactor>
   <reactor id="64415322-fda9-e447-3c8f" name="Information" type="node.rect" enabled="true">
    <parameter name="nodeMask">
-    <field name="mask" value="0x00000010"/>
+    <field name="mask" value="0x0000001F"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
-    <item value="64f98bde-c3d8-2535-a695"/>
     <item value="63d294e5-35ab-919b-dbb5"/>
     <item value="63d2943a-74e7-39be-f23f"/>
+    <item value="64f98bde-c3d8-2535-a695"/>
     <item value="648057e3-6ce3-4fa2-563c"/>
     <item value="64415393-fecf-5b3e-fe79"/>
+    <item value="68df82e8-56c3-7b14-2eea"/>
+    <item value="68df82e8-4efd-e1ef-c272"/>
     <item value="6481a532-5855-c224-efbb"/>
    </parameter>
    <parameter name="layer" value="0.01"/>
@@ -395,6 +396,7 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
   </reactor>
   <reactor id="64415393-fecf-5b3e-fe79" name="corousel" type="node.rect" enabled="true">
    <parameter name="nodeMask">
@@ -430,7 +432,6 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="6441670d-6f46-1bf8-a4d6" name="corousel_page_1" type="node.rect" enabled="true">
    <parameter name="nodeMask">
@@ -465,7 +466,6 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="6442d4e9-d488-3ff9-7712" name="corousel_page_2" type="node.rect" enabled="true">
    <parameter name="nodeMask">
@@ -473,8 +473,8 @@
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
-    <item value="64f9980e-d68e-261c-1561"/>
     <item value="64f997dc-1ef4-8cfa-3966"/>
+    <item value="64f9980e-d68e-261c-1561"/>
    </parameter>
    <parameter name="layer" value="0.01"/>
    <parameter name="rect.position" value="left-center"/>
@@ -500,7 +500,6 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="6442d702-a8c7-c784-212f" name="corousel_page_3" type="node.rect" enabled="true">
    <parameter name="nodeMask">
@@ -535,7 +534,6 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="64493a79-c2d1-c5fd-bf96" name="Audio_click" type="audio" enabled="true">
    <parameter name="audioResource" value="64f99e97-bef-3af-24a-b41"/>
@@ -544,7 +542,7 @@
    <parameter name="playMode" value="once"/>
    <parameter name="liveDecoding" value="false"/>
   </reactor>
-  <reactor id="648057e3-6ce3-4fa2-563c" name="Fon" type="rect.image" enabled="true">
+  <reactor id="648057e3-6ce3-4fa2-563c" name="Backgound" type="rect.image" enabled="true">
    <parameter name="nodeMask">
     <field name="mask" value="0x0000001F"/>
     <field name="unchangedBits" value="0x00000000"/>
@@ -555,7 +553,7 @@
    <parameter name="rect.size">
     <field name="x" value="100.000000%"/>
     <field name="y" value="100.000000%"/>
-    <field name="policy" value="simple"/>
+    <field name="policy" value="min_aspect"/>
    </parameter>
    <parameter name="rect.color">
     <field name="red" value="0"/>
@@ -576,14 +574,14 @@
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="image.resourceId" value="64e8a703-641-8c9-fd3-d4a"/>
   </reactor>
-  <reactor id="6481a532-5855-c224-efbb" name="Scroll" type="rect.image" enabled="true">
+  <reactor id="6481a532-5855-c224-efbb" name="Scroll_indicator_3" type="rect.image" enabled="true">
    <parameter name="nodeMask">
-    <field name="mask" value="0x0000001F"/>
+    <field name="mask" value="0x00000010"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children"/>
    <parameter name="layer" value="0.02"/>
-   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.position" value="center-bottom"/>
    <parameter name="rect.size">
     <field name="x" value="6.000000%v"/>
     <field name="y" value="keep-aspect"/>
@@ -596,8 +594,8 @@
     <field name="alpha" value="0"/>
    </parameter>
    <parameter name="rect.shift">
-    <field name="x" value="0.000000%h"/>
-    <field name="y" value="-42.000000%v"/>
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="5.000000%v"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -606,7 +604,8 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
-   <parameter name="image.resourceId" value="64a2a35d-397-b66-33a-c64"/>
+   <parameter name="image.resourceId" value="6481e0e2-a8e-ef3-e17-726"/>
+   <view expanded="true"/>
   </reactor>
   <reactor id="64e8a7bd-fd7a-f1d6-75d1" name="Text_slide1" type="rect.text" enabled="true">
    <parameter name="nodeMask">
@@ -615,7 +614,7 @@
    </parameter>
    <parameter name="children"/>
    <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="90.000000%v"/>
     <field name="y" value="keep-aspect"/>
@@ -629,7 +628,7 @@
    </parameter>
    <parameter name="rect.shift">
     <field name="x" value="0.000000%"/>
-    <field name="y" value="0.000000%v"/>
+    <field name="y" value="-40.000000%v"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -639,16 +638,16 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
    <parameter name="text.color">
     <field name="red" value="0"/>
     <field name="green" value="0"/>
     <field name="blue" value="0"/>
-    <field name="alpha" value="0.1"/>
+    <field name="alpha" value="1"/>
    </parameter>
    <parameter name="text.align" value="left-center"/>
    <parameter name="text.auto_wrap" value="true"/>
-   <parameter name="text.line_spacing" value="0.675"/>
+   <parameter name="text.line_spacing" value="0.5"/>
    <parameter name="text.value" value="Единая среда разработки полноценных проектов дополненной  и виртуальной реальности для маркетинга и образования без написания программного кода."/>
   </reactor>
   <reactor id="64f98bde-b7fc-9b76-65f9" name="Text_link" type="rect.text" enabled="true">
@@ -682,7 +681,7 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.font_size" value="3.000000%v"/>
    <parameter name="text.color">
     <field name="red" value="0.49803921568627"/>
     <field name="green" value="0.41176470588235"/>
@@ -703,10 +702,10 @@
     <item value="64f98bde-b7fc-9b76-65f9"/>
    </parameter>
    <parameter name="layer" value="0.02"/>
-   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.position" value="right-bottom"/>
    <parameter name="rect.size">
-    <field name="x" value="25.000000%"/>
-    <field name="y" value="keep-aspect"/>
+    <field name="x" value="40.000000%vh"/>
+    <field name="y" value="10.000000%v"/>
     <field name="policy" value="simple"/>
    </parameter>
    <parameter name="rect.color">
@@ -716,8 +715,8 @@
     <field name="alpha" value="0"/>
    </parameter>
    <parameter name="rect.shift">
-    <field name="x" value="28.000000%"/>
-    <field name="y" value="16.000000%"/>
+    <field name="x" value="-5.000000%"/>
+    <field name="y" value="5.000000%"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -727,7 +726,6 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="image.resourceId" value="64f9902c-be3-d62-aad-e3e"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="64f997dc-1ef4-8cfa-3966" name="Title_slide2" type="rect.text" enabled="true">
    <parameter name="nodeMask">
@@ -736,7 +734,7 @@
    </parameter>
    <parameter name="children"/>
    <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="90.000000%v"/>
     <field name="y" value="keep-aspect"/>
@@ -750,7 +748,7 @@
    </parameter>
    <parameter name="rect.shift">
     <field name="x" value="0.000000%"/>
-    <field name="y" value="22.000000%v"/>
+    <field name="y" value="-20.000000%v"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -779,7 +777,7 @@
    </parameter>
    <parameter name="children"/>
    <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="90.000000%v"/>
     <field name="y" value="keep-aspect"/>
@@ -793,7 +791,7 @@
    </parameter>
    <parameter name="rect.shift">
     <field name="x" value="0.000000%"/>
-    <field name="y" value="-4.000000%v"/>
+    <field name="y" value="-40.000000%v"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -803,7 +801,7 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
    <parameter name="text.color">
     <field name="red" value="0"/>
     <field name="green" value="0"/>
@@ -812,7 +810,7 @@
    </parameter>
    <parameter name="text.align" value="left-center"/>
    <parameter name="text.auto_wrap" value="true"/>
-   <parameter name="text.line_spacing" value="0.675"/>
+   <parameter name="text.line_spacing" value="0.5"/>
    <parameter name="text.value" value="Единственный конструктор, в котором вы можете создавать проекты на базе сразу двух технологий AR и VR при помощи визуально-блочного и скриптового программирования и сразу собирать их в приложения для запуска на целевых устройствах"/>
   </reactor>
   <reactor id="64f998fd-4875-bd12-cb71" name="Text_slide3" type="rect.text" enabled="true">
@@ -822,7 +820,7 @@
    </parameter>
    <parameter name="children"/>
    <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="90.000000%v"/>
     <field name="y" value="keep-aspect"/>
@@ -836,7 +834,7 @@
    </parameter>
    <parameter name="rect.shift">
     <field name="x" value="0.000000%"/>
-    <field name="y" value="5.000000%v"/>
+    <field name="y" value="-40.000000%v"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -846,7 +844,7 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="text.font_id" value="Exo2-Bold"/>
-   <parameter name="text.font_size" value="5.000000%v"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
    <parameter name="text.color">
     <field name="red" value="0"/>
     <field name="green" value="0"/>
@@ -855,7 +853,7 @@
    </parameter>
    <parameter name="text.align" value="left-center"/>
    <parameter name="text.auto_wrap" value="true"/>
-   <parameter name="text.line_spacing" value="0.675"/>
+   <parameter name="text.line_spacing" value="0.5"/>
    <parameter name="text.value" value="Все, что вам нужно, чтобы создать ваш первый AR и VR проект в конструкторе EV Toolbox за один день."/>
   </reactor>
   <reactor id="64f99904-3518-f739-e68c" name="Title_slide3" type="rect.text" enabled="true">
@@ -865,7 +863,7 @@
    </parameter>
    <parameter name="children"/>
    <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="x" value="90.000000%v"/>
     <field name="y" value="keep-aspect"/>
@@ -879,7 +877,7 @@
    </parameter>
    <parameter name="rect.shift">
     <field name="x" value="0.000000%"/>
-    <field name="y" value="22.000000%v"/>
+    <field name="y" value="-20.000000%v"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000px"/>
@@ -901,8 +899,109 @@
    <parameter name="text.line_spacing" value="0.1"/>
    <parameter name="text.value" value="База знаний для работы в EV Toolbox"/>
   </reactor>
+  <reactor id="68df7d8b-bf44-7fde-8f9e" name="Container" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="63caad7d-c461-4444-2187"/>
+    <item value="63e3864b-5f6f-bf28-6ad7"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%v"/>
+    <field name="y" value="100.000000%v"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="68df82e8-4efd-e1ef-c272" name="Scroll_indicator_2" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.02"/>
+   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.size">
+    <field name="x" value="6.000000%v"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="5.000000%v"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="6481a781-44f-a63-56a-178"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="68df82e8-56c3-7b14-2eea" name="Scroll_indicator_1" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.02"/>
+   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.size">
+    <field name="x" value="6.000000%v"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="5.000000%v"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="64a2a35d-397-b66-33a-c64"/>
+   <view expanded="true"/>
+  </reactor>
  </reactors>
- <exportParameters last="rpm">
+ <exportParameters last="apk">
   <parameters format="apk" appName="swipe - EVI Android App" appId="swipe" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="5" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a" minApi="24" targetApi="36">
    <presets>
     <preset id="user" name="User Preset">
@@ -917,7 +1016,7 @@
   </parameters>
   <parameters format="app" appName="swipe - EVI macOS App" appId="swipe" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.app" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="None" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" retinaSupport="true" bundleName="swipe - EVI macOS App" cameraDescription="Дополненная реальность ждет!"/>
   <parameters format="exe" appName="swipe - EVI Windows App" appId="swipe" arch="x64" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.exe" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" targetPlatform="1"/>
-  <parameters format="rpm" name="ru.eligovision.Swipe" version="0.0.1" summary="Пример с элементом интерфейса &quot;Карусель&quot;." license="MIT" arch="armv7hl" description="Пример с элементом интерфейса &quot;Карусель&quot;. Можно перетягивать части интерфейса влево и вправо, переходя к следующему тексту." verboseName="Swipe example" verboseNameRu="Карусель пример" cert="${STUDIO_DATA_DIR}/aurora/cert/regular_cert.pem" key="${STUDIO_DATA_DIR}/aurora/cert/regular_key.pem" dirname="${PROJECT_DIR}" qmldir="" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" coverIcon="${STUDIO_DATA_DIR}/AppIcon.png" permissions="Audio;Camera;DeviceInfo;UserDirs" orientations="All"/>
+  <parameters format="rpm" name="ru.eligovision.Swipe" version="0.0.1" summary="Пример с элементом интерфейса &quot;Карусель&quot;." license="MIT" arch="armv7hl" description="Пример с элементом интерфейса &quot;Карусель&quot;. Можно перетягивать части интерфейса влево и вправо, переходя к следующему тексту." verboseName="Swipe example" verboseNameRu="Карусель пример" cert="${STUDIO_DATA_DIR}/aurora/cert/regular_cert.pem" key="${STUDIO_DATA_DIR}/aurora/cert/regular_key.pem" dirname="${PROJECT_DIR}" qmldir="/Users/kos/EligoVision/git/ev_evi/build/darwin.advanced.int/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//aurora/qml" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" coverIcon="${STUDIO_DATA_DIR}/AppIcon.png" permissions="Audio;Camera;DeviceInfo;UserDirs" orientations="All"/>
  </exportParameters>
  <workspace>
   <preview platform="1"/>

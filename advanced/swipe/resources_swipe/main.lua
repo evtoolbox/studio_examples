@@ -41,7 +41,15 @@ page_info:hide(0x0)
 require "corousel.lua"
 
 local corousel_ctrl_reactror = getReactorOrDie("corousel")
-local corousel = Corousel(corousel_ctrl_reactror)
+local audio = getReactorOrDie("Audio_click")
+
+local onElementChangedCallback = function(current, prev)
+	audio:play()
+	getReactorOrDie("Scroll_indicator_" .. prev):hide()
+	getReactorOrDie("Scroll_indicator_" .. current):show()
+end
+
+local corousel = Corousel(corousel_ctrl_reactror, onElementChangedCallback)
 
 
 

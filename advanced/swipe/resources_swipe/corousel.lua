@@ -1,9 +1,10 @@
 local logger = set_lua_logger("Corousel")
-local audio = reactorController:getReactorByName("Audio_click")
-local image_insrt = reactorController:getReactorByName("Scroll")
 
 Corousel = class("Corousel")
-	:field("reactor")	-- must be rect
+	:field("reactor")				-- must be rect reactor
+	:field("onElementChanged")		-- must be a function
+	:field("currentElement")
+	:field("nextElement")
 
 	:field("_startPos", nil)
 	:field("_pushPos", nil)
@@ -14,8 +15,12 @@ Corousel = class("Corousel")
 :done()
 
 
-function Corousel:_construct(reactor)
-	self.reactor = reactor
+function Corousel:_construct(reactor, onElementChanged)
+	self.reactor			= reactor
+	self.onElementChanged	= onElementChanged
+	self.currentElement		= 1
+	self.nextElement		= 1
+
 	self.isMultitouch = false
 
 	-- NOTE: All children must be rect with 100v width/height
@@ -54,12 +59,10 @@ function Corousel:_construct(reactor)
 		self.reactor.node:setUpdateCallback(nil)
 
 		local pos = self._startPos + osg.Vec3(shift_x, 0.0, 0.0)
-		
 
 		-- constraints
 		local elementsCount = #self.reactor.children
 		local x_min = -self.reactor.rect.sizeRaw.x*(elementsCount - 1)/elementsCount
-		
 		-- local x_prev = self.reactor.node:getPosition():x()
 		local x_curr = pos:x()
 		x_curr = math.min(math.max(x_min, x_curr), 0.0)
@@ -77,11 +80,9 @@ function Corousel:_construct(reactor)
 
 		local x_start = pos:x()
 
-
 		local x_finish = 0.0	-- TODO: nearest to
 		local elementsCount = #self.reactor.children
 		local elementWidth =  self.reactor.rect.sizeRaw.x/elementsCount
-		
 
 		local distance = elementWidth*(elementsCount + 1)
 
@@ -92,7 +93,6 @@ function Corousel:_construct(reactor)
 		for _, v in pairs(velocityArr) do
 			if not v1.t or math.abs(v.t - time) < math.abs(v.t - v1.t) then
 				v1.t, v1.x = v.t, v.x
-				
 			end
 			if not v2.t or math.abs(v.t - time - 0.2) < math.abs(v.t - v2.t) then
 				v2.t, v2.x = v.t, v.x
@@ -101,25 +101,19 @@ function Corousel:_construct(reactor)
 		velocityArr = {}
 
 		local moveVelocity = v1.t and v2.t and (v1.t - v2.t) > 0.0 and (v2.x - v1.x)/(v2.t - v1.t) or 0.0
-		if moveVelocity == 0.0 then
-			return
-		end
-
 		local vsign = moveVelocity < 0 and -1.0 or 1.0
 
-		-- logger:error("v1.t = ", v1.t, "; v2.t = ", v2.t)
+		-- logger:debug("v1.t = ", v1.t, "; v2.t = ", v2.t)
 
 		-- NOTE: first margin + velocity approx
 		local x_start_predicted = x_start + vsign*math.min(math.abs(moveVelocity*0.5), elementWidth/2)	-- TODO: configurable
-		-- logger:error("el width = ", elementWidth, "; moveVelocity = ", moveVelocity, "start = ", x_start, "; predicted = ", x_start_predicted)
-		local fSlide = 0
-		for i = 0,  elementsCount - 1 do
+		-- logger:debug("el width = ", elementWidth, "; moveVelocity = ", moveVelocity, "start = ", x_start, "; predicted = ", x_start_predicted)
+		for i = 0, elementsCount - 1 do
 			local d = math.abs(x_start_predicted + i*elementWidth)	-- margin!!!
 			if d < distance then
 				distance = d
 				x_finish = -i*elementWidth
-				fSlide = i;
-				
+				self.nextElement = i + 1
 			end
 		end
 
@@ -128,35 +122,27 @@ function Corousel:_construct(reactor)
 
 		local stabilizationAnimationCallback = osg.NodeCallback(function()
 			local time = viewer:getFrameStamp():getSimulationTime()
- 
+
 			if not startTime then
 				startTime = time
-				period = math.max(0.25*math.abs(x_finish - x_start), 0.1)	-- TODO: coeff
-				--logger:error("PERIOD = ", period)
+				period = math.max(0.75*math.abs(x_finish - x_start), 0.1)	-- TODO: coeff
+				--logger:debug("el period = ", period)
 			end
 
 			local elapsed = time - startTime
 
 			if elapsed > period then
 				elapsed = period
-				self.reactor.node:setUpdateCallback(nil)
-				
-				
-				local resName= "circle_new" .. tostring(fSlide+ 1) .. ".png"
-				logger:error(resName)
-				local res = resourceRepository:getResourceByName(resName)
-				logger:error(tostring(res))
-
-				local reactor = reactorController:getReactorByName("Scroll")
-				if res then
-					reactor.image.resourceId = res.id
+				if self.currentElement ~= self.nextElement then
+					if self.onElementChanged then
+						self.onElementChanged(self.nextElement, self.currentElement)
+					end
+					self.currentElement = self.nextElement
 				end
-
+				self.reactor.node:setUpdateCallback(nil)
 			end
 
 			local k1 = elapsed/period
---			k1 = k1*k1
---			k1 = k1*k1*(1.5 - k1)*2.0
 			k1 = 0.5 + math.sin((k1 - 0.5)*math.pi)/2
 			local k2 = 1.0 - k1
 			local x = x_finish*k1 + x_start*k2
@@ -164,13 +150,11 @@ function Corousel:_construct(reactor)
 			local p = self.reactor.node:getPosition()
 			p:x(x)
 			self.reactor.node:setPosition(p)
-			
 
 			return true
 		end)
 
 		self.reactor.node:setUpdateCallback(stabilizationAnimationCallback)
-		audio:play()
 	end
 
 	self.eventHandler = osgGA.GUIEventHandler(function(ea)
@@ -205,7 +189,6 @@ function Corousel:_construct(reactor)
 				local tp	= touchData:get(i)
 				local phase	= tp:getTouchPhase()
 				local id	= tp:getId()
-				
 
 				if not self._touchId and phase == osgGA.GUIEventAdapter.TOUCH_BEGAN then
 					-- Interaction begin
@@ -215,9 +198,6 @@ function Corousel:_construct(reactor)
 					self._touchId		= id
 					self._pushPos		= getTouchPosition(tp)
 					self._startPos		= self.reactor.node:getPosition()
-					
-					
-				
 				end
 
 				-- logger:error("id = ", id, "; active = ", self._touchId)
@@ -229,11 +209,10 @@ function Corousel:_construct(reactor)
 					local currentPos = getTouchPosition(tp)
 					local shift_x = currentPos:x() - self._pushPos:x()
 					move(shift_x)
-					
+
 					if phase ~= osgGA.GUIEventAdapter.TOUCH_ENDED then
 						activeTouchFound = true
-						audio:play()
-					end 
+					end
 
 					break
 				end
@@ -246,7 +225,6 @@ function Corousel:_construct(reactor)
 				self._touchId	= nil
 				self._startPos	= nil
 				moveEnd()
-			
 			end
 
 		elseif not self.isMultitouch then
@@ -272,13 +250,11 @@ function Corousel:_construct(reactor)
 			if eventType == osgGA.GUIEventAdapter.PUSH then
 				self._pushPos = getCursorPosition()
 				self._startPos = self.reactor.node:getPosition()
-				move(0.0)	-- stoppn
-				
+				move(0.0)	-- stop
 			elseif eventType == osgGA.GUIEventAdapter.RELEASE then
 				self._pushPos	= nil
 				self._startPos	= nil
 				moveEnd()
-			
 			end
 
 
