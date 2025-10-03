@@ -10,11 +10,11 @@
    <field name="near" value="0.01"/>
    <field name="far" value="10"/>
   </parameter>
-  <parameter name="useMainCamera" value="true"/>
+  <parameter name="useMainCamera" value="false"/>
   <parameter name="clearColor">
-   <field name="x" value="0.7"/>
-   <field name="y" value="0.7"/>
-   <field name="z" value="0.7"/>
+   <field name="x" value="0.69803921568627"/>
+   <field name="y" value="0.69803921568627"/>
+   <field name="z" value="0.69803921568627"/>
    <field name="w" value="1"/>
   </parameter>
  </presentationParams>
@@ -994,8 +994,8 @@
    <parameter name="image.resourceId" value="64a2a35d-397-b66-33a-c64"/>
   </reactor>
  </reactors>
- <exportParameters last="rpm">
-  <parameters format="apk" appName="swipe - EVI Android App" appId="swipe" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a" minApi="24" targetApi="36">
+ <exportParameters last="apk">
+  <parameters format="apk" appName="Swipe" appId="ru.eligovision.swipe" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a,armeabi-v7a" minApi="24" targetApi="36">
    <presets>
     <preset id="user" name="User Preset">
      <files>
@@ -1008,6 +1008,7 @@
    </presets>
   </parameters>
   <parameters format="app" appName="swipe - EVI macOS App" appId="swipe" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.app" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="None" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" retinaSupport="true" bundleName="swipe - EVI macOS App" cameraDescription="Дополненная реальность ждет!"/>
+  <parameters format="dir" appName="swipe - Directory Package" appId="swipe" arch="" version="1.0" build="1" filename="/Users/kos/EligoVision/github/studio_examples/advanced/swipe/swipe.package" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false"/>
   <parameters format="exe" appName="swipe - EVI Windows App" appId="swipe" arch="x64" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.exe" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" targetPlatform="1"/>
   <parameters format="ipa" appName="swipe - EVI iOS App" appId="swipe" arch="" version="1.0" build="1" filename="/Users/kos/EligoVision/github/studio_examples/advanced/swipe/swipe.ipa" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="12" appStoreDistribution="false" bundleName="swipe - EVI iOS App" cameraDescription="Дополненная реальность ждет!" photolibraryDescription="Снимки будут сохранены в Фото!" deviceMotionDescription="Необходимо для отслеживания движений"/>
   <parameters format="rpm" name="ru.eligovision.Swipe" version="0.0.1" summary="Пример с элементом интерфейса &quot;Карусель&quot;." license="MIT" arch="armv7hl" description="Пример с элементом интерфейса &quot;Карусель&quot;. Можно перетягивать части интерфейса влево и вправо, переходя к следующему тексту." verboseName="Swipe example" verboseNameRu="Карусель пример" cert="${STUDIO_DATA_DIR}/aurora/cert/regular_cert.pem" key="${STUDIO_DATA_DIR}/aurora/cert/regular_key.pem" dirname="${PROJECT_DIR}" qmldir="/Users/kos/EligoVision/git/ev_evi/build/darwin.advanced.int/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//aurora/qml" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" coverIcon="${STUDIO_DATA_DIR}/AppIcon.png" permissions="Audio;Camera;DeviceInfo;UserDirs" orientations="Landscape"/>
