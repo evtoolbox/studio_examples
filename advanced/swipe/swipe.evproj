@@ -127,7 +127,6 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="image.resourceId" value="64f87bed-ca3-3ce-2fe-2e7"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="63caad7d-c461-4444-2187" name="Button_information" type="rect.image" enabled="true">
    <parameter name="nodeMask">
@@ -280,7 +279,6 @@
    <parameter name="text.auto_wrap" value="false"/>
    <parameter name="text.line_spacing" value="0.15"/>
    <parameter name="text.value" value="КАК ИГРАТЬ"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="63d29557-f995-f654-fc53" name="Title_slide1" type="rect.text" enabled="true">
    <parameter name="nodeMask">
@@ -359,7 +357,7 @@
   </reactor>
   <reactor id="64415322-fda9-e447-3c8f" name="Information" type="node.rect" enabled="true">
    <parameter name="nodeMask">
-    <field name="mask" value="0x0000001F"/>
+    <field name="mask" value="0x00000010"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
@@ -396,7 +394,6 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="64415393-fecf-5b3e-fe79" name="corousel" type="node.rect" enabled="true">
    <parameter name="nodeMask">
@@ -605,7 +602,6 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="image.resourceId" value="6481e0e2-a8e-ef3-e17-726"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="64e8a7bd-fd7a-f1d6-75d1" name="Text_slide1" type="rect.text" enabled="true">
    <parameter name="nodeMask">
@@ -932,7 +928,6 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="68df82e8-4efd-e1ef-c272" name="Scroll_indicator_2" type="rect.image" enabled="true">
    <parameter name="nodeMask">
@@ -965,7 +960,6 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="image.resourceId" value="6481a781-44f-a63-56a-178"/>
-   <view expanded="true"/>
   </reactor>
   <reactor id="68df82e8-56c3-7b14-2eea" name="Scroll_indicator_1" type="rect.image" enabled="true">
    <parameter name="nodeMask">
@@ -998,11 +992,10 @@
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="image.resourceId" value="64a2a35d-397-b66-33a-c64"/>
-   <view expanded="true"/>
   </reactor>
  </reactors>
- <exportParameters last="apk">
-  <parameters format="apk" appName="swipe - EVI Android App" appId="swipe" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="5" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a" minApi="24" targetApi="36">
+ <exportParameters last="rpm">
+  <parameters format="apk" appName="swipe - EVI Android App" appId="swipe" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="2" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a" minApi="24" targetApi="36">
    <presets>
     <preset id="user" name="User Preset">
      <files>
@@ -1016,7 +1009,8 @@
   </parameters>
   <parameters format="app" appName="swipe - EVI macOS App" appId="swipe" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.app" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="None" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" retinaSupport="true" bundleName="swipe - EVI macOS App" cameraDescription="Дополненная реальность ждет!"/>
   <parameters format="exe" appName="swipe - EVI Windows App" appId="swipe" arch="x64" version="1.0" build="1" filename="${PROJECT_DIR}/swipe.exe" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="1" frameMode="window" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" runAfterExport="false" targetPlatform="1"/>
-  <parameters format="rpm" name="ru.eligovision.Swipe" version="0.0.1" summary="Пример с элементом интерфейса &quot;Карусель&quot;." license="MIT" arch="armv7hl" description="Пример с элементом интерфейса &quot;Карусель&quot;. Можно перетягивать части интерфейса влево и вправо, переходя к следующему тексту." verboseName="Swipe example" verboseNameRu="Карусель пример" cert="${STUDIO_DATA_DIR}/aurora/cert/regular_cert.pem" key="${STUDIO_DATA_DIR}/aurora/cert/regular_key.pem" dirname="${PROJECT_DIR}" qmldir="/Users/kos/EligoVision/git/ev_evi/build/darwin.advanced.int/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//aurora/qml" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" coverIcon="${STUDIO_DATA_DIR}/AppIcon.png" permissions="Audio;Camera;DeviceInfo;UserDirs" orientations="All"/>
+  <parameters format="ipa" appName="swipe - EVI iOS App" appId="swipe" arch="" version="1.0" build="1" filename="/Users/kos/EligoVision/github/studio_examples/advanced/swipe/swipe.ipa" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="12" appStoreDistribution="false" bundleName="swipe - EVI iOS App" cameraDescription="Дополненная реальность ждет!" photolibraryDescription="Снимки будут сохранены в Фото!" deviceMotionDescription="Необходимо для отслеживания движений"/>
+  <parameters format="rpm" name="ru.eligovision.Swipe" version="0.0.1" summary="Пример с элементом интерфейса &quot;Карусель&quot;." license="MIT" arch="armv7hl" description="Пример с элементом интерфейса &quot;Карусель&quot;. Можно перетягивать части интерфейса влево и вправо, переходя к следующему тексту." verboseName="Swipe example" verboseNameRu="Карусель пример" cert="${STUDIO_DATA_DIR}/aurora/cert/regular_cert.pem" key="${STUDIO_DATA_DIR}/aurora/cert/regular_key.pem" dirname="${PROJECT_DIR}" qmldir="/Users/kos/EligoVision/git/ev_evi/build/darwin.advanced.int/src/ev_studio/ev_studio.app/Contents/MacOS/../Resources/studio_data//aurora/qml" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" coverIcon="${STUDIO_DATA_DIR}/AppIcon.png" permissions="Audio;Camera;DeviceInfo;UserDirs" orientations="Landscape"/>
  </exportParameters>
  <workspace>
   <preview platform="1"/>
