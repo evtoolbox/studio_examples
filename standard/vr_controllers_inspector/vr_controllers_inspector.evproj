@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.6.0" version-extra="devel_x64">
+<Project version="3.6.0" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -1432,7 +1432,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">921421</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <action>vibrate</action>
@@ -1466,7 +1466,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">8764346</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <action>vibrate</action>
@@ -1479,7 +1479,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">8922479</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <action>vibrate</action>
@@ -1492,7 +1492,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">9757740</property>
-       <property name="relative_position" type="realpoint">0.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,128.000000</property>
        <property name="action" type="action_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <action>vibrate</action>
@@ -1524,7 +1524,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7784205</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonPush</event>
@@ -1535,7 +1535,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7211868</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonRelease</event>
@@ -1546,7 +1546,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">2949408</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onTouchEnded</event>
@@ -1557,7 +1557,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">773567</property>
-       <property name="relative_position" type="realpoint">36.000000,172.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,156.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onTouchMove</event>
@@ -1595,7 +1595,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">4782744</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2ef5d-fd3c-e59f-dfc1</reactor>
         <action>setRect_color</action>
@@ -1611,7 +1611,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">4664888</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2ef5d-fd3c-e59f-dfc1</reactor>
         <action>setRect_color</action>
@@ -1651,7 +1651,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">2514345</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2f026-2eb7-dd5b-947f</reactor>
         <action>setRect_color</action>
@@ -1667,7 +1667,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">7057106</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2f026-2eb7-dd5b-947f</reactor>
         <action>setRect_color</action>
@@ -1707,7 +1707,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">4502330</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2ef9e-aff3-2249-ae3e</reactor>
         <action>setRect_color</action>
@@ -1723,7 +1723,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">9282594</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2ef9e-aff3-2249-ae3e</reactor>
         <action>setRect_color</action>
@@ -1758,7 +1758,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">2846441</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonPush</event>
@@ -1769,7 +1769,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">8030112</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonRelease</event>
@@ -1780,7 +1780,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">4967134</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onTouchEnded</event>
@@ -1810,7 +1810,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">1974213</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonPush</event>
@@ -1821,7 +1821,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7121362</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonRelease</event>
@@ -1832,7 +1832,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">6278324</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onTouchEnded</event>
@@ -1867,7 +1867,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">2281914</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2ce5f-93b3-6465-bed9</reactor>
         <action>setRect_color</action>
@@ -1883,7 +1883,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">6615854</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2ce5f-93b3-6465-bed9</reactor>
         <action>setRect_color</action>
@@ -1918,7 +1918,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7100563</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonPush</event>
@@ -1929,7 +1929,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">8159631</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonRelease</event>
@@ -1940,7 +1940,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">2194518</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onTouchEnded</event>
@@ -1970,7 +1970,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">1554287</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonPush</event>
@@ -1981,7 +1981,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7569093</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonRelease</event>
@@ -1992,7 +1992,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">3371384</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onTouchEnded</event>
@@ -2027,7 +2027,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">5424735</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2d215-8662-58ec-faa5</reactor>
         <action>setRect_color</action>
@@ -2043,7 +2043,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">655578</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2d215-8662-58ec-faa5</reactor>
         <action>setRect_color</action>
@@ -2100,7 +2100,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">6619797</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonPush</event>
@@ -2111,7 +2111,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">6995989</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonRelease</event>
@@ -2122,7 +2122,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">5450755</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onTouchEnded</event>
@@ -2157,7 +2157,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">9465285</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2f026-2eb7-dd5b-947f</reactor>
         <action>setRect_color</action>
@@ -2173,7 +2173,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">1491075</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2f026-2eb7-dd5b-947f</reactor>
         <action>setRect_color</action>
@@ -2213,7 +2213,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">2723592</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2d7f3-8826-1f36-3677</reactor>
         <action>setRect_color</action>
@@ -2229,7 +2229,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">3447175</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2d7f3-8826-1f36-3677</reactor>
         <action>setRect_color</action>
@@ -2264,7 +2264,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">4319808</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonPush</event>
@@ -2275,7 +2275,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">3828052</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onButtonRelease</event>
@@ -2286,7 +2286,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7325740</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onTouchEnded</event>
@@ -2297,7 +2297,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">4219806</property>
-       <property name="relative_position" type="realpoint">36.000000,172.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,156.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-4c29-f619-27a2</reactor>
         <event>onTouchMove</event>
@@ -2330,7 +2330,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">6249680</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>65f8479e-48b7-6e43-8123</reactor>
         <event>onFinished</event>
@@ -2363,7 +2363,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">4763645</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2d722-df6f-b885-6f53</reactor>
         <action>setRect_color</action>
@@ -2379,7 +2379,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">2370784</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f2d722-df6f-b885-6f53</reactor>
         <action>setRect_color</action>
@@ -2797,7 +2797,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">921421</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <action>vibrate</action>
@@ -2834,7 +2834,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">2535725</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-51af-259e-766e</reactor>
         <action>setRect_color</action>
@@ -2850,7 +2850,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">5979467</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-51af-259e-766e</reactor>
         <action>setRect_color</action>
@@ -2885,7 +2885,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7784205</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonPush</event>
@@ -2896,7 +2896,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7211868</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonRelease</event>
@@ -2907,7 +2907,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">2949408</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onTouchEnded</event>
@@ -2918,7 +2918,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">773567</property>
-       <property name="relative_position" type="realpoint">36.000000,172.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,156.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onTouchMove</event>
@@ -2978,7 +2978,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">2514345</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-51af-259e-766e</reactor>
         <action>setRect_color</action>
@@ -2994,7 +2994,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">7057106</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-51af-259e-766e</reactor>
         <action>setRect_color</action>
@@ -3029,7 +3029,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">8653447</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonPush</event>
@@ -3040,7 +3040,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7757611</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonRelease</event>
@@ -3051,7 +3051,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">1995800</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onTouchEnded</event>
@@ -3081,7 +3081,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">1186153</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonPush</event>
@@ -3092,7 +3092,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">3912450</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonRelease</event>
@@ -3103,7 +3103,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">5282678</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onTouchEnded</event>
@@ -3114,7 +3114,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">9204083</property>
-       <property name="relative_position" type="realpoint">36.000000,172.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,156.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onTouchMove</event>
@@ -3152,7 +3152,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">9856012</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-a356-ba21-ace1</reactor>
         <action>setRect_color</action>
@@ -3168,7 +3168,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">6318134</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-a356-ba21-ace1</reactor>
         <action>setRect_color</action>
@@ -3208,7 +3208,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">1205621</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-b84b-1dcd-1edc</reactor>
         <action>setRect_color</action>
@@ -3224,7 +3224,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">1061324</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-b84b-1dcd-1edc</reactor>
         <action>setRect_color</action>
@@ -3259,7 +3259,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">3420497</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonPush</event>
@@ -3270,7 +3270,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">2698393</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonRelease</event>
@@ -3281,7 +3281,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7970146</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onTouchEnded</event>
@@ -3311,7 +3311,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">6925014</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonPush</event>
@@ -3322,7 +3322,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">7632010</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonRelease</event>
@@ -3333,7 +3333,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">2929158</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onTouchEnded</event>
@@ -3368,7 +3368,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">8860674</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-df8e-d966-477b</reactor>
         <action>setRect_color</action>
@@ -3384,7 +3384,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">6844756</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-df8e-d966-477b</reactor>
         <action>setRect_color</action>
@@ -3446,7 +3446,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">9713502</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-ad24-5689-eaa3</reactor>
         <action>setRect_color</action>
@@ -3462,7 +3462,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">6377803</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-ad24-5689-eaa3</reactor>
         <action>setRect_color</action>
@@ -3502,7 +3502,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">3319613</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-fdd3-2176-d35d</reactor>
         <action>setRect_color</action>
@@ -3518,7 +3518,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">18140</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-fdd3-2176-d35d</reactor>
         <action>setRect_color</action>
@@ -3553,7 +3553,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">3974420</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonPush</event>
@@ -3564,7 +3564,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">1481818</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonRelease</event>
@@ -3575,7 +3575,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">4090869</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onTouchEnded</event>
@@ -3605,7 +3605,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">1180745</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f8479e-48b7-6e43-8123</reactor>
         <action>stop</action>
@@ -3638,7 +3638,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">9118114</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-d2b2-1c26-d67d</reactor>
         <action>setRect_color</action>
@@ -3654,7 +3654,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">2172597</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>65f9666f-d2b2-1c26-d67d</reactor>
         <action>setRect_color</action>
@@ -3689,7 +3689,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">2767818</property>
-       <property name="relative_position" type="realpoint">36.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonPush</event>
@@ -3700,7 +3700,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">6721238</property>
-       <property name="relative_position" type="realpoint">36.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onButtonRelease</event>
@@ -3711,7 +3711,7 @@
       </object>
       <object type="Event">
        <property name="id" type="long">2172751</property>
-       <property name="relative_position" type="realpoint">36.000000,140.000000</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
        <property name="event" type="event_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <event>onTouchEnded</event>
@@ -3743,7 +3743,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">8337431</property>
-       <property name="relative_position" type="realpoint">0.000000,76.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
        <property name="action" type="action_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <action>vibrate</action>
@@ -3756,7 +3756,7 @@
       </object>
       <object type="Action">
        <property name="id" type="long">3924846</property>
-       <property name="relative_position" type="realpoint">0.000000,108.000000</property>
+       <property name="relative_position" type="realpoint">0.000000,100.000000</property>
        <property name="action" type="action_info">
         <reactor>5dea528a-9764-c1f2-ae1e</reactor>
         <action>vibrate</action>
@@ -4113,7 +4113,7 @@
     </chart>
    </scenario>
   </reactor>
-  <reactor id="669e7bd8-d152-cd8f-8dba" name="vr_hand_left" type="vr_controller" enabled="true">
+  <reactor id="669e7bd8-d152-cd8f-8dba" name="vr_hand_left" type="vr_controller" enabled="false">
    <parameter name="nodeMask">
     <field name="mask" value="0x0000001F"/>
     <field name="unchangedBits" value="0x00000000"/>
@@ -4142,7 +4142,7 @@
    <parameter name="autoHide" value="true"/>
    <view expanded="true"/>
   </reactor>
-  <reactor id="669e7bd9-c278-a55c-6c7b" name="vr_hand_right" type="vr_controller" enabled="true">
+  <reactor id="669e7bd9-c278-a55c-6c7b" name="vr_hand_right" type="vr_controller" enabled="false">
    <parameter name="nodeMask">
     <field name="mask" value="0x0000001F"/>
     <field name="unchangedBits" value="0x00000000"/>
@@ -4171,7 +4171,7 @@
    <parameter name="autoHide" value="true"/>
    <view expanded="true"/>
   </reactor>
-  <reactor id="669e7c34-78e9-cbce-2daf" name="vr_hand_left/model" type="node.model" enabled="true">
+  <reactor id="669e7c34-78e9-cbce-2daf" name="vr_hand_left/model" type="node.model" enabled="false">
    <parameter name="nodeMask">
     <field name="mask" value="0x0000000F"/>
     <field name="unchangedBits" value="0x00000000"/>
@@ -4199,7 +4199,7 @@
    <parameter name="gpuInstancesMinCount" value="50"/>
    <parameter name="model" value="669e7c28-1eb-848-645-27e"/>
   </reactor>
-  <reactor id="669e7c5e-83ac-15be-5987" name="vr_hand_right/model" type="node.model" enabled="true">
+  <reactor id="669e7c5e-83ac-15be-5987" name="vr_hand_right/model" type="node.model" enabled="false">
    <parameter name="nodeMask">
     <field name="mask" value="0x0000000F"/>
     <field name="unchangedBits" value="0x00000000"/>
@@ -4278,8 +4278,8 @@
    <view expanded="true"/>
   </reactor>
  </reactors>
- <exportParameters last="rpm">
-  <parameters format="apk" appName="vr_controllers_inspector - EVI Android App" appId="vr.controllers.inspector" arch="" version="1.0" build="1" filename="${PROJECT_DIR}/vr_controllers_inspector.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="5" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="general" abis="arm64-v8a" minApi="24" targetApi="36">
+ <exportParameters last="apk">
+  <parameters format="apk" appName="vr_controllers_inspector - EVI Android App" appId="vr.controllers.inspector" arch="" version="3.6.0" build="360" filename="${PROJECT_DIR}/vr_controllers_inspector.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="5" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="openxr" abis="arm64-v8a" minApi="24" targetApi="36">
    <presets>
     <preset id="user" name="User Preset">
      <files>
