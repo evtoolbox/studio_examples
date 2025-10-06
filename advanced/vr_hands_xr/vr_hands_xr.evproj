@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.6.0" version-extra="devel">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="false"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="false"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.035294117647059"/>
+   <field name="y" value="0.090196078431373"/>
+   <field name="z" value="0.10196078431373"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_vr_hands_xr">
+  <resource internal="false" id="67a4c7fb-7a5-d54-3c1-db3" kind="script" local="true" forceExport="true" rawAssetsExport="false" name="main.lua">
+   <filename value="main.lua"/>
+  </resource>
+  <resource internal="false" id="67a5b2e3-757-a7a-271-c13" kind="image" local="true" forceExport="false" rawAssetsExport="true" name="vr_splash.png">
+   <filename value="vr_splash.png"/>
+  </resource>
+  <resource internal="false" id="6863f94f-6ff-b56-a25-c48" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="thimble.fbx">
+   <filename value="thimble.fbx"/>
+  </resource>
+  <resource internal="false" id="68dfd7e4-f89-96b-96c-922" kind="video" local="true" forceExport="false" rawAssetsExport="false" name="toolbox_promo.webm">
+   <filename value="toolbox_promo.webm"/>
+  </resource>
+  <resource internal="false" id="68dfdea1-117-49b-2c2-429" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="vr_glove_left_model_slim_v9.fbx">
+   <filename value="vr_glove_left_model_slim_v9.fbx"/>
+  </resource>
+  <resource internal="false" id="68dfe408-221-912-63f-caa" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="play_arrow_active.png">
+   <filename value="play_arrow_active.png"/>
+  </resource>
+  <resource internal="false" id="68dfe456-7e3-382-5aa-7ad" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="play_arrow_inactive.png">
+   <filename value="play_arrow_inactive.png"/>
+  </resource>
+  <resource internal="false" id="68dfe4b3-6f6-8aa-15c-7d8" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="pause_active.png">
+   <filename value="pause_active.png"/>
+  </resource>
+  <resource internal="false" id="68dfe4c4-121-325-537-21f" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="pause_inactive.png">
+   <filename value="pause_inactive.png"/>
+  </resource>
+  <resource internal="false" id="68dfed51-176-252-7c7-2ea" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="vr_glove_right_model_slim_v9.fbx">
+   <filename value="vr_glove_right_model_slim_v9.fbx"/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="System"/>
+   <item id="Viewer"/>
+   <item id="68dfcadf-48b2-c512-5ee6"/>
+   <item id="67a4e101-99a9-2ece-c9df"/>
+   <item id="67a361d7-5395-f198-29b5"/>
+   <item id="Scene"/>
+  </order>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="650aed3a-c16b-2361-ad79"/>
+    <item value="68dfce9c-4c12-1522-f82c"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="System" name="System" type="system" enabled="true">
+   <parameter name="albumName" value="evi_app"/>
+  </reactor>
+  <reactor id="Viewer" name="Viewer" type="viewer" enabled="true">
+   <parameter name="cameraManipulator" value="67a361d7-5395-f198-29b5"/>
+  </reactor>
+  <reactor id="5dea528a-4c29-f619-27a2" name="vr_hand_left" type="vr_controller" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="68dfde1b-346b-3b97-111d"/>
+    <item value="6863c5b9-3f47-da22-a5f6"/>
+    <item value="6863c5ce-26df-24c4-8712"/>
+    <item value="6863c5d7-3242-ca26-f1d9"/>
+    <item value="6863dd57-93b1-9f2d-53de"/>
+    <item value="6863c5ff-8677-291e-dcee"/>
+    <item value="6863c5f1-c4d5-23db-3268"/>
+    <item value="6863c5ea-1a12-32e1-fbdb"/>
+    <item value="6863c5e3-cbff-5226-69a5"/>
+    <item value="683d6fac-fc47-4154-ec51"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="-0.060550924599245"/>
+    <field name="y" value="-0.26036518564965"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="enabled" value="true"/>
+   <parameter name="deviceType" value="hand_left"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="5dea528a-9764-c1f2-ae1e" name="vr_hand_right" type="vr_controller" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="68dfed3c-ad78-fb86-8769"/>
+    <item value="683d7703-b7ad-a32f-5685"/>
+    <item value="683d771e-4b29-1432-1f6c"/>
+    <item value="683d7737-266a-7e73-35c5"/>
+    <item value="6863dd27-964d-1832-939c"/>
+    <item value="683c2936-da5e-e9ce-ad59"/>
+    <item value="683c2948-1c61-2d1d-3b29"/>
+    <item value="683c2967-8f1b-c134-8c5a"/>
+    <item value="683c2990-99b4-4ea8-3c62"/>
+    <item value="5dee1cdb-3a9d-29b8-45d5"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0.064373996182606"/>
+    <field name="y" value="-0.16341530818389"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="enabled" value="true"/>
+   <parameter name="deviceType" value="hand_right"/>
+   <parameter name="autoShow" value="true"/>
+   <parameter name="autoHide" value="true"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="5dee1cc9-a9fa-9574-9aaf" name="Index_Tip_R/intersector" type="node.intersector" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="segmentLength" value="0.03"/>
+   <parameter name="visualizationEnabled" value="false"/>
+   <parameter name="visualizationWidth" value="0.001"/>
+   <parameter name="visualizationColor">
+    <field name="red" value="0"/>
+    <field name="green" value="0.46666666666667"/>
+    <field name="blue" value="0.8"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="5dee1cdb-3a9d-29b8-45d5" name="Index_Tip_R" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="5dee1cc9-a9fa-9574-9aaf"/>
+    <item value="6863f900-ce84-29ee-fa54"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="2.3781292441459e-14"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="650aed3a-c16b-2361-ad79" name="vr_controllers" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="5dea528a-4c29-f619-27a2"/>
+    <item value="5dea528a-9764-c1f2-ae1e"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="67a361d7-5395-f198-29b5" name="trackball" type="camera_manipulator" enabled="true">
+   <parameter name="kind" value="trackball"/>
+   <parameter name="homeEye">
+    <field name="x" value="0"/>
+    <field name="y" value="-0.65"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="homeCenter">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="homeUp">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="autoComputeHomePosition" value="false"/>
+  </reactor>
+  <reactor id="67a4e101-99a9-2ece-c9df" name="manipulator_vr" type="camera_manipulator" enabled="true">
+   <parameter name="kind" value="vr"/>
+   <parameter name="homeEye">
+    <field name="x" value="0"/>
+    <field name="y" value="-0.65"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="homeCenter">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="homeUp">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="autoComputeHomePosition" value="false"/>
+  </reactor>
+  <reactor id="683c2936-da5e-e9ce-ad59" name="Index_Metacarpal_R" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="683c3036-1663-68ee-3585"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="683c2948-1c61-2d1d-3b29" name="Index_Proximal_R" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="683c3036-1663-68ee-3585"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="683c2967-8f1b-c134-8c5a" name="Index_Intermediate_R" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="683c3036-1663-68ee-3585"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="683c2990-99b4-4ea8-3c62" name="Index_Distal_R" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="683c3036-1663-68ee-3585"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="683c3036-1663-68ee-3585" name="bone_R" type="node.intersector" enabled="false">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="segmentLength" value="0.02"/>
+   <parameter name="visualizationEnabled" value="true"/>
+   <parameter name="visualizationWidth" value="0.005"/>
+   <parameter name="visualizationColor">
+    <field name="red" value="1"/>
+    <field name="green" value="0.27843137254902"/>
+    <field name="blue" value="0.52941176470588"/>
+    <field name="alpha" value="0.5"/>
+   </parameter>
+  </reactor>
+  <reactor id="683d6fac-fc47-4154-ec51" name="Index_Tip_L" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6863f900-ce84-29ee-fa54"/>
+    <item value="6862ae17-b662-9992-a574"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="2.3781292441459e-14"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="683d7703-b7ad-a32f-5685" name="Thumb_Metacarpal_R" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="683c3036-1663-68ee-3585"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="683d771e-4b29-1432-1f6c" name="Thumb_Proximal_R" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="683c3036-1663-68ee-3585"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="683d7737-266a-7e73-35c5" name="Thumb_Distal_R" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="683c3036-1663-68ee-3585"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6862ae17-b662-9992-a574" name="Index_Tip_L/intersector" type="node.intersector" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="segmentLength" value="0.03"/>
+   <parameter name="visualizationEnabled" value="false"/>
+   <parameter name="visualizationWidth" value="0.001"/>
+   <parameter name="visualizationColor">
+    <field name="red" value="0"/>
+    <field name="green" value="0.79607843137255"/>
+    <field name="blue" value="0.53333333333333"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863c5b9-3f47-da22-a5f6" name="Thumb_Metacarpal_L" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6863c5b9-cd54-4275-f5e2"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863c5b9-cd54-4275-f5e2" name="bone_L" type="node.intersector" enabled="false">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="segmentLength" value="0.02"/>
+   <parameter name="visualizationEnabled" value="true"/>
+   <parameter name="visualizationWidth" value="0.005"/>
+   <parameter name="visualizationColor">
+    <field name="red" value="1"/>
+    <field name="green" value="0.27843137254902"/>
+    <field name="blue" value="0.52941176470588"/>
+    <field name="alpha" value="0.5"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863c5ce-26df-24c4-8712" name="Thumb_Proximal_L" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6863c5b9-cd54-4275-f5e2"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863c5d7-3242-ca26-f1d9" name="Thumb_Distal_L" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6863c5b9-cd54-4275-f5e2"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863c5e3-cbff-5226-69a5" name="Index_Metacarpal_L" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6863c5b9-cd54-4275-f5e2"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863c5ea-1a12-32e1-fbdb" name="Index_Proximal_L" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6863c5b9-cd54-4275-f5e2"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863c5f1-c4d5-23db-3268" name="Index_Intermediate_L" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6863c5b9-cd54-4275-f5e2"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863c5ff-8677-291e-dcee" name="Index_Distal_L" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="6863c5b9-cd54-4275-f5e2"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863dd27-964d-1832-939c" name="Thumb_Tip_R" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="683c3036-1663-68ee-3585"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+  </reactor>
+  <reactor id="6863dd57-93b1-9f2d-53de" name="Thumb_Tip_L" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="6863f900-ce84-29ee-fa54" name="thimble" type="node.model" enabled="false">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0.02"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="6863f94f-6ff-b56-a25-c48"/>
+  </reactor>
+  <reactor id="68dfcadf-48b2-c512-5ee6" name="scenario_intersection" type="scenario.chunk" enabled="true">
+   <parameter name="scenarioChart" value="inline"/>
+   <parameter name="activated" value="false"/>
+   <scenario>
+    <chart owner="EV_Studio" version="1.0">
+     <object type="Reactor">
+      <property name="id" type="long">7004</property>
+      <property name="relative_position" type="realpoint">555.000000,-232.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+       <typename>rect.video</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">3806244</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+        <action>rewind</action>
+        <arguments>
+         <argument name="time" type="Number" value="0"/>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">1127241</property>
+      <property name="relative_position" type="realpoint">-599.000000,-167.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>5dee1cdb-3a9d-29b8-45d5</reactor>
+       <typename>node.transform</typename>
+      </property>
+      <object type="Event">
+       <property name="id" type="long">875890</property>
+       <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+       <property name="event" type="event_info">
+        <reactor>5dee1cdb-3a9d-29b8-45d5</reactor>
+        <event>onFrame</event>
+        <arguments/>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">1146180</property>
+      <property name="relative_position" type="realpoint">667.000000,399.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfe4b9-23f4-8ab5-6cd1</reactor>
+       <typename>rect.image</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">7470425</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfe4b9-23f4-8ab5-6cd1</reactor>
+        <action>hide</action>
+        <arguments>
+         <argument name="nodeMask" type="NodeMaskExt">
+          <field name="mask" value="0x00000000"/>
+          <field name="unchangedBits" value="0x00000000"/>
+         </argument>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">1251805</property>
+      <property name="relative_position" type="realpoint">102.000000,-60.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+       <typename>rect.video</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">662716</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+        <action>play</action>
+        <arguments>
+         <argument name="playMode" type="rect.video.PlayModeExt" value="once"/>
+        </arguments>
+       </property>
+      </object>
+      <object type="Action">
+       <property name="id" type="long">3466530</property>
+       <property name="relative_position" type="realpoint">0.000000,72.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+        <action>pause</action>
+        <arguments/>
+       </property>
+      </object>
+      <object type="Event">
+       <property name="id" type="long">2928383</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
+       <property name="event" type="event_info">
+        <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+        <event>onFinish</event>
+        <arguments/>
+       </property>
+      </object>
+      <object type="Event">
+       <property name="id" type="long">8434232</property>
+       <property name="relative_position" type="realpoint">36.000000,128.000000</property>
+       <property name="event" type="event_info">
+        <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+        <event>onPlay</event>
+        <arguments/>
+       </property>
+      </object>
+      <object type="Event">
+       <property name="id" type="long">1183404</property>
+       <property name="relative_position" type="realpoint">36.000000,156.000000</property>
+       <property name="event" type="event_info">
+        <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+        <event>onPause</event>
+        <arguments/>
+       </property>
+      </object>
+      <object type="Event">
+       <property name="id" type="long">4107262</property>
+       <property name="relative_position" type="realpoint">36.000000,184.000000</property>
+       <property name="event" type="event_info">
+        <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+        <event>onRewind</event>
+        <arguments/>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">1303729</property>
+      <property name="relative_position" type="realpoint">666.000000,574.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfe46a-5945-9c4e-3a23</reactor>
+       <typename>rect.image</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">7976252</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfe46a-5945-9c4e-3a23</reactor>
+        <action>show</action>
+        <arguments>
+         <argument name="nodeMask" type="NodeMaskExt">
+          <field name="mask" value="0x0000000F"/>
+          <field name="unchangedBits" value="0x00000000"/>
+         </argument>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">1800195</property>
+      <property name="relative_position" type="realpoint">-277.000000,30.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>6862ae17-b662-9992-a574</reactor>
+       <typename>node.intersector</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">4577290</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>6862ae17-b662-9992-a574</reactor>
+        <action>findIntersection</action>
+        <arguments/>
+       </property>
+      </object>
+      <object type="Event">
+       <property name="id" type="long">6720924</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
+       <property name="event" type="event_info">
+        <reactor>6862ae17-b662-9992-a574</reactor>
+        <event>onHit</event>
+        <arguments>
+         <argument name="reactorName" type="NodeReactorPlainId" value="68dfe44b-2334-27bd-1f6f"/>
+         <argument name="missed" type="Bool" value="false"/>
+        </arguments>
+       </property>
+      </object>
+      <object type="Event">
+       <property name="id" type="long">8420897</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
+       <property name="event" type="event_info">
+        <reactor>6862ae17-b662-9992-a574</reactor>
+        <event>onHit</event>
+        <arguments>
+         <argument name="reactorName" type="NodeReactorPlainId" value="68dfe4b9-23f4-8ab5-6cd1"/>
+         <argument name="missed" type="Bool" value="false"/>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">2967443</property>
+      <property name="relative_position" type="realpoint">817.000000,-166.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfe44b-2334-27bd-1f6f</reactor>
+       <typename>rect.image</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">1663476</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfe44b-2334-27bd-1f6f</reactor>
+        <action>hide</action>
+        <arguments>
+         <argument name="nodeMask" type="NodeMaskExt">
+          <field name="mask" value="0x00000000"/>
+          <field name="unchangedBits" value="0x00000000"/>
+         </argument>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">3178011</property>
+      <property name="relative_position" type="realpoint">817.000000,-64.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfe4b9-23f4-8ab5-6cd1</reactor>
+       <typename>rect.image</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">7085286</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfe4b9-23f4-8ab5-6cd1</reactor>
+        <action>show</action>
+        <arguments>
+         <argument name="nodeMask" type="NodeMaskExt">
+          <field name="mask" value="0x0000001F"/>
+          <field name="unchangedBits" value="0x00000000"/>
+         </argument>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">4529619</property>
+      <property name="relative_position" type="realpoint">815.000000,116.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfe46a-5945-9c4e-3a23</reactor>
+       <typename>rect.image</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">4940923</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfe46a-5945-9c4e-3a23</reactor>
+        <action>hide</action>
+        <arguments>
+         <argument name="nodeMask" type="NodeMaskExt">
+          <field name="mask" value="0x00000000"/>
+          <field name="unchangedBits" value="0x00000000"/>
+         </argument>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">4909663</property>
+      <property name="relative_position" type="realpoint">817.000000,22.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfe111-6552-49c8-8b91</reactor>
+       <typename>rect.image</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">9658813</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfe111-6552-49c8-8b91</reactor>
+        <action>show</action>
+        <arguments>
+         <argument name="nodeMask" type="NodeMaskExt">
+          <field name="mask" value="0x0000001F"/>
+          <field name="unchangedBits" value="0x00000000"/>
+         </argument>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">6236502</property>
+      <property name="relative_position" type="realpoint">668.000000,487.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfe111-6552-49c8-8b91</reactor>
+       <typename>rect.image</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">3242473</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfe111-6552-49c8-8b91</reactor>
+        <action>hide</action>
+        <arguments>
+         <argument name="nodeMask" type="NodeMaskExt">
+          <field name="mask" value="0x00000000"/>
+          <field name="unchangedBits" value="0x00000000"/>
+         </argument>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">6338758</property>
+      <property name="relative_position" type="realpoint">-277.000000,-162.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>5dee1cc9-a9fa-9574-9aaf</reactor>
+       <typename>node.intersector</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">4122401</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>5dee1cc9-a9fa-9574-9aaf</reactor>
+        <action>findIntersection</action>
+        <arguments/>
+       </property>
+      </object>
+      <object type="Event">
+       <property name="id" type="long">2251239</property>
+       <property name="relative_position" type="realpoint">36.000000,72.000000</property>
+       <property name="event" type="event_info">
+        <reactor>5dee1cc9-a9fa-9574-9aaf</reactor>
+        <event>onHit</event>
+        <arguments>
+         <argument name="reactorName" type="NodeReactorPlainId" value="68dfe44b-2334-27bd-1f6f"/>
+         <argument name="missed" type="Bool" value="false"/>
+        </arguments>
+       </property>
+      </object>
+      <object type="Event">
+       <property name="id" type="long">4099254</property>
+       <property name="relative_position" type="realpoint">36.000000,100.000000</property>
+       <property name="event" type="event_info">
+        <reactor>5dee1cc9-a9fa-9574-9aaf</reactor>
+        <event>onHit</event>
+        <arguments>
+         <argument name="reactorName" type="NodeReactorPlainId" value="68dfe4b9-23f4-8ab5-6cd1"/>
+         <argument name="missed" type="Bool" value="false"/>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">7475777</property>
+      <property name="relative_position" type="realpoint">665.000000,311.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfe44b-2334-27bd-1f6f</reactor>
+       <typename>rect.image</typename>
+      </property>
+      <object type="Action">
+       <property name="id" type="long">5657346</property>
+       <property name="relative_position" type="realpoint">0.000000,44.000000</property>
+       <property name="action" type="action_info">
+        <reactor>68dfe44b-2334-27bd-1f6f</reactor>
+        <action>show</action>
+        <arguments>
+         <argument name="nodeMask" type="NodeMaskExt">
+          <field name="mask" value="0x0000001F"/>
+          <field name="unchangedBits" value="0x00000000"/>
+         </argument>
+        </arguments>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">8969343</property>
+      <property name="relative_position" type="realpoint">123.000000,486.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+       <typename>rect.video</typename>
+      </property>
+      <object type="Event">
+       <property name="id" type="long">6851761</property>
+       <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+       <property name="event" type="event_info">
+        <reactor>68dfd475-eaaa-1f8b-89db</reactor>
+        <event>onRewind</event>
+        <arguments/>
+       </property>
+      </object>
+     </object>
+     <object type="Reactor">
+      <property name="id" type="long">9949034</property>
+      <property name="relative_position" type="realpoint">-599.000000,76.000000</property>
+      <property name="reactor" type="reactor_info">
+       <reactor>683d6fac-fc47-4154-ec51</reactor>
+       <typename>node.transform</typename>
+      </property>
+      <object type="Event">
+       <property name="id" type="long">5000885</property>
+       <property name="relative_position" type="realpoint">36.000000,44.000000</property>
+       <property name="event" type="event_info">
+        <reactor>683d6fac-fc47-4154-ec51</reactor>
+        <event>onFrame</event>
+        <arguments/>
+       </property>
+      </object>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">698222</property>
+      <property name="relative_position" type="realpoint">-913.000000,-619.000000</property>
+      <property name="source" type="long">2251239</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">662716</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">4236721</property>
+      <property name="relative_position" type="realpoint">-934.000000,-854.000000</property>
+      <property name="source" type="long">2928383</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">3806244</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">2411562</property>
+      <property name="relative_position" type="realpoint">-934.000000,-854.000000</property>
+      <property name="source" type="long">4099254</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">3466530</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">3649024</property>
+      <property name="relative_position" type="realpoint">-963.000000,-952.000000</property>
+      <property name="source" type="long">8434232</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">1663476</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">9499387</property>
+      <property name="relative_position" type="realpoint">-963.000000,-952.000000</property>
+      <property name="source" type="long">8434232</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">7085286</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">4000684</property>
+      <property name="relative_position" type="realpoint">-963.000000,-952.000000</property>
+      <property name="source" type="long">8434232</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">9658813</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">6555643</property>
+      <property name="relative_position" type="realpoint">-963.000000,-952.000000</property>
+      <property name="source" type="long">8434232</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">4940923</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">2313496</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">1183404</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">5657346</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">9489789</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">1183404</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">7470425</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">5058709</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">1183404</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">3242473</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">3339330</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">1183404</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">7976252</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">4669779</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">6851761</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">5657346</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">7675222</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">6851761</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">7470425</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">4251437</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">6851761</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">3242473</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">9732542</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">6851761</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">7976252</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">4474101</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">875890</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">4122401</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">2833248</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">5000885</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">4577290</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">8729918</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">6720924</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">662716</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+     <object type="Connection">
+      <property name="id" type="long">4285673</property>
+      <property name="relative_position" type="realpoint">-1283.000000,-907.000000</property>
+      <property name="source" type="long">8420897</property>
+      <property name="source_offset" type="realpoint">0.994764,0.480000</property>
+      <property name="target" type="long">3466530</property>
+      <property name="target_offset" type="realpoint">-0.032609,0.500000</property>
+      <property name="priority" type="long">0</property>
+     </object>
+    </chart>
+   </scenario>
+  </reactor>
+  <reactor id="68dfce9c-4c12-1522-f82c" name="boardContainer" type="node.transform" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="68dfd475-eaaa-1f8b-89db"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="-0.12"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="80"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="68dfd475-eaaa-1f8b-89db" name="video" type="rect.video" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="68dfd87b-39d3-8277-47c4"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="60.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="68dfd7e4-f89-96b-96c-922"/>
+   <parameter name="volume" value="1"/>
+   <parameter name="playMode" value="once"/>
+  </reactor>
+  <reactor id="68dfd87b-39d3-8277-47c4" name="video_ctrl" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="68dfe44b-2334-27bd-1f6f"/>
+    <item value="68dfe111-6552-49c8-8b91"/>
+    <item value="68dfe4b9-23f4-8ab5-6cd1"/>
+    <item value="68dfe46a-5945-9c4e-3a23"/>
+   </parameter>
+   <parameter name="layer" value="0.2"/>
+   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.size">
+    <field name="x" value="30.000000%"/>
+    <field name="y" value="15.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0.33725490196078"/>
+    <field name="green" value="0.33725490196078"/>
+    <field name="blue" value="0.33725490196078"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+  </reactor>
+  <reactor id="68dfde1b-346b-3b97-111d" name="vr_hand_left/rig" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="kdTrees" value="off"/>
+   <parameter name="rig" value="on"/>
+   <parameter name="morph" value="off"/>
+   <parameter name="gpuInstancing" value="off"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="68dfdea1-117-49b-2c2-429"/>
+  </reactor>
+  <reactor id="68dfe111-6552-49c8-8b91" name="btn_play_active" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.002"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%h"/>
+    <field name="y" value="100.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0.13333333333333"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="0.035294117647059"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="50.000000%h"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="68dfe408-221-912-63f-caa"/>
+  </reactor>
+  <reactor id="68dfe44b-2334-27bd-1f6f" name="btn_play_inactive" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.002"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%h"/>
+    <field name="y" value="100.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0.13333333333333"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="0.035294117647059"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="50.000000%h"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="68dfe456-7e3-382-5aa-7ad"/>
+  </reactor>
+  <reactor id="68dfe46a-5945-9c4e-3a23" name="btn_pause_active" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.002"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%h"/>
+    <field name="y" value="100.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0.13333333333333"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="0.035294117647059"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-50.000000%h"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="68dfe4b3-6f6-8aa-15c-7d8"/>
+  </reactor>
+  <reactor id="68dfe4b9-23f4-8ab5-6cd1" name="btn_pause_inactive" type="rect.image" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.002"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%h"/>
+    <field name="y" value="100.000000%"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0.13333333333333"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="0.035294117647059"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-50.000000%h"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="68dfe4c4-121-325-537-21f"/>
+  </reactor>
+  <reactor id="68dfed3c-ad78-fb86-8769" name="vr_hand_right/rig" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000000F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="kdTrees" value="off"/>
+   <parameter name="rig" value="on"/>
+   <parameter name="morph" value="off"/>
+   <parameter name="gpuInstancing" value="off"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="68dfed51-176-252-7c7-2ea"/>
+  </reactor>
+ </reactors>
+ <exportParameters last="apk">
+  <parameters format="apk" appName="VR Hands XR" appId="ru.eligovision.vr_hands_xr" arch="" version="1.0" build="100" filename="${PROJECT_DIR}/vr_hands_xr.apk" appIconPath="/Users/kos/EligoVision/git/ev_evi/data/ev_studio/AppIcon.png" loadingImagePath="/Users/kos/EligoVision/git/ev_evi/data/ev_studio/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="1" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="openxr" abis="arm64-v8a" minApi="24" targetApi="34">
+   <presets>
+    <preset id="user" name="User Preset">
+     <files>
+      <file name="AndroidManifest.xml" path="${ANDROID_DATA_DIR}/AndroidManifest.xml.in"/>
+      <file name="build.gradle" path="${ANDROID_DATA_DIR}/build.gradle.in"/>
+      <file name="gradle.properties" path="${ANDROID_DATA_DIR}/gradle.properties.in"/>
+      <file name="local.properties" path="${ANDROID_DATA_DIR}/local.properties.in"/>
+     </files>
+    </preset>
+   </presets>
+  </parameters>
+ </exportParameters>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>

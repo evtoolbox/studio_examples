@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <examples>
-	<example path="standard/model_on_marker/model_on_marker.evproj" name="Model on Marker"/>
-	<example path="standard/markerless_technology/markerless_technology.evproj" name="Markerless Technology"/>
-	<example path="standard/two_models_on_marker/two_models_on_marker.evproj" name="Two Models on Marker"/>
-	<example path="standard/video_on_marker/video_on_marker.evproj" name="Video on Marker"/>
-	<example path="standard/composite_animation/composite_animation.evproj" name="Composite Animation"/>
-	<example path="standard/switch_simple/switch_simple.evproj" name="Switch Simple"/>
-	<example path="standard/manual_tracking_control/manual_tracking_control.evproj" name="Manual Tracking Control"/>
-	<example path="standard/timer_simple/timer_simple.evproj" name="Timer Simple"/>
-	<example path="standard/timer_control/timer_control.evproj" name="Timer Control"/>
-	<example path="standard/counter_control/counter_control.evproj" name="Counter Control"/>
-	<example path="standard/counter_markers/counter_markers.evproj" name="Counter Markers"/>
-	<example path="standard/distance_markers/distance_markers.evproj" name="Distance Markers"/>
-	<example path="standard/vr_controllers/vr_controllers.evproj" name="VR Controllers"/>
-	<example path="standard/vr_controllers_inspector/vr_controllers_inspector.evproj" name="VR Controllers Inspector"/>
-	<example path="standard/audio_3d/audio_3d.evproj" name="Audio 3D"/>
+	<example path="standard/model_on_marker/model_on_marker.evproj" name_ru="Модель на Метке" name="Model on Marker"/>
+	<example path="standard/markerless_technology/markerless_technology.evproj" name_ru="Безмаркерная Технология" name="Markerless Technology"/>
+	<example path="standard/two_models_on_marker/two_models_on_marker.evproj" name_ru="Две Модели на Метке" name="Two Models on Marker"/>
+	<example path="standard/video_on_marker/video_on_marker.evproj" name_ru="Видео на Метке" name="Video on Marker"/>
+	<example path="standard/composite_animation/composite_animation.evproj" name_ru="Композитная Анимация" name="Composite Animation"/>
+	<example path="standard/switch_simple/switch_simple.evproj" name_ru="Переключатель" name="Switch Simple"/>
+	<example path="standard/manual_tracking_control/manual_tracking_control.evproj" name_ru="Управление Системой Трекинга" name="Manual Tracking Control"/>
+	<example path="standard/timer_simple/timer_simple.evproj" name_ru="Таймер" name="Timer Simple"/>
+	<example path="standard/timer_control/timer_control.evproj" name_ru="Управление Таймером" name="Timer Control"/>
+	<example path="standard/counter_control/counter_control.evproj" name_ru="Управление Счетчиком" name="Counter Control"/>
+	<example path="standard/counter_markers/counter_markers.evproj" name_ru="Счетчик Маркеров" name="Counter Markers"/>
+	<example path="standard/distance_markers/distance_markers.evproj" name_ru="Дистанция между Маркерами" name="Distance Markers"/>
+	<example path="standard/vr_controllers/vr_controllers.evproj" name_ru="VR Контроллеры" name="VR Controllers"/>
+	<example path="standard/vr_controllers_inspector/vr_controllers_inspector.evproj" name_ru="Инспектор VR Контроллеров" name="VR Controllers Inspector"/>
+	<example path="standard/audio_3d/audio_3d.evproj" name_ru="Аудио 3D" name="Audio 3D"/>
 
 	<advanced>
-		<example path="advanced/global_pick_handler/global_pick_handler.evproj" name="Pick Handler"/>
-		<example path="advanced/particles_simple/particles_simple.evproj" name="Particles Simple"/>
-		<example path="advanced/physics_simple/physics_simple.evproj" name="Physics Simple"/>
-		<example path="advanced/rotate_scale_model/rotate_scale_model.evproj" name="Rotate Scale Model"/>
-		<example path="advanced/swipe/swipe.evproj" name="Swipe"/>
-		<example path="advanced/vr_hands/vr_hands.evproj" name="VR Hands"/>
+		<example path="advanced/global_pick_handler/global_pick_handler.evproj" name_ru="Выбор Объекта" name="Pick Handler"/>
+		<example path="advanced/particles_simple/particles_simple.evproj" name_ru="Система Частиц" name="Particles Simple"/>
+		<example path="advanced/physics_simple/physics_simple.evproj" name_ru="Физика" name="Physics Simple"/>
+		<example path="advanced/rotate_scale_model/rotate_scale_model.evproj" name_ru="Трансформация Модели" name="Rotate Scale Model"/>
+		<example path="advanced/swipe/swipe.evproj" name_ru="Свайп" name="Swipe"/>
+		<example path="advanced/vr_hands_xr/vr_hands_xr.evproj" name_ru="VR Руки (OpenXR)" name="VR Hands (OpenXR)"/>
 	</advanced>
 </examples>
