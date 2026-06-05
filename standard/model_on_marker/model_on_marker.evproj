@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.6.2" version-extra="devel_x64">
+<Project version="3.7.0" version-extra="devel_x64">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -25,6 +25,10 @@
   <resource internal="false" id="57f52910-c5f-c22-72e-855" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="ev_model.fbx">
    <filename value="ev_model.fbx"/>
   </resource>
+  <resource internal="false" id="6a22a0b5-3f4-b47-7cf-b62" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="evt_ai_model_0.glb">
+   <filename value="evt_ai_model_0.glb"/>
+   <source value="C:\test\toolbox_examples\studio_examples\standard\model_on_marker\resources_model_on_marker\ai\evt_ai_model_0.glb"/>
+  </resource>
  </resources>
  <reactors>
   <order>
@@ -38,6 +42,8 @@
    <parameter name="children">
     <item value="57f528fb-366d-c13a-334a"/>
    </parameter>
+   <parameter name="environmentMap"/>
+   <parameter name="displaySkybox" value="false"/>
    <view expanded="true"/>
   </reactor>
   <reactor id="57f528fb-366d-c13a-334a" name="Метка" type="node.marker" enabled="true">
