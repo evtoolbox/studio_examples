@@ -23,6 +23,6 @@
 		<example path="advanced/rotate_scale_model/rotate_scale_model.evproj" name_ru="Трансформация Модели" name="Rotate Scale Model"/>
 		<example path="advanced/swipe/swipe.evproj" name_ru="Свайп" name="Swipe"/>
 		<example path="advanced/vr_hands_xr/vr_hands_xr.evproj" name_ru="VR Руки (OpenXR)" name="VR Hands (OpenXR)"/>
-		<example path="advanced/gltf_async/gltf_async.evproj" name_ru="Загрузка glb моделей по сети" name="Network glb model loading"/>
+		<example path="advanced/gltf_async/gltf_async.evproj" name_ru="Загрузка glTF моделей по сети" name="Network glTF models loading"/>
 	</advanced>
 </examples>
