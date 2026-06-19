@@ -25,10 +25,6 @@
   <resource internal="false" id="57f52910-c5f-c22-72e-855" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="ev_model.fbx">
    <filename value="ev_model.fbx"/>
   </resource>
-  <resource internal="false" id="6a22a0b5-3f4-b47-7cf-b62" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="evt_ai_model_0.glb">
-   <filename value="evt_ai_model_0.glb"/>
-   <source value="C:\test\toolbox_examples\studio_examples\standard\model_on_marker\resources_model_on_marker\ai\evt_ai_model_0.glb"/>
-  </resource>
  </resources>
  <reactors>
   <order>
