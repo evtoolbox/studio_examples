@@ -1595,7 +1595,7 @@
   </reactor>
  </reactors>
  <exportParameters last="apk">
-  <parameters format="apk" appName="VR Hands XR" appId="ru.eligovision.vr_hands_xr" arch="" version="3.7.1" build="370" filename="${PROJECT_DIR}/vr_hands_xr.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="1" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="openxr" abis="arm64-v8a" minApi="24" targetApi="34">
+  <parameters format="apk" appName="VR Hands XR" appId="ru.eligovision.vr_hands_xr" arch="" version="3.7.1" build="371" filename="${PROJECT_DIR}/vr_hands_xr.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="1" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="openxr" abis="arm64-v8a" minApi="24" targetApi="34">
    <presets>
     <preset id="user" name="User Preset">
      <files>
