@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Project version="3.7.0" version-extra="devel">
+<Project version="3.7.1" version-extra="devel">
  <presentationParams>
   <parameter name="enableStatistics" value="true"/>
   <parameter name="flipFrames">
@@ -4279,7 +4279,7 @@
   </reactor>
  </reactors>
  <exportParameters last="apk">
-  <parameters format="apk" appName="vr_controllers_inspector - EVI Android App" appId="vr.controllers.inspector" arch="" version="3.7.0" build="370" filename="${PROJECT_DIR}/vr_controllers_inspector.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="5" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="openxr" abis="arm64-v8a" minApi="24" targetApi="36">
+  <parameters format="apk" appName="vr_controllers_inspector - EVI Android App" appId="vr.controllers.inspector" arch="" version="3.7.1" build="370" filename="${PROJECT_DIR}/vr_controllers_inspector.apk" appIconPath="${STUDIO_DATA_DIR}/AppIcon.png" loadingImagePath="${STUDIO_DATA_DIR}/LaunchImage.png" configurationFile="" category="" copyright="" supportedOrientations="5" usageHardwareCamera="optional" usageARCore="optional" gradleOpt="" selectedPresetId="openxr" abis="arm64-v8a" minApi="24" targetApi="36">
    <presets>
     <preset id="user" name="User Preset">
      <files>
